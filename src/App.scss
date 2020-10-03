@@ -1,3 +1,21 @@
+@import './colors.scss';
+
 .App {
-  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-off-white);
+  color: var(--color-off-black);
+  >.content {
+    flex: 1;
+  }
+  h1 {
+    margin: 0;
+  }
+  h2 {
+    margin: 0;
+  }
+  h3 {
+    margin: 0;
+  }
 }
