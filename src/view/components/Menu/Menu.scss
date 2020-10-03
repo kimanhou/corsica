@@ -1,0 +1,109 @@
+.menu {
+    font-family: Kiona;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 100vw;
+    transition: left 0.8s;
+    background-color: var(--color-off-white);
+    &.visible {
+        left: 34vw;
+        >.left {
+            >h1 {
+                transition: opacity 0.8s 0.8s;
+                opacity: 1;
+            }
+            >h2 {
+                transition: opacity 0.8s 0.9s;
+                opacity: 1;
+            }
+            >.menu-links {
+                >*{
+                    opacity: 1;
+                }
+            }
+        }
+        >.right {
+            >img {
+                opacity: 1;
+            }
+        }
+    }
+    >.left, >.right {
+        display: inline-block;
+        vertical-align: top;
+        width: 33vw;
+        height: 100vh;
+    }
+    >.left {
+        >h1 {
+            font-weight: normal;
+            font-size: 60px;
+            margin-top: 30px;
+            margin-left: 20px;
+            opacity: 0;
+            transition: opacity 0.8s 0.8s;
+        }
+        >h2 {
+            font-family: Signature;
+            font-weight: normal;
+            font-size: 100px;
+            margin-left: calc(20px + 95px);
+            margin-top: -35px;
+            opacity: 0;
+            transition: opacity 0.8s 0.8s;
+        }
+        >.menu-links {
+            margin-top: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+            transition: opacity 0.8s 0.8s;
+            >*{
+                opacity: 0;
+            }
+            >*:nth-child(0) {
+                transition: opacity 0.8s 1s;
+            }
+            >*:nth-child(1) {
+                transition: opacity 0.8s 1.1s;
+            }
+            >*:nth-child(2) {
+                transition: opacity 0.8s 1.2s;
+            }
+            >*:nth-child(3) {
+                transition: opacity 0.8s 1.3s;
+            }
+            >*:nth-child(4) {
+                transition: opacity 0.8s 1.4s;
+            }
+            >*:nth-child(5) {
+                transition: opacity 0.8s 1.5s;
+            }
+            >*:nth-child(6) {
+                transition: opacity 0.8s 1.6s;
+            }
+            >*:nth-child(7) {
+                transition: opacity 0.8s 1.7s;
+            }
+            >*:nth-child(8) {
+                transition: opacity 0.8s 1.8s;
+            }
+            >*:nth-child(9) {
+                transition: opacity 0.8s 1.9s;
+            }
+            >*:nth-child(10) {
+                transition: opacity 0.8s 2s;
+            }
+        }
+    }
+    >.right {
+        position: relative;
+        >img {
+            object-fit: cover;
+            width: 100%;
+            height: 100vh;
+            transition: opacity 0.8s 1.5s;
+            opacity: 0;
+        }
+    }
+}

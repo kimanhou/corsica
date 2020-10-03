@@ -1,0 +1,21 @@
+.cross-icon {
+    height: 38px;
+    width: 63px;
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    cursor: pointer;
+    .bar1, .bar2 {
+        transform: rotate(0deg); 
+        transition: transform 0.4s;
+        transform-origin: 50px 30px;
+    }
+    &:hover {
+        .bar1 {
+            transform: rotate(-20deg);
+        }
+        .bar2 {
+            transform: rotate(20deg);
+        }
+    }
+}

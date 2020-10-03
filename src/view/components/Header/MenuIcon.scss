@@ -1,0 +1,20 @@
+.menu-icon {
+    height: 38px;
+    width: 63px;
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    .bar1, .bar2, .bar3 {
+        transform: translateX(0); 
+        transition: transform 0.4s;   
+    }
+    &:hover {
+        cursor: pointer;
+        .bar1, .bar3 {
+            transform: translateX(20px);
+        }
+        .bar2 {
+            transform: translateX(-20px);
+        }
+    }
+}
