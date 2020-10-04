@@ -14,4 +14,27 @@
         margin-left: 235px;
         margin-top: -35px;
     }
+    >.languages {
+        position: absolute;
+        top: 50px;
+        left: 35px;
+        >.english, >.french {
+            display: inline-block;
+            cursor: pointer;
+        }
+        >.underline {
+            transition: transform 0.4s;
+            height: 2px;
+            width: 20px;
+            margin-top: 2px;
+            margin-left: 20px;
+            background-color: var(--color-off-black);
+            &.FR {
+                transform: translateX(17px);
+            }
+            &.EN {
+                transform: translateX(-20px);
+            }
+        }
+    }
 }

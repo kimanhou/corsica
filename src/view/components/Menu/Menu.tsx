@@ -25,17 +25,17 @@ const Menu : React.FC<IMenuProps> = props => {
                 <h1>Menu</h1>
                 <h2>Navigation</h2>
                 <div className={`menu-links`}>
-                    <MenuLink isActive={props.currentPage == Page.home} name={`Accueil`} onClick={() => onClick(Page.home)} />
-                    <MenuLink isActive={props.currentPage == Page.itinerary} name={`Itinéraire`} onClick={() => onClick(Page.itinerary)} />
-                    <MenuLink isActive={props.currentPage == Page.infos} name={`Infos pratiques`} onClick={() => onClick(Page.infos)} />
-                    <MenuLink isActive={props.currentPage == Page.photos} name={`Photos & vidéos`} onClick={() => onClick(Page.photos)} />
-                    <MenuLink isActive={props.currentPage == Page.home} name={`Contact`} onClick={() => onClick(Page.home)} />
+                    <MenuLink isActive={props.currentPage == Page.home} frenchName={`Accueil`} englishName={`Home`} onClick={() => onClick(Page.home)} />
+                    <MenuLink isActive={props.currentPage == Page.itinerary} frenchName={`Itinéraire`} englishName={`Itinerary`} onClick={() => onClick(Page.itinerary)} />
+                    <MenuLink isActive={props.currentPage == Page.infos} frenchName={`Infos pratiques`} englishName={`Practical info`} onClick={() => onClick(Page.infos)} />
+                    <MenuLink isActive={props.currentPage == Page.photos} frenchName={`Photos & vidéos`} englishName={`Photos & videos`} onClick={() => onClick(Page.photos)} />
+                    <MenuLink isActive={props.currentPage == Page.home} frenchName={`Contact`} englishName={`Contact us`} onClick={() => onClick(Page.home)} />
                 </div>
             </div>
             <div className={`right`}>
                 <img src="./photos/menu/menu.jpg"/>
                 <CrossIcon onClick={() => props.setMenuVisible(!props.isVisible)}/>
-            </div>
+            </div>frenchName
         </div>
     );
 }

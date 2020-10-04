@@ -5,6 +5,7 @@ import Header from './view/components/Header/Header';
 import Home from './view/components/Home/Home';
 import Infos from './view/components/Infos/Infos';
 import Itinerary from './view/components/Itinerary/Itinerary';
+import LocalContext from './view/components/LocalisationContext/LocalContext';
 import Menu from './view/components/Menu/Menu';
 import Photos from './view/components/Photos/Photos';
 
@@ -34,14 +35,16 @@ const App : React.FunctionComponent = props => {
   }
   const [menuVisible, setMenuVisible] = useState(false);
   return (
-    <div className={`App`}>
-      <Header isMenuVisible={menuVisible} setMenuVisible={setMenuVisible}/>
-      <div className={`content`}>
-        <Content/>
+    <LocalContext>
+      <div className={`App`}>
+        <Header isMenuVisible={menuVisible} setMenuVisible={setMenuVisible}/>
+        <div className={`content`}>
+          <Content/>
+        </div>
+        <Footer/>
+        <Menu activeLink="" isVisible={menuVisible} setMenuVisible={setMenuVisible} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </div>
-      <Footer/>
-      <Menu activeLink="" isVisible={menuVisible} setMenuVisible={setMenuVisible} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
-    </div>
+    </LocalContext>
   )
 }
 export default App;
