@@ -8,7 +8,7 @@ const Footer : React.FunctionComponent = props => {
     <div className={`footer`} id={`footer`}>
         <div className={`grey`}>
             <div className={`left`}>
-                <h1><Text english={`Contact us`} french={`Contact`}/></h1>
+                <h1><Text english={`Contact us`} french={`Nous contacter`}/></h1>
                 <div className={`social-media`}>
                   <SocialMediaLink link="mailto:mark.kimanh@gmail.com" iconUrl="icons/mail.png"/>
                   <SocialMediaLink link="https://www.instagram.com/kimanhou/" iconUrl="icons/instagram.png"/>
