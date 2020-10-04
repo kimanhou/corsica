@@ -19,6 +19,11 @@ const Menu : React.FC<IMenuProps> = props => {
         props.setMenuVisible(!props.isVisible);
     }
 
+    const onClickContact = () => {
+        window.location.href = `#footer`;
+        props.setMenuVisible(!props.isVisible);
+    }
+
     return(
         <div className={`menu ${isVisibleClassname}`}>
             <div className={`left`}>
@@ -29,7 +34,7 @@ const Menu : React.FC<IMenuProps> = props => {
                     <MenuLink isActive={props.currentPage == Page.itinerary} frenchName={`Itinéraire`} englishName={`Itinerary`} onClick={() => onClick(Page.itinerary)} />
                     <MenuLink isActive={props.currentPage == Page.infos} frenchName={`Infos pratiques`} englishName={`Practical info`} onClick={() => onClick(Page.infos)} />
                     <MenuLink isActive={props.currentPage == Page.photos} frenchName={`Photos & vidéos`} englishName={`Photos & videos`} onClick={() => onClick(Page.photos)} />
-                    <MenuLink isActive={props.currentPage == Page.home} frenchName={`Contact`} englishName={`Contact us`} onClick={() => onClick(Page.home)} />
+                    <MenuLink isActive={false} frenchName={`Contact`} englishName={`Contact us`} onClick={() => onClickContact()} />
                 </div>
             </div>
             <div className={`right`}>

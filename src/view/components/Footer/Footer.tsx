@@ -5,7 +5,7 @@ import SocialMediaLink from './SocialMediaLink';
 
 const Footer : React.FunctionComponent = props => {
   return (
-    <div className={`footer`}>
+    <div className={`footer`} id={`footer`}>
         <div className={`grey`}>
             <div className={`left`}>
                 <h1><Text english={`Contact us`} french={`Contact`}/></h1>
