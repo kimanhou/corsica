@@ -1,9 +1,10 @@
 .home {
     >.home-image-container {
         position: relative;
-        width: calc(100vw - 100px);
+        width: calc(100vw - 70px);
         height: calc(100vh - 180px);
-        margin-left: 50px;
+        margin-bottom: 50px;
+        margin-left: 35px;
         >.home-image {
             object-fit: cover;
             width:100%;
