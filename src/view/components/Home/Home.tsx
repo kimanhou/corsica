@@ -1,8 +1,9 @@
 import React from 'react';
 import Transition from '../Transition/Transition';
 import './Home.scss';
-import Info from './Info/Info';
+import HomeInfo from './Info/HomeInfo';
 import HomeItinerary from './Itinerary/HomeItinerary';
+import HomePhotos from './Photos/HomePhotos';
 
 const Home : React.FunctionComponent = props => {
   return (
@@ -12,7 +13,8 @@ const Home : React.FunctionComponent = props => {
       </div>
       <HomeItinerary />
       <Transition classname="home-itinerary-info" imageSrc="./photos/home/transition.png" />
-      <Info />
+      <HomeInfo />
+      <HomePhotos />
     </div>
   )
 }
