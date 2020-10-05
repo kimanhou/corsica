@@ -2,6 +2,7 @@ import React from 'react';
 import Text from '../LocalisationContext/Text';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import './HomeItinerary.scss';
+import Map from './Map';
 
 interface IHomeItineraryProps {
 
@@ -12,7 +13,7 @@ const HomeItinerary : React.FC<IHomeItineraryProps> = props => {
         <div className={`home-itinerary`}>
             <SectionHeader englishTitle={`Around the island`} englishSubtitle={`in two weeks`} frenchTitle={`Le tour de l'île`} frenchSubtitle={`en deux semaines`} />
             <div className={`left`}>
-
+                <Map />
             </div>
             <div className={`right`}>
                 <h3><Text english={``} french={`Faire le tour de l'île en deux semaines ?`} /></h3>

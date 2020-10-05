@@ -1,0 +1,16 @@
+.map {
+    height: 100%;
+    .animated {
+        stroke-dasharray: 1000;
+        animation: svg-road-trip-path 10s linear 0s infinite;
+    }
+}
+
+@keyframes svg-road-trip-path {
+    0% {
+        stroke-dashoffset: -1000;
+    }
+    100% {
+        stroke-dashoffset: -2000;
+    }
+}
