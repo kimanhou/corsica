@@ -1,4 +1,5 @@
 import React from 'react';
+import Text from '../LocalisationContext/Text';
 import './Itinerary.scss';
 
 interface IItineraryProps {
