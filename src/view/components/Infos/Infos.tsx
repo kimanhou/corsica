@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Text from '../LocalisationContext/Text';
 import Accommodation from './Accommodation/Accommodation';
 import Food from './Food/Food';
 import './Infos.scss';
+import SectionTitle from './SectionTitle';
 import Transport from './Transport/Transport';
 
 interface IInfosProps {
@@ -34,16 +34,9 @@ const Infos : React.FC<IInfosProps> = props => {
 
     return(
         <div className={`infos`}>
-            <div className={`section-title first ${transportActiveClassname}`} onClick={() => setCurrentSection(InfoSection.transport)}>
-                <Text english="Transport" french="Se déplacer" />
-            </div>
-            <div className={`section-title ${accommodationActiveClassname}`} onClick={() => setCurrentSection(InfoSection.accommodation)}>
-                <Text english="Accommodation" french="Se loger" />
-            </div>
-            <div className={`section-title ${foodActiveClassname}`} onClick={() => setCurrentSection(InfoSection.food)}>
-                <Text english="Food" french="Se restaurer" />
-            </div>
-            <div className={`underline ${currentSection.toString()}`}></div>
+            <SectionTitle english="Transport" french="Se déplacer" activeClassname={`first ${transportActiveClassname}`} setCurrentSection={() => setCurrentSection(InfoSection.transport)}/>
+            <SectionTitle english="Accommodation" french="Se loger" activeClassname={accommodationActiveClassname} setCurrentSection={() => setCurrentSection(InfoSection.accommodation)}/>
+            <SectionTitle english="Food" french="Se restaurer" activeClassname={foodActiveClassname} setCurrentSection={() => setCurrentSection(InfoSection.food)}/>
 
             <div className={`info-content`}>
                 <InfoContent/>
