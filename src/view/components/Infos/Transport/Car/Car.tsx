@@ -21,11 +21,20 @@ const Car : React.FC<ICarProps> = props => {
             </div>
             <div className={`column middle`}></div>
             <div className={`column right`}>
-                <p><Text english="" french="Pour se déplacer en Corse, pas le choix : il faut une voiture ! Les transports en commun existent et relient les majeures villes de l'île entre elles, mais pour un touriste classique, le réseau ne suffit malheureusement pas. On ne parlera pas non plus des énergumènes qui se déplacent en vélo car on veut rester dans un cadre sain d'esprit. Il y a aussi le stop, qui peut bien marcher sur de courtes distances.
-
-La location de voitures est donc incontournable pour beaucoup de voyageurs, l’île importe notamment 25 000 véhicules du continent chaque été (chiffre donné par l’un de nos hôtes Airbnb, peut être sujet à exagération). Il faut rendre la voiture propre, extérieur comme intérieur. On peut trouver des stations de lavage dans les grosses stations service, équipées d’aspirateurs et de “tuyaux d’arrosage” qu’on paye au temps. 
-
-Il y a beaucoup de routes de montagne très étroites et sinueuses, les pires se trouvant au Cap Corse et sur la côte Nord-Ouest entre Bastia, Saint Florent, l’Île Rousse, Calvi et Porto. Les croisements avec les locaux sont délicats, certains abandonnent carrément et replient leurs deux rétroviseurs pour gagner quelques centimètres. Le parking en ville est presque toujours payant, il faut s’éloigner pour trouver des places gratuites. Les parkings au départ des randonnés les plus populaires se remplissent, mieux vaut arriver avant 9h. L’essence est plus chère que sur le continent mais il est facile de trouver une station service partout en Corse." /></p>
+                <p><Text english="" french="Pour se déplacer en Corse, " />
+                    <b></b><Text english="" french="pas le choix : il faut une voiture !" />
+                    <Text english="" french=" Les transports en commun existent et relient les majeures villes de l'île entre elles, mais pour un touriste classique, le réseau ne suffit malheureusement pas. On ne parlera pas non plus des énergumènes qui se déplacent en vélo car on veut rester dans un cadre sain d'esprit. Il y a aussi le stop, qui peut bien marcher sur de courtes distances." />
+                    <br></br>
+                    <br></br>
+                    <Text english="" french="La location de voitures est donc incontournable pour beaucoup de voyageurs, l’île importe notamment 25 000 véhicules du continent chaque été (chiffre donné par l’un de nos hôtes Airbnb, peut être sujet à exagération). Il faut rendre la voiture propre, extérieur comme intérieur. On peut trouver des stations de lavage dans les grosses stations service, équipées d’aspirateurs et de “tuyaux d’arrosage” qu’on paye au temps." />
+                    <br></br>
+                    <br></br>
+                    <Text english="" french="Il y a beaucoup de " />
+                    <b></b><Text english="" french="routes de montagne très étroites et sinueuses" />
+                    <Text english="" french=", les pires se trouvant au Cap Corse et sur la côte Nord-Ouest entre Bastia, Saint Florent, l’Île Rousse, Calvi et Porto. Les croisements avec les locaux sont délicats, certains abandonnent carrément et replient leurs deux rétroviseurs pour gagner quelques centimètres. " />
+                    <b></b><Text english="" french="Le parking en ville est presque toujours payant" />
+                    <Text english="" french=", il faut s’éloigner pour trouver des places gratuites. Les parkings au départ des randonnés les plus populaires se remplissent, mieux vaut arriver avant 9h. L’essence est plus chère que sur le continent mais il est facile de trouver une station service partout en Corse." />
+                </p>
             </div>
         </div>
     );
