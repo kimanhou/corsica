@@ -1,4 +1,5 @@
 import React from 'react';
+import { myScrollTo } from '../../../../Util';
 import Text from '../../LocalisationContext/Text';
 import './TransportMode.scss'
 
@@ -11,7 +12,7 @@ interface ITransportModeProps {
 
 const TransportMode : React.FC<ITransportModeProps> = props => {
     const onClick = () => {
-        window.location.href = `#${props.id}`;
+        myScrollTo(props.id);
     }
     
     return(

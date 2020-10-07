@@ -16,7 +16,7 @@ const Home : React.FunctionComponent<IHomeProps> = props => {
       </div>
       <HomeItinerary />
       <Transition classname="home-itinerary-info" imageSrc="./photos/home/transition.png" />
-      <HomeInfo setCurrentPage={props.setCurrentPage}/>
+      <HomeInfo setCurrentPage={props.setCurrentPage} setCurrentSection={props.setCurrentSection}/>
       <HomePhotos />
     </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
+import Transition from '../../Transition/Transition';
 import Car from './Car/Car';
 import Ferry from './Ferry/Ferry';
 import Plane from './Plane/Plane';
@@ -24,8 +25,11 @@ const Transport : React.FC<ITransportProps> = props => {
                 <TransportMode english="The train" french="Le train" id="train" iconSrc="./icons/train.png" />
             </div>
             <Plane/>
+            <Transition imageSrc="./photos/infos/transport/transition-01.png" classname={''}/>
             <Ferry />
+            <Transition imageSrc="./photos/infos/transport/transition-02.png" classname={''}/>
             <Car />
+            <Transition imageSrc="./photos/infos/transport/transition-03.png" classname={''}/>
             <Train />
         </div>
     );

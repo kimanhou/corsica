@@ -1,0 +1,36 @@
+.car-detail {
+    >.image-container, >.middle, >.text-container {
+        display: inline-block;
+        vertical-align: top;
+    }
+    >.image-container {
+        width: 80px;
+        >img {
+            width: 80px;
+        }
+    }
+    >.middle {
+        width: 10px;
+    }
+    >.text-container {
+        width: 310px;
+        >p {
+            line-height: normal;
+            >.small {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 14px;
+            }
+            >.normal {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 20px;
+            }
+            >.space {
+                display: inline-block;
+                vertical-align: middle;
+                width: 4px;
+            }
+        }
+    }
+}

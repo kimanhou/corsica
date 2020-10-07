@@ -9,7 +9,6 @@ interface ITransitionProps {
 const Transition : React.FC<ITransitionProps> = props => {
     return(
         <div className={`transition ${props.classname}`} style={{ backgroundImage: `url('${props.imageSrc}')`}}>
-            {/* <img src={props.imageSrc} /> */}
         </div>
     );
 }
