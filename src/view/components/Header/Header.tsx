@@ -23,7 +23,7 @@ const Header : React.FunctionComponent<IHeaderProps> = props => {
   }
 
   return (
-    <div className={`header`}>
+    <div className={`header`} id={`header`}>
       <div className={`languages`}>
         <div className={`english`} onClick={() => setLanguageTo(Local.EN)}>EN</div> - <div className={`french`} onClick={() => setLanguageTo(Local.FR)}>FR</div>
         <div className={`underline ${currentLanguage.getShortName()}`}></div>

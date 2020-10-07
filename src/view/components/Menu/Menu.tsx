@@ -1,5 +1,6 @@
 import React from 'react';
 import { Page } from '../../../App';
+import { myScrollTo } from '../../../Util';
 import CrossIcon from './CrossIcon';
 import './Menu.scss';
 import MenuLink from './MenuLink';
@@ -20,7 +21,7 @@ const Menu : React.FC<IMenuProps> = props => {
     }
 
     const onClickContact = () => {
-        window.location.href = `#footer`;
+        myScrollTo("footer")
         props.setMenuVisible(!props.isVisible);
     }
 

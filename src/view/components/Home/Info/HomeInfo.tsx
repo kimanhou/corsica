@@ -1,5 +1,6 @@
 import React from 'react';
 import { Page } from '../../../../App';
+import { myScrollTo } from '../../../../Util';
 import Text from '../../LocalisationContext/Text';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 import './HomeInfo.scss';
@@ -9,9 +10,11 @@ interface IHomeInfoProps {
 }
 
 const HomeInfo : React.FC<IHomeInfoProps> = props => {
-    const onClick = (page : Page, id : string) => {
-        props.setCurrentPage(page);
-        window.location.href = `#${id}`;
+    const onClick = (id : string) => {
+        props.setCurrentPage(Page.infos);
+        setTimeout(() => {
+            myScrollTo(id);
+        }, 20);
     }
     return(
         <div className={`home-info`}>
@@ -23,12 +26,12 @@ const HomeInfo : React.FC<IHomeInfoProps> = props => {
                     <p>Arriver et partir de l'île, se déplacer entre chaque ville. en transports en commun ou en voiture, comment se garer...</p>
                     <div className={`subcolumns`}>
                         <div className={`subcolumn`}>
-                            <p onClick={() => onClick(Page.infos, "plane")}><Text english="The plane" french="L'avion" /></p>
-                            <p onClick={() => onClick(Page.infos, "ferry")}><Text english="The ferry" french="Le ferry" /></p>
+                            <p onClick={() => onClick("plane")}><Text english="The plane" french="L'avion" /></p>
+                            <p onClick={() => onClick("ferry")}><Text english="The ferry" french="Le ferry" /></p>
                         </div>
                         <div className={`subcolumn`}>
-                            <p onClick={() => onClick(Page.infos, "car")}><Text english="The car" french="La voiture" /></p>
-                            <p onClick={() => onClick(Page.infos, "train")}><Text english="The train" french="Le train" /></p>
+                            <p onClick={() => onClick("car")}><Text english="The car" french="La voiture" /></p>
+                            <p onClick={() => onClick("train")}><Text english="The train" french="Le train" /></p>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Page } from '../../../App';
+import { myScrollTo } from '../../../Util';
 import Text from '../LocalisationContext/Text';
 import './Footer.scss';
 import SocialMediaLink from './SocialMediaLink';
@@ -11,6 +12,7 @@ interface IFooterProps {
 const Footer : React.FunctionComponent<IFooterProps> = props => {
 const onClickMenu = (page : Page) => {
   props.setCurrentPage(page);
+  myScrollTo("header");
 }
 
   return (
