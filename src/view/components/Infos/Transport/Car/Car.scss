@@ -1,0 +1,20 @@
+.car {
+    min-height: 100vh;
+    border-top: 1px solid transparent;
+    background-color: var(--color-light-yellow);
+    >.column {
+        display: inline-block;
+        vertical-align: top;
+        min-height: calc(100vh - 180px);
+        &.left {
+            width: 400px;
+            margin-left: 35px;
+        }
+        &.middle {
+            width: 200px;
+        }
+        &.right {
+            width: 770px;
+        }
+    }
+}

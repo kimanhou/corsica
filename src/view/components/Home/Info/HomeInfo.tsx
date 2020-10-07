@@ -1,12 +1,18 @@
 import React from 'react';
+import { Page } from '../../../../App';
 import Text from '../../LocalisationContext/Text';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 import './HomeInfo.scss';
 
 interface IHomeInfoProps {
+    setCurrentPage : (currentPage : Page) => void;
 }
 
 const HomeInfo : React.FC<IHomeInfoProps> = props => {
+    const onClick = (page : Page, id : string) => {
+        props.setCurrentPage(page);
+        window.location.href = `#${id}`;
+    }
     return(
         <div className={`home-info`}>
             <SectionHeader englishTitle={`Practical info`} englishSubtitle={`good to know`} frenchTitle={`Infos pratiques`} frenchSubtitle={`bon a savoir`} />
@@ -17,12 +23,12 @@ const HomeInfo : React.FC<IHomeInfoProps> = props => {
                     <p>Arriver et partir de l'île, se déplacer entre chaque ville. en transports en commun ou en voiture, comment se garer...</p>
                     <div className={`subcolumns`}>
                         <div className={`subcolumn`}>
-                            <p><Text english="The plane" french="L'avion" /></p>
-                            <p><Text english="The ferry" french="Le ferry" /></p>
+                            <p onClick={() => onClick(Page.infos, "plane")}><Text english="The plane" french="L'avion" /></p>
+                            <p onClick={() => onClick(Page.infos, "ferry")}><Text english="The ferry" french="Le ferry" /></p>
                         </div>
                         <div className={`subcolumn`}>
-                            <p><Text english="The car" french="La voiture" /></p>
-                            <p><Text english="The train" french="Le train" /></p>
+                            <p onClick={() => onClick(Page.infos, "car")}><Text english="The car" french="La voiture" /></p>
+                            <p onClick={() => onClick(Page.infos, "train")}><Text english="The train" french="Le train" /></p>
                         </div>
                     </div>
                 </div>

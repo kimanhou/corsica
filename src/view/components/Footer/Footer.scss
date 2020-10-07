@@ -28,6 +28,13 @@
             >h2 {
                 text-align: right;
                 font-weight: normal;
+                display: inline-block;
+                vertical-align: top;
+                cursor: pointer;
+                &.divider {
+                    margin: 0 10px;
+                    cursor: initial;
+                }
             }
         }
     }

@@ -16,9 +16,13 @@ export enum Page {
   photos
 }
 
+export interface IContentProps {
+  setCurrentPage : (currentPage : Page) => void;
+}
+
 const App : React.FunctionComponent = props => {
   const [currentPage, setCurrentPage] = useState(Page.home);
-  let Content : React.FC;
+  let Content : React.FC<IContentProps>;
   switch (currentPage) {
     case Page.home:
       Content = Home;
@@ -37,11 +41,11 @@ const App : React.FunctionComponent = props => {
   return (
     <LocalContext>
       <div className={`App`}>
-        <Header isMenuVisible={menuVisible} setMenuVisible={setMenuVisible}/>
+        <Header isMenuVisible={menuVisible} setMenuVisible={setMenuVisible} setCurrentPage={setCurrentPage}/>
         <div className={`content`}>
-          <Content/>
+          <Content setCurrentPage={setCurrentPage}/>
         </div>
-        <Footer/>
+        <Footer setCurrentPage={setCurrentPage}/>
         <Menu activeLink="" isVisible={menuVisible} setMenuVisible={setMenuVisible} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </div>
     </LocalContext>

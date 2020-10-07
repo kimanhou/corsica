@@ -1,6 +1,11 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
+import Car from './Car/Car';
+import Ferry from './Ferry/Ferry';
+import Plane from './Plane/Plane';
+import Train from './Train/Train';
 import './Transport.scss'
+import TransportMode from './TransportMode';
 
 interface ITransportProps {
 
@@ -10,6 +15,18 @@ const Transport : React.FC<ITransportProps> = props => {
     return(
         <div className={`transport`}>
             <h2><Text english="Transport" french="Tous les modes de transport" /></h2>
+            <p><Text english="" french="On ne vous parle ici que des modes de transport que l'on a pris et des gares, ports et aéroports que l'on a fréquentés. Les horaires et informations changent souvent, c'est pourquoi des liens utiles sont inclus à la fin de chaque section."/></p>
+            <div className={`transport-modes`}>
+                <TransportMode english="The plane" french="L'avion" id="plane" iconSrc="./icons/plane.png" />
+                <TransportMode english="The ferry" french="Le ferry" id="ferry" iconSrc="./icons/ferry.png" />
+                <div></div>
+                <TransportMode english="The car" french="La voiture" id="car" iconSrc="./icons/car.png" />
+                <TransportMode english="The train" french="Le train" id="train" iconSrc="./icons/train.png" />
+            </div>
+            <Plane/>
+            <Ferry />
+            <Car />
+            <Train />
         </div>
     );
 }

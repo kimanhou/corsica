@@ -1,0 +1,27 @@
+.plane {
+    min-height: 100vh;
+    background-color: var(--color-light-yellow);
+    border-top: 1px solid transparent;
+    >.column {
+        display: inline-block;
+        vertical-align: top;
+        min-height: calc(100vh - 180px);
+        &.left {
+            width: 400px;
+            margin-left: 35px;
+            >p {
+                margin: 0;
+            }
+        }
+        &.middle {
+            width: 200px;
+        }
+        &.right {
+            width: 770px;
+            ul {
+                list-style-type : none;
+                margin-top: 0;
+            }
+        }
+    }
+}

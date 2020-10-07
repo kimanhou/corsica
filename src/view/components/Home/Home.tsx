@@ -1,11 +1,14 @@
 import React from 'react';
+import { IContentProps } from '../../../App';
 import Transition from '../Transition/Transition';
 import './Home.scss';
 import HomeInfo from './Info/HomeInfo';
 import HomeItinerary from './Itinerary/HomeItinerary';
 import HomePhotos from './Photos/HomePhotos';
 
-const Home : React.FunctionComponent = props => {
+interface IHomeProps extends IContentProps {}
+
+const Home : React.FunctionComponent<IHomeProps> = props => {
   return (
     <div className={`home`}>
       <div className={`home-image-container`}>
@@ -13,7 +16,7 @@ const Home : React.FunctionComponent = props => {
       </div>
       <HomeItinerary />
       <Transition classname="home-itinerary-info" imageSrc="./photos/home/transition.png" />
-      <HomeInfo />
+      <HomeInfo setCurrentPage={props.setCurrentPage}/>
       <HomePhotos />
     </div>
   )

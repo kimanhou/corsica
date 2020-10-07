@@ -1,9 +1,18 @@
 import React from 'react';
+import { Page } from '../../../App';
 import Text from '../LocalisationContext/Text';
 import './Footer.scss';
 import SocialMediaLink from './SocialMediaLink';
 
-const Footer : React.FunctionComponent = props => {
+interface IFooterProps {
+  setCurrentPage : (currentPage : Page) => void;
+}
+
+const Footer : React.FunctionComponent<IFooterProps> = props => {
+const onClickMenu = (page : Page) => {
+  props.setCurrentPage(page);
+}
+
   return (
     <div className={`footer`} id={`footer`}>
         <div className={`grey`}>
@@ -17,7 +26,13 @@ const Footer : React.FunctionComponent = props => {
                 </div>
             </div>
             <div className={`right`}>
-                <h2><Text english={`Home | Itinerary | Practical info | Photos & Videos`} french={`Accueil | Itinéraire | Infos pratiques | Photos & Vidéos`}/></h2>
+                <h2 onClick={() => onClickMenu(Page.home)}><Text english={`Home`} french={`Accueil`}/></h2>
+                <h2 className={`divider`}> | </h2>
+                <h2 onClick={() => onClickMenu(Page.itinerary)}><Text english={`Itinerary`} french={`Itinéraire`}/></h2>
+                <h2 className={`divider`}> | </h2>
+                <h2 onClick={() => onClickMenu(Page.infos)}><Text english={`Practical info`} french={`Infos pratiques`}/></h2>
+                <h2 className={`divider`}> | </h2>
+                <h2 onClick={() => onClickMenu(Page.photos)}><Text english={`Photos & Videos`} french={`Photos & Vidéos`}/></h2>
             </div>
         </div>
       <h3><Text english={`©2020 Website made by Kim Anh Nguyen and Mark Poussard`} french={`©2020 Site web réalisé par Kim Anh Nguyen et Mark Poussard`}/></h3>
