@@ -16,6 +16,22 @@
             width: 400px;
             >p {
                 margin: 0;
+                >.image-container, >.middle, >.text-container {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                >.middle {
+                    width: 10px;
+                }
+                >.image-container {
+                    width: 50px;
+                    >img {
+                        width: 50px;
+                    }
+                }
+                >.text-container {
+                    line-height: 50px;
+                }
             }
         }
     }

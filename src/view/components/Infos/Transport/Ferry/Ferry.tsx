@@ -40,9 +40,21 @@ const Ferry : React.FC<IFerryProps> = props => {
                     <b><Text english="" french="Nos chiffres" /></b>
                     <Text english="" french=" : septembre 2020 avec Corsica Ferries sans cabine sans voiture" />
                     <br></br>
-                    <Text english="" french="Toulon - Ajaccio 35€ / personne" />
+                    <div className={`image-container`}>
+                        <img src="./icons/night.png" />
+                    </div>
+                    <div className={`middle`}></div>
+                    <div className={`text-container`}>
+                        <Text english="Toulon - Ajaccio 35€ / pax" french="Toulon - Ajaccio 35€ / personne" />
+                    </div>
                     <br></br>
-                    <Text english="" french="Bastia - Livourne 22€ / personne" />
+                    <div className={`image-container`}>
+                        <img src="./icons/day.png" />
+                    </div>
+                    <div className={`middle`}></div>
+                    <div className={`text-container`}>
+                        <Text english="Bastia - Livourne 22€ / pax" french="Bastia - Livourne 22€ / personne" />
+                    </div>
                     <br></br>
                     <Text english="" french="Pour 2 personnes avec une voiture, compter environ 150€ par traversée en septembre." />
                     <br></br>
