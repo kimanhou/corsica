@@ -9,8 +9,14 @@
         &.left {
             width: 400px;
             margin-left: 35px;
+            text-align: center;
             >p {
                 margin: 0;
+                text-align: left;
+            }
+            >img {
+                margin-top: 30px;
+                width: 300px;
             }
         }
         &.middle {

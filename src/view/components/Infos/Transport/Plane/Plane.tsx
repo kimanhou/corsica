@@ -18,6 +18,7 @@ const Plane : React.FC<IPlaneProps> = props => {
                 <p><b><Text english="" french="Lien utile" /></b></p>
                 <p><a href="https://mobilite.muvitarra.fr/" target="_blank"><Text english="" french="Muvitarra" /></a></p>
                 <p><Text english="" french="Comme un plan à jour du réseau urbain de la Muvistrada est introuvable sur Internet, voici une photo prise à un l’arrêt de bus."/></p>
+                <img src="./photos/infos/transport/bus-lines.jpg" />
             </div>
             <div className={`column middle`}></div>
             <div className={`column right`}>
