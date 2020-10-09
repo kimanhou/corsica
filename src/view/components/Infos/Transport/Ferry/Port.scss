@@ -1,0 +1,13 @@
+.port {
+    >.name {
+        cursor: pointer;
+    }
+    >.details {
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.4s;
+        &.visible {
+            height: 250px;
+        }
+    }
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import Text from '../../../LocalisationContext/Text';
 import './CarDetail.scss';
 
 interface ICarDetailProps {

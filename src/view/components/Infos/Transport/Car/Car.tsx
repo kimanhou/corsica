@@ -48,7 +48,7 @@ const Car : React.FC<ICarProps> = props => {
                     <b><Text english="" french="routes de montagne très étroites et sinueuses" /></b>
                     <Text english="" french=", les pires se trouvant au Cap Corse et sur la côte Nord-Ouest entre Bastia, Saint Florent, l’Île Rousse, Calvi et Porto. Les croisements avec les locaux sont délicats, certains abandonnent carrément et replient leurs deux rétroviseurs pour gagner quelques centimètres. " />
                     <b><Text english="" french="Le parking en ville est presque toujours payant" /></b>
-                    <Text english="" french=", il faut s’éloigner pour trouver des places gratuites. Les parkings au départ des randonnés les plus populaires se remplissent, mieux vaut arriver avant 9h. L’essence est plus chère que sur le continent mais il est facile de trouver une station service partout en Corse." /> 
+                    <Text english="" french=", il faut s’éloigner pour trouver des places gratuites. Les parkings au départ des randonnés les plus populaires se remplissent vite, mieux vaut arriver avant 9h. L’essence est plus chère que sur le continent mais il est facile de trouver une station service partout en Corse." /> 
                 </p>
                 <img src="./icons/moutain-road.png"/>
             </div>

@@ -25,7 +25,6 @@ const Train : React.FC<ITrainProps> = props => {
                 <TrainLink textEnglish="" textFrench="Horaires grandes lignes" link="https://cf-corse.corsica/wp-content/uploads/2020/08/Affiches-CFC-automne-hiver-2020-2021-1.pdf" />
                 <TrainLink textEnglish="" textFrench="Horaires Calvi - L'Île Rousse" link="https://cf-corse.corsica/wp-content/uploads/2020/08/Affiches-CFC-automne-hiver-2020-2021-4.pdf" />
             </div>
-            {/* <div className={`column middle`}></div> */}
             <div className={`column right`}>
                 <img src="./icons/train-line.png" />
             </div>

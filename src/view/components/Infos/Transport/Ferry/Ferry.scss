@@ -5,9 +5,40 @@
         display: inline-block;
         vertical-align: top;
         min-height: calc(100vh - 180px);
+        margin-bottom: 30px;
         &.left {
             width: 770px;
             margin-left: 35px;
+            >p {
+                >.departure-ports {
+                    display: inline-block;
+                    >img {
+                        width: 50px;
+                        margin: 0 10px;
+                        line-height: 40px;
+                    }
+                    >.italian-flag {
+                        margin-left: 30px;
+                    }
+                }
+                >.choose-text {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 200px;
+                }
+                >select {
+                    cursor: pointer;
+                    font-weight: 100;
+                    font-size: 20px;
+                    line-height: 40px;
+                    font-family: Timeless;
+                    color: var(--color-off-black);
+                    background-color: transparent;
+                    outline: 0px;
+                    padding: 5px;
+                    margin-left: 10px;
+                }
+            }
         }
         &.middle {
             width: 200px;
