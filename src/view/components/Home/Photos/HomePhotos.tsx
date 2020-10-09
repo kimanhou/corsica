@@ -24,7 +24,10 @@ const HomePhotos : React.FC<IHomePhotosProps> = props => {
                 <ScreenDetector onActive={onActive} onUnactive={onUnactive} className={`screen-detector`}/>
                 <div className={`photos-container ${onActiveClassname}`}>
                     <div className={`vertical-box`}>
-                        <img src="./photos/home/photos-04.png" />
+                        <video controls autoPlay muted>
+                            <source src="./videos/01.mov" type="video/mp4"/>
+                            Your browser does not support the video tag.
+                        </video>
                         <div className={`vertical-box-cover left`}></div>
                     </div>
                     <div className={`middle-box`}>
