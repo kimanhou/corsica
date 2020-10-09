@@ -1,8 +1,8 @@
 import React from 'react';
 import Text from '../../../LocalisationContext/Text';
 import SectionHeader from '../../../SectionHeader/SectionHeader';
+import Link from '../Link';
 import './Train.scss'
-import TrainLink from './TrainLink';
 
 interface ITrainProps {
 }
@@ -20,10 +20,10 @@ const Train : React.FC<ITrainProps> = props => {
                 <p><Text english="" french="Ci-contre le plan des deux grandes lignes avec les prix et temps de trajet depuis Ajaccio (toutes les stations n'y figurent pas). Pour un aller-retour, il faut multiplier le prix par 2, il n'y a pas de réduction. Il y a environ 5 trains par jour sur l'axe Ajaccio - Bastia dans chaque sens." /></p>
                 <br></br>
                 <p style={{ marginBottom: "0"}}><b><Text english="" french="Liens utiles" /></b></p>
-                <TrainLink textEnglish="" textFrench="Site CFC" link="https://cf-corse.corsica/" />
-                <TrainLink textEnglish="" textFrench="Grille tarifaire (pas très claire)" link="https://cf-corse.corsica/wp-content/uploads/2019/03/Grille-tarifaire.pdf" />
-                <TrainLink textEnglish="" textFrench="Horaires grandes lignes" link="https://cf-corse.corsica/wp-content/uploads/2020/08/Affiches-CFC-automne-hiver-2020-2021-1.pdf" />
-                <TrainLink textEnglish="" textFrench="Horaires Calvi - L'Île Rousse" link="https://cf-corse.corsica/wp-content/uploads/2020/08/Affiches-CFC-automne-hiver-2020-2021-4.pdf" />
+                <Link textEnglish="" textFrench="Site CFC" link="https://cf-corse.corsica/" />
+                <Link textEnglish="" textFrench="Grille tarifaire (pas très claire)" link="https://cf-corse.corsica/wp-content/uploads/2019/03/Grille-tarifaire.pdf" />
+                <Link textEnglish="" textFrench="Horaires grandes lignes" link="https://cf-corse.corsica/wp-content/uploads/2020/08/Affiches-CFC-automne-hiver-2020-2021-1.pdf" />
+                <Link textEnglish="" textFrench="Horaires Calvi - L'Île Rousse" link="https://cf-corse.corsica/wp-content/uploads/2020/08/Affiches-CFC-automne-hiver-2020-2021-4.pdf" />
             </div>
             <div className={`column right`}>
                 <img src="./icons/train-line.png" />

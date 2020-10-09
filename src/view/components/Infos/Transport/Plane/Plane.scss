@@ -15,9 +15,11 @@
                 margin: 0;
                 text-align: left;
             }
-            >img {
-                margin-top: 30px;
-                width: 300px;
+            >a {
+                >img {
+                    margin-top: 30px;
+                    width: 300px;
+                }
             }
         }
         &.middle {

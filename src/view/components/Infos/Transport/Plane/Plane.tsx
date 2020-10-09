@@ -1,7 +1,8 @@
 import React from 'react';
 import Text from '../../../LocalisationContext/Text';
 import SectionHeader from '../../../SectionHeader/SectionHeader';
-import './Plane.scss'
+import Link from '../Link';
+import './Plane.scss';
 
 interface IPlaneProps {
 }
@@ -16,9 +17,9 @@ const Plane : React.FC<IPlaneProps> = props => {
                 <br></br>
                 <br></br>
                 <p><b><Text english="" french="Lien utile" /></b></p>
-                <p><a href="https://mobilite.muvitarra.fr/" target="_blank"><Text english="" french="Muvitarra" /></a></p>
+                <p><Link textEnglish="Muvitarra" textFrench="Muvitarra" link="https://mobilite.muvitarra.fr/" /></p>
                 <p><Text english="" french="Comme un plan à jour du réseau urbain de la Muvistrada est introuvable sur Internet, voici une photo prise à un l’arrêt de bus."/></p>
-                <img src="./photos/infos/transport/bus-lines.jpg" />
+                <a href="./photos/infos/transport/bus-lines.jpg" target="_blank" ><img src="./photos/infos/transport/bus-lines.jpg" /></a>
             </div>
             <div className={`column middle`}></div>
             <div className={`column right`}>

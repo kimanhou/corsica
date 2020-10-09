@@ -1,19 +1,19 @@
 import React from 'react';
-import Text from '../../../LocalisationContext/Text';
-import './TrainLink.scss';
+import Text from '../../LocalisationContext/Text';
+import './Link.scss';
 
-interface ITrainLinkProps {
+interface ILinkProps {
     textEnglish : string;
     textFrench : string;
     link : string;
 }
 
-const TrainLink : React.FC<ITrainLinkProps> = props => {
+const Link : React.FC<ILinkProps> = props => {
     return(
-        <div className={`train-link`}>
+        <div className={`link`}>
             <a href={props.link} target="_blank"><Text english={props.textEnglish} french={props.textFrench} /></a>
         </div>
     );
 }
 
-export default TrainLink;
+export default Link;

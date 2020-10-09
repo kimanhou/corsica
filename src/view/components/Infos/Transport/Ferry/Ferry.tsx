@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Text from '../../../LocalisationContext/Text';
 import SectionHeader from '../../../SectionHeader/SectionHeader';
-import TrainLink from '../Train/TrainLink';
+import Link from '../Link';
 import './Ferry.scss'
 import Port from './Port';
 
@@ -211,10 +211,10 @@ const Ferry : React.FC<IFerryProps> = props => {
                     <br></br>
                     <b><Text english="" french="Liens utiles" /></b>
                     <br></br>
-                    <TrainLink textEnglish="Corsica Linea" textFrench="Corsica Linea" link="https://www.corsicalinea.com/" />
-                    <TrainLink textEnglish="Corsica Ferries" textFrench="Corsica Ferries" link="https://www.corsica-ferries.fr/" />
-                    <TrainLink textEnglish="Moby Lines" textFrench="Moby Lines" link="https://www.mobylines.com/" />
-                    <TrainLink textEnglish="La Meridionale" textFrench="La Méridionale" link="https://www.lameridionale.fr/" />
+                    <Link textEnglish="Corsica Linea" textFrench="Corsica Linea" link="https://www.corsicalinea.com/" />
+                    <Link textEnglish="Corsica Ferries" textFrench="Corsica Ferries" link="https://www.corsica-ferries.fr/" />
+                    <Link textEnglish="Moby Lines" textFrench="Moby Lines" link="https://www.mobylines.com/" />
+                    <Link textEnglish="La Meridionale" textFrench="La Méridionale" link="https://www.lameridionale.fr/" />
                 </p>
             </div>
         </div>
