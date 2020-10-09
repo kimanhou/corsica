@@ -1,0 +1,60 @@
+.itinerary {
+    text-align: center;
+    >.columns {
+        overflow: hidden;
+        width: calc(100vw - 70px);
+        margin-left: 35px;
+        &.active {
+            >.column {
+                >.image-container {
+                    &.one, &.two, &.three {
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+        >.column {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(33.33vw - 23.33px);
+            height: calc(100vh - 180px);
+            margin-bottom: 30px;
+            >h1 {
+                font-family: Kiona;
+                font-weight: normal;
+                font-size: 60px;
+                margin-top: 50px;
+            }
+            >h2 {
+                font-family: Signature;
+                font-weight: normal;
+                font-size: 100px;
+            }
+            >.image-container {
+                width: 9vw;
+                height: 60vh;
+                border: 1px solid var(--color-off-black);
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 1vw;
+                transition: transform 0.8s;
+                >img {
+                    width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                }
+                &.one {
+                    transform: translateY(200px);
+                }
+                &.two {
+                    margin-top: 100px;
+                    transform: translateY(-200px);
+                }
+                &.three {
+                    margin-top: 40px;
+                    transform: translateY(200px);
+                }
+            }
+        }
+    }
+}
