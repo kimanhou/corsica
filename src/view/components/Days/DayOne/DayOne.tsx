@@ -79,6 +79,8 @@ const DayOne : React.FC<IDayOneProps> = props => {
                  introEnglishText="" introFrenchText="Ajaccio, ou Aiacciu en Corse, est la préfecture du département de la Corse du Sud et de la région Corse. Elle compte un peu plus de 100 000 habitants et est dotée d’un grand port et d’un aéroport, ce qui en fait un point de départ pratique pour beaucoup de vacanciers."
                  isFullDay={false}
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
+                 programEnglishMorning={"visit of Ajaccio old town"} programFrenchMorning={"visite du centre ville d'Ajaccio"} 
+                 programEnglishAfternoon={"small hike on Parata Peninsula to admire the Blood Islands"} programFrenchAfternoon={"petite randonnée sur la presqu'île de la Parata pour admirer les Îles Sanguinaires"}
             />
         </div>
     );

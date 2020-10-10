@@ -16,7 +16,7 @@ const Itinerary : React.FC<IItineraryProps> = props => {
     }
 
     const onClickBreakdown = () => {
-        props.setCurrentPage(Page.dayOne);
+        props.setCurrentPage(Page.dayPage);
     }
     
     var [onActiveClassname, setOnActiveClassname] = useState("");

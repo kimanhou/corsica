@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import './App.scss';
-import DayOne from './view/components/Days/DayOne/DayOne';
+import DayPage from './view/components/Days/DayPage';
 import Footer from './view/components/Footer/Footer';
 import Header from './view/components/Header/Header';
 import Home from './view/components/Home/Home';
-import Accommodation from './view/components/Infos/Accommodation/Accommodation';
-import Food from './view/components/Infos/Food/Food';
 import Infos from './view/components/Infos/Infos';
-import Transport from './view/components/Infos/Transport/Transport';
 import Itinerary from './view/components/Itinerary/Itinerary';
 import LocalContext from './view/components/LocalisationContext/LocalContext';
 import Menu from './view/components/Menu/Menu';
@@ -18,7 +15,7 @@ export enum Page {
   itinerary,
   infos,
   photos,
-  dayOne
+  dayPage
 }
 
 export enum InfoSection {
@@ -49,8 +46,8 @@ const App : React.FunctionComponent = props => {
     case Page.photos:
       Content = Photos;
       break;
-    case Page.dayOne:
-      Content = DayOne;
+    case Page.dayPage:
+      Content = DayPage;
       break;
   }
 

@@ -1,0 +1,18 @@
+.day-header {
+    margin-left: 35px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    >.day-header-number {
+        display: inline-block;
+        vertical-align: top;
+        font-family: Kiona;
+        font-size: 40px;
+        width: calc((100vw - 70px - 4px) / 14);
+        text-align: center;
+        color: var(--color-dark-grey);
+        &.active {
+            color: var(--color-off-black);
+            border: 2px solid var(--color-off-black);
+        }
+    }
+}

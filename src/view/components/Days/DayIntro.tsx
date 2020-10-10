@@ -9,6 +9,10 @@ interface IDayIntroProps {
     englishText : string;
     frenchText : string;
     isFullDay : boolean;
+    programEnglishMorning : string;
+    programFrenchMorning : string;
+    programEnglishAfternoon : string;
+    programFrenchAfternoon : string;
 }
 
 const DayIntro : React.FC<IDayIntroProps> = props => {
@@ -19,7 +23,7 @@ const DayIntro : React.FC<IDayIntroProps> = props => {
                 <h2><Text english={props.englishTitle} french={props.frenchTitle} /></h2>
                 <p><Text english={props.englishText} french={props.frenchText} /></p>
                 <p><Text english="The program of the day is :" french="Le programme de la journée est :" /></p>
-                <Program isFullDay={props.isFullDay} englishMorning="visit of Ajaccio old town" frenchMorning="visite du centre ville d'Ajaccio" englishAfternoon="short hike on Parata Peninsula to admire the Blood Islands" frenchAfternoon="petite randonnée sur la presqu'île de la Parata pour admirer les Îles Sanguinaires"/>
+                <Program isFullDay={props.isFullDay} englishMorning={props.programEnglishMorning} frenchMorning={props.programFrenchMorning} englishAfternoon={props.programEnglishAfternoon} frenchAfternoon={props.programFrenchAfternoon}/>
             </div>
         </div>
     );
