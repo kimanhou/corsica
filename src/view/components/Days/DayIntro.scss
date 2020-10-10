@@ -1,0 +1,20 @@
+.day-intro {
+    >.day-intro-text, >.day-intro-map {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 50px;
+    }
+    >.day-intro-map {
+        width: calc(40vw - 35px);
+        margin-left: 35px;
+    }
+    >.day-intro-text {
+        width: calc(60vw - 35px);
+        margin-right: 35px;
+        >h2 {
+            font-family: Signature;
+            font-size: 100px; 
+            font-weight: 100;
+        }
+    }
+}

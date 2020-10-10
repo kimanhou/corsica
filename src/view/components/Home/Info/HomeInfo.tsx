@@ -48,19 +48,19 @@ const HomeInfo : React.FC<IHomeInfoProps> = props => {
                 </div>
             </div>
             <div className={`column middle`}>
-            <div className={`column-content`}>
-                    <img src="./photos/home/info-02.png" />
-                    <h4 onClick={() => onClickInfoSection(InfoSection.accommodation)}><Text english="" french="Se loger" /></h4>
-                    <p><Text english="" french="Quel type de logements est disponible ? Pour quel budget ?"/></p>
+                <div className={`column-content`}>
+                        <img src="./photos/home/info-02.png" />
+                        <h4 onClick={() => onClickInfoSection(InfoSection.accommodation)}><Text english="" french="Se loger" /></h4>
+                        <p><Text english="" french="Quel type de logements est disponible ? Pour quel budget ?"/></p>
+                    </div>
                 </div>
-            </div>
             <div className={`column right`}>
-            <div className={`column-content`}>
-                    <img src="./photos/home/info-03.png" />
-                    <h4 onClick={() => onClickInfoSection(InfoSection.food)}><Text english="" french="Se restaurer" /></h4>
-                    <p><Text english="" french="Supermarchés, boulangeries, restaurants... Qu'est ce qu'on mange en Corse ?" /></p>
+                <div className={`column-content`}>
+                        <img src="./photos/home/info-03.png" />
+                        <h4 onClick={() => onClickInfoSection(InfoSection.food)}><Text english="" french="Se restaurer" /></h4>
+                        <p><Text english="" french="Supermarchés, boulangeries, restaurants... Qu'est ce qu'on mange en Corse ?" /></p>
+                    </div>
                 </div>
-            </div>
         </div>
     );
 }

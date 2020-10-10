@@ -1,0 +1,9 @@
+.day-photos {
+    min-height: 100vh;
+    border-top: 1px solid transparent;
+    >.day-photos-content {
+        min-height: calc(100vh - 180px);
+        margin-bottom: 30px;
+        margin-top: 65px;
+    }
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.scss';
+import DayOne from './view/components/Days/DayOne/DayOne';
 import Footer from './view/components/Footer/Footer';
 import Header from './view/components/Header/Header';
 import Home from './view/components/Home/Home';
@@ -16,7 +17,8 @@ export enum Page {
   home,
   itinerary,
   infos,
-  photos
+  photos,
+  dayOne
 }
 
 export enum InfoSection {
@@ -46,6 +48,9 @@ const App : React.FunctionComponent = props => {
       break;
     case Page.photos:
       Content = Photos;
+      break;
+    case Page.dayOne:
+      Content = DayOne;
       break;
   }
 

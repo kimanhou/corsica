@@ -1,0 +1,48 @@
+.day-details {
+    min-height: 100vh;
+    background-color: var(--color-light-yellow);
+    border-top: 1px solid transparent;
+    >.column {
+        display: inline-block;
+        vertical-align: top;
+        min-height: calc(100vh - 180px);
+        margin-bottom: 30px;
+        margin-top: 65px;
+        &.left {
+            width: 770px;
+            margin-left: 35px;
+            >.day-details-half-days {
+                >.am {
+                    margin-bottom: 50px;
+                }
+            }
+            a {
+                text-decoration: underline;
+            }
+        }
+        &.middle {
+            width: 200px;
+        }
+        &.right {
+            width: 400px;
+            p {
+                display: inline;
+                vertical-align: middle;
+            }
+            img {
+                height: 80px;
+                display: inline;
+                vertical-align: middle;
+            }
+        }
+        h2 {
+            font-family: Signature;
+            font-size: 100px; 
+            font-weight: 100;
+        }
+        ul {
+            list-style-type : none;
+            margin-top: 0;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { IContentProps, Page } from '../../../App';
 import { myScrollTo } from '../../../Util';
 import Text from '../LocalisationContext/Text';
 import ScreenDetector from '../ScreenDetector/screenDetector';
@@ -6,12 +7,16 @@ import './Itinerary.scss';
 import ItineraryNutshell from './ItineraryNutshell';
 import ItinerarySectionTitle from './ItinerarySectionTitle';
 
-interface IItineraryProps {
+interface IItineraryProps extends IContentProps {
 }
 
 const Itinerary : React.FC<IItineraryProps> = props => {
     const onClickNutshell = () => {
         myScrollTo(`itinerary-nutshell`);
+    }
+
+    const onClickBreakdown = () => {
+        props.setCurrentPage(Page.dayOne);
     }
     
     var [onActiveClassname, setOnActiveClassname] = useState("");
@@ -46,7 +51,7 @@ const Itinerary : React.FC<IItineraryProps> = props => {
                     <ScreenDetector onActive={onActive} onUnactive={onUnactive} className={`screen-detector`} />
                     <h2><Text english="in two weeks" french="en deux semaines"/></h2>
                     <ItinerarySectionTitle english="The itinerary in a nutshell" french="L'itinéraire en un clin d'oeil" onClick={onClickNutshell} />
-                    <ItinerarySectionTitle english="Day by day breakdown" french="Le détail jour par jour" onClick={() => {}}/>
+                    <ItinerarySectionTitle english="Day by day breakdown" french="Le détail jour par jour" onClick={onClickBreakdown}/>
                 </div>
                 <div className={`column right`}>
                     <div className={`image-container one`}>
