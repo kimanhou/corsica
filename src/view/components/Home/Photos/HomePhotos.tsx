@@ -3,8 +3,11 @@ import SectionHeader from '../../SectionHeader/SectionHeader';
 import './HomePhotos.scss';
 import Text from '../../LocalisationContext/Text';
 import ScreenDetector from '../../ScreenDetector/screenDetector';
+import { IContentProps, Page } from '../../../../App';
 
-interface IHomePhotosProps {}
+interface IHomePhotosProps {
+    setCurrentPage : (currentPage : Page) => void;
+}
 
 const HomePhotos : React.FC<IHomePhotosProps> = props => {
     var [onActiveClassname, setOnActiveClassname] = useState("");
@@ -18,7 +21,7 @@ const HomePhotos : React.FC<IHomePhotosProps> = props => {
 
     return(
         <div className={`home-photos`}>
-            <SectionHeader englishTitle={`A sneak peak`} englishSubtitle={`photos and videos`} frenchTitle={`Un avant goût`} frenchSubtitle={`en photos et videos`} />
+            <SectionHeader englishTitle={`A sneak peak`} englishSubtitle={`photos and videos`} frenchTitle={`Un avant goût`} frenchSubtitle={`en photos et videos`} setCurrentPage={props.setCurrentPage} page={Page.photos}/>
             <p><Text english="" french="Des photos et vidéos de chaque endroit présenté dans l'itinéraire pour vous donner un avant goût ou tout simplement vous faire voyager depuis votre canapé. Cela permet aussi de se faire une petite idée sur chaque endroit."/></p>
             <div className={`photos-container-relative`}>
                 <ScreenDetector onActive={onActive} onUnactive={onUnactive} className={`screen-detector`}/>

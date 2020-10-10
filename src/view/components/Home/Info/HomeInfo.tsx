@@ -29,7 +29,7 @@ const HomeInfo : React.FC<IHomeInfoProps> = props => {
     }
     return(
         <div className={`home-info`}>
-            <SectionHeader englishTitle={`Practical info`} englishSubtitle={`good to know`} frenchTitle={`Infos pratiques`} frenchSubtitle={`bon a savoir`} />
+            <SectionHeader englishTitle={`Practical info`} englishSubtitle={`good to know`} frenchTitle={`Infos pratiques`} frenchSubtitle={`bon a savoir`} setCurrentPage={props.setCurrentPage} page={Page.infos}/>
             <div className={`column left`}>
                 <div className={`column-content`}>
                     <img src="./photos/home/info-01.png" />

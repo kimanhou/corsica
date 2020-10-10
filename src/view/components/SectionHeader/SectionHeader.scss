@@ -1,4 +1,7 @@
 .section-header {
+    &.clickable {
+        cursor: pointer;
+    }
     >h1 {
         font-family: Kiona;
         text-align: center;

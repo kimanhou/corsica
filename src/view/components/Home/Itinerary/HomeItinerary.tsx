@@ -1,17 +1,18 @@
 import React from 'react';
+import { IContentProps, Page } from '../../../../App';
 import Text from '../../LocalisationContext/Text';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 import './HomeItinerary.scss';
 import Map from './Map';
 
 interface IHomeItineraryProps {
-
+    setCurrentPage : (currentPage : Page) => void;
 }
 
 const HomeItinerary : React.FC<IHomeItineraryProps> = props => {
     return (
         <div className={`home-itinerary`}>
-            <SectionHeader englishTitle={`Around the island`} englishSubtitle={`in two weeks`} frenchTitle={`Le tour de l'île`} frenchSubtitle={`en deux semaines`} />
+            <SectionHeader englishTitle={`Around the island`} englishSubtitle={`in two weeks`} frenchTitle={`Le tour de l'île`} frenchSubtitle={`en deux semaines`} setCurrentPage={props.setCurrentPage} page={Page.itinerary}/>
             <div className={`left`}>
                 <Map />
             </div>
