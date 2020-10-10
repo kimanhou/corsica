@@ -1,0 +1,14 @@
+.two-half-days {
+    display: inline-block;
+    width: calc((100vw - 70px) / 7);
+    height: calc((100vh - 200px) / 2 - 52px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    >.day-divider {
+        width: 50%;
+        height: 1px;
+        background-color: var(--color-off-black);
+        align-self: center;
+    }
+}
