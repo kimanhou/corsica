@@ -36,9 +36,9 @@ const Car : React.FC<ICarProps> = props => {
             </div>
             <div className={`column middle`}></div>
             <div className={`column right`}>
-                <p><Text english="" french="Pour se déplacer en Corse, " />
-                    <b><Text english="" french="pas le choix : il faut une voiture !" /></b>
-                    <Text english="" french=" Les transports en commun existent et relient les majeures villes de l'île entre elles, mais pour un touriste classique, le réseau ne suffit malheureusement pas. On ne parlera pas non plus des énergumènes qui se déplacent en vélo car on veut rester dans un cadre sain d'esprit. Il y a aussi le stop, qui peut bien marcher sur de courtes distances." />
+                <p><Text english="To get around in Corsica," french="Pour se déplacer en Corse, " />
+                    <b><Text english=" you don't really have a choice : you need a car !" french="pas le choix : il faut une voiture !" /></b>
+                    <Text english=" Public transports do exist and connect major cities, however, as a regular tourist, the network is sadly not enough. We won't talk here about lunatics going around by bike because we consider that our readers are sane. Hitchhiking can also be a solution for short distances, like going to the starting point of a major hike ." french=" Les transports en commun existent et relient les majeures villes de l'île entre elles, mais pour un touriste classique, le réseau ne suffit malheureusement pas. On ne parlera pas non plus des énergumènes qui se déplacent en vélo car on veut rester dans un cadre sain d'esprit. Il y a aussi le stop, qui peut bien marcher sur de courtes distances." />
                     <br></br>
                     <br></br>
                     <Text english="" french="La location de voitures est donc incontournable pour beaucoup de voyageurs, l’île importe notamment 25 000 véhicules du continent chaque été (chiffre donné par l’un de nos hôtes Airbnb, peut être sujet à exagération). Il faut rendre la voiture propre, extérieur comme intérieur. On peut trouver des stations de lavage dans les grosses stations service, équipées d’aspirateurs et de “tuyaux d’arrosage” qu’on paye au temps." />
@@ -47,8 +47,8 @@ const Car : React.FC<ICarProps> = props => {
                     <Text english="" french="Il y a beaucoup de " />
                     <b><Text english="" french="routes de montagne très étroites et sinueuses" /></b>
                     <Text english="" french=", les pires se trouvant au Cap Corse et sur la côte Nord-Ouest entre Bastia, Saint Florent, l’Île Rousse, Calvi et Porto. Les croisements avec les locaux sont délicats, certains abandonnent carrément et replient leurs deux rétroviseurs pour gagner quelques centimètres. " />
-                    <b><Text english="" french="Le parking en ville est presque toujours payant" /></b>
-                    <Text english="" french=", il faut s’éloigner pour trouver des places gratuites. Les parkings au départ des randonnés les plus populaires se remplissent vite, mieux vaut arriver avant 9h. L’essence est plus chère que sur le continent mais il est facile de trouver une station service partout en Corse." /> 
+                    <b><Text english="In city centers, parking is almost always paid" french="Le parking en ville est presque toujours payant" /></b>
+                    <Text english=", you need to get out a bit to find free parking spots. Parkings at popular hikes' starting point get full very fast, better be there before 9am. Gas is more expensive than on the continent, however finding a gas station is easy everywhere in Corsica." french=", il faut s’éloigner pour trouver des places gratuites. Les parkings au départ des randonnés les plus populaires se remplissent vite, mieux vaut arriver avant 9h. L’essence est plus chère que sur le continent mais il est facile de trouver une station service partout en Corse." /> 
                 </p>
                 <img src="./icons/moutain-road.png"/>
             </div>
