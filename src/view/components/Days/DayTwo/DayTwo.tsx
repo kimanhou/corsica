@@ -34,7 +34,7 @@ const DayTwo : React.FC<IDayTwoProps> = props => {
                  introEnglishText="" introFrenchText="Le plus Corse des villages Corses."
                  isFullDay={false}
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
-                 programEnglishMorning={"visit of Sartene old twon"} programFrenchMorning={"visite du centre ville de Sartène"} 
+                 programEnglishMorning={"visit of Sartene old town"} programFrenchMorning={"visite du centre ville de Sartène"} 
                  programEnglishAfternoon={"beach time and optional hike on Roccapina beach"} programFrenchAfternoon={"plage de Roccapina et randonnée possible"}
             />
         </div>

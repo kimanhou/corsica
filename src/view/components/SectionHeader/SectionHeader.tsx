@@ -27,7 +27,9 @@ const SectionHeader : React.FunctionComponent<ISectionHeaderProps> = props => {
   return (
     <div className={`section-header ${cursorPointerClassname}`} onClick={onClick}>
       <h1><Text english={props.englishTitle} french={props.frenchTitle}/></h1>
-      <h2><Text english={props.englishSubtitle} french={props.frenchSubtitle}/></h2>
+      {props.englishSubtitle !== "" && props.frenchSubtitle !== "" &&
+        <h2><Text english={props.englishSubtitle} french={props.frenchSubtitle}/></h2>
+      }
     </div>
   )
 }
