@@ -3,11 +3,18 @@ import Text from '../../LocalisationContext/Text';
 import Day from '../Day';
 import IconAndText from '../IconAndText';
 import './DayOne.scss';
+import Map from './Map';
 
 interface IDayOneProps {
 }
 
 const DayOne : React.FC<IDayOneProps> = props => {
+    const introText = <p>
+        <b><Text english="Ajaccio" french="Ajaccio" /></b>
+        <Text english=", or " french=", ou " />
+        <i><Text english="Aiacciu" french="Aiacciu" /></i>
+        <Text english=" is the biggest city in Corsica." french=" en Corse, est la préfecture du département de la Corse du Sud et de la région Corse. Elle compte un peu plus de 100 000 habitants et est dotée d’un grand port et d’un aéroport, ce qui en fait un point de départ pratique pour beaucoup de vacanciers." />
+    </p>
     const detailsMorning = <p>
         <Text english="" french="Le " />
         <b><Text english="Ajaccio old town" french="centre ville d'Ajaccio" /></b>
@@ -76,7 +83,8 @@ const DayOne : React.FC<IDayOneProps> = props => {
         <div className={`day-one`}>
             <Day dayNumber={1} 
                  introEnglishTitle="Ajaccio" introFrenchTitle="Ajaccio"
-                 introEnglishText="" introFrenchText="Ajaccio, ou Aiacciu en Corse, est la préfecture du département de la Corse du Sud et de la région Corse. Elle compte un peu plus de 100 000 habitants et est dotée d’un grand port et d’un aéroport, ce qui en fait un point de départ pratique pour beaucoup de vacanciers."
+                 introText={introText}
+                 introMap={<Map/>}
                  isFullDay={false}
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"visit of Ajaccio old town"} programFrenchMorning={"visite du centre ville d'Ajaccio"} 

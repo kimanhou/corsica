@@ -8,6 +8,7 @@ interface IDayTwoProps {
 }
 
 const DayTwo : React.FC<IDayTwoProps> = props => {
+    const introText = <p><Text english="" french="" /></p>;
     const detailsMorning = <p>
         <Text english="" french="" />
         <b><Text english="Sartene" french="Sartene" /></b>
@@ -31,7 +32,7 @@ const DayTwo : React.FC<IDayTwoProps> = props => {
         <div className={`day-two`}>
             <Day dayNumber={2} 
                  introEnglishTitle="Sartene and Roccapina" introFrenchTitle="Sartene et Roccapina"
-                 introEnglishText="" introFrenchText="Le plus Corse des villages Corses."
+                 introText={introText}
                  isFullDay={false}
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"visit of Sartene old town"} programFrenchMorning={"visite du centre ville de Sartène"} 

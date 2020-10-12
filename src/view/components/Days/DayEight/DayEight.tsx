@@ -8,6 +8,7 @@ interface IDayEightProps {
 }
 
 const DayEight : React.FC<IDayEightProps> = props => {
+    const introText = <p><Text english="" french="" /></p>;
     const detailsMorning = <p>
         <Text english="" french="" />
         <b><Text english="" french="" /></b>
@@ -31,7 +32,7 @@ const DayEight : React.FC<IDayEightProps> = props => {
         <div className={`day-eight`}>
             <Day dayNumber={8}
                  introEnglishTitle="" introFrenchTitle=""
-                 introEnglishText="" introFrenchText=""
+                 introText={introText}
                  isFullDay={false}
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={""} programFrenchMorning={""} 

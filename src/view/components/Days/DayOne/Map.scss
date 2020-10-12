@@ -1,12 +1,13 @@
 .map-day-one {
     height: 100%;
+    width: 100%;
     .animated {
         animation: zoom-in 10s linear 0s infinite;
         transform-origin: 28px 191px;
     }
     .ajaccio-mark {
         opacity: 0;
-        animation: flash 1s linear 3s infinite;
+        animation: flash 1s linear 0s infinite;
     }
 }
 

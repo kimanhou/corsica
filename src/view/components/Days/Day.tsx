@@ -9,8 +9,8 @@ interface IDayProps {
     dayNumber : number;
     introEnglishTitle : string;
     introFrenchTitle : string;
-    introEnglishText : string;
-    introFrenchText : string;
+    introText : React.ReactNode;
+    introMap ?: React.ReactNode;
     isFullDay : boolean;
     programEnglishMorning : string;
     programFrenchMorning : string;
@@ -26,11 +26,11 @@ const Day : React.FC<IDayProps> = props => {
         <div className={`day`}>
             <DayIntro isFullDay={props.isFullDay} 
                       englishTitle={props.introEnglishTitle} 
-                      englishText={props.introEnglishText} 
                       frenchTitle={props.introFrenchTitle} 
-                      frenchText={props.introFrenchText}
+                      text={props.introText}
                       programEnglishMorning={props.programEnglishMorning} programFrenchMorning={props.programFrenchMorning} 
-                      programEnglishAfternoon={props.programEnglishAfternoon} programFrenchAfternoon={props.programFrenchAfternoon} />
+                      programEnglishAfternoon={props.programEnglishAfternoon} programFrenchAfternoon={props.programFrenchAfternoon}
+                      map={props.introMap} />
             <DayDetails isFullDay={props.isFullDay} morning={props.detailsMorning} afternoon={props.detailsAfternoon} useful={props.detailsUseful}/>
             <DayPhotos />
         </div>
