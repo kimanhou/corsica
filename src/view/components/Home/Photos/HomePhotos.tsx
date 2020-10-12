@@ -22,7 +22,7 @@ const HomePhotos : React.FC<IHomePhotosProps> = props => {
     return(
         <div className={`home-photos`}>
             <SectionHeader englishTitle={`A sneak peak`} englishSubtitle={`photos and videos`} frenchTitle={`Un avant goût`} frenchSubtitle={`en photos et videos`} setCurrentPage={props.setCurrentPage} page={Page.photos}/>
-            <p><Text english="" french="Des photos et vidéos de chaque endroit présenté dans l'itinéraire pour vous donner un avant goût ou tout simplement vous faire voyager depuis votre canapé. Cela permet aussi de se faire une petite idée sur chaque endroit."/></p>
+            <p><Text english="Here we show you pictures and videos of all the places we have been and that are included in our two week itinerary. A sneak peak of what is awaiting you or just a way to get a taste of travel from a couche, enjoy the view !" french="Des photos et vidéos de chaque endroit présenté dans l'itinéraire pour vous donner un avant goût ou tout simplement vous faire voyager depuis votre canapé. Cela permet aussi de se faire une petite idée sur chaque endroit."/></p>
             <div className={`photos-container-relative`}>
                 <ScreenDetector onActive={onActive} onUnactive={onUnactive} className={`screen-detector`}/>
                 <div className={`photos-container ${onActiveClassname}`}>

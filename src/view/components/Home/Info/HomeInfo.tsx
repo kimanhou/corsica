@@ -33,8 +33,8 @@ const HomeInfo : React.FC<IHomeInfoProps> = props => {
             <div className={`column left`}>
                 <div className={`column-content`}>
                     <img src="./photos/home/info-01.png" />
-                    <h4 onClick={() => onClickInfoSection(InfoSection.transport)}><Text english="" french="Se déplacer" /></h4>
-                    <p>Arriver et partir de l'île, se déplacer entre chaque ville. en transports en commun ou en voiture, comment se garer...</p>
+                    <h4 onClick={() => onClickInfoSection(InfoSection.transport)}><Text english="Transport" french="Se déplacer" /></h4>
+                    <p><Text english="How to get there and out ? How to get from a city to another ? Public transport or car ? Where to park ? We tell you everything about transport." french="Arriver et partir de l'île, se déplacer entre chaque ville, en transports en commun ou en voiture, comment se garer..." /></p>
                     <div className={`subcolumns`}>
                         <div className={`subcolumn`}>
                             <p onClick={() => onClickTransportMode("plane")}><Text english="The plane" french="L'avion" /></p>
@@ -50,15 +50,15 @@ const HomeInfo : React.FC<IHomeInfoProps> = props => {
             <div className={`column middle`}>
                 <div className={`column-content`}>
                         <img src="./photos/home/info-02.png" />
-                        <h4 onClick={() => onClickInfoSection(InfoSection.accommodation)}><Text english="" french="Se loger" /></h4>
-                        <p><Text english="" french="Quel type de logements est disponible ? Pour quel budget ?"/></p>
+                        <h4 onClick={() => onClickInfoSection(InfoSection.accommodation)}><Text english="Accommodation" french="Se loger" /></h4>
+                        <p><Text english="What kind of accommodation is there in Corsica ? For what budget ?" french="Quel type de logements est disponible ? Pour quel budget ?"/></p>
                     </div>
                 </div>
             <div className={`column right`}>
                 <div className={`column-content`}>
                         <img src="./photos/home/info-03.png" />
-                        <h4 onClick={() => onClickInfoSection(InfoSection.food)}><Text english="" french="Se restaurer" /></h4>
-                        <p><Text english="" french="Supermarchés, boulangeries, restaurants... Qu'est ce qu'on mange en Corse ?" /></p>
+                        <h4 onClick={() => onClickInfoSection(InfoSection.food)}><Text english="Food" french="Se restaurer" /></h4>
+                        <p><Text english="Supermarkets, bakeries, restaurants ... What is there to eat in Corsica ?" french="Supermarchés, boulangeries, restaurants... Qu'est ce qu'on mange en Corse ?" /></p>
                     </div>
                 </div>
         </div>
