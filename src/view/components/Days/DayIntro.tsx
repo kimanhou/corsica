@@ -1,6 +1,7 @@
 import React from 'react';
 import Text from '../LocalisationContext/Text';
 import './DayIntro.scss';
+import Map from './DayOne/Map';
 import Program from './Program/Program';
 
 interface IDayIntroProps {
@@ -18,7 +19,9 @@ interface IDayIntroProps {
 const DayIntro : React.FC<IDayIntroProps> = props => {
     return(
         <div className={`day-intro`}>
-            <div className={`day-intro-map`}></div>
+            <div className={`day-intro-map`}>
+                <Map />
+            </div>
             <div className={`day-intro-text`}>
                 <h2><Text english={props.englishTitle} french={props.frenchTitle} /></h2>
                 <p><Text english={props.englishText} french={props.frenchText} /></p>

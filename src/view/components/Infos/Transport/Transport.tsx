@@ -16,7 +16,7 @@ const Transport : React.FC<ITransportProps> = props => {
     return(
         <div className={`transport`}>
             <h2><Text english="Transport" french="Tous les modes de transport" /></h2>
-            <p><Text english="" french="On ne vous parle ici que des modes de transport que l'on a pris et des gares, ports et aéroports que l'on a fréquentés. Les horaires et informations changent souvent, c'est pourquoi des liens utiles sont inclus à la fin de chaque section."/></p>
+            <p><Text english="Let's talk about how to get to Corsica and out and how to get around ! We will only cover the places we have actually been." french="On ne vous parle ici que des modes de transport que l'on a pris et des gares, ports et aéroports que l'on a fréquentés. Les horaires et informations changent souvent, c'est pourquoi des liens utiles sont inclus à la fin de chaque section."/></p>
             <div className={`transport-modes`}>
                 <TransportMode english="The plane" french="L'avion" id="plane" iconSrc="./icons/plane.png" />
                 <TransportMode english="The ferry" french="Le ferry" id="ferry" iconSrc="./icons/ferry.png" />

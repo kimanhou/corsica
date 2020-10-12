@@ -6,7 +6,9 @@
     }
     >.day-intro-map {
         width: calc(40vw - 35px);
+        height: calc(100vh - 180px);
         margin-left: 35px;
+        text-align: center;
     }
     >.day-intro-text {
         width: calc(60vw - 35px);
