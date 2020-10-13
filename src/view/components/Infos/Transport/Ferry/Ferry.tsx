@@ -79,13 +79,13 @@ const Ferry : React.FC<IFerryProps> = props => {
     const formatCompanies = (companies : (Departure | Arrival | Companies)[]) => {
         var formattedCompanies = companies.join(', ');
         if (companies.length == 0) {
-            return <Text english="This route is unavailable" french="Aucune compagnie ne fait ce trajet."/>        
+            return <Text english="This route is unavailable." french="Aucune compagnie ne fait ce trajet."/>        
         }
         if (companies.length == 1) {
-            return <Text english="" french={`La seule compagnie qui fait ce trajet est ${formattedCompanies}.`}/>        
+            return <Text english={`The only possible company is ${formattedCompanies}.`} french={`La seule compagnie qui fait ce trajet est ${formattedCompanies}.`}/>        
         }
         else {
-            return <Text english="" french={`Les compagnies possibles sont ${formattedCompanies}.`} />
+            return <Text english={`The possible companies are ${formattedCompanies}.`} french={`Les compagnies possibles sont ${formattedCompanies}.`} />
         }
     }
 
@@ -94,30 +94,30 @@ const Ferry : React.FC<IFerryProps> = props => {
             <SectionHeader englishTitle="The ferry" englishSubtitle="cheap and environmental friendly" frenchTitle="Le ferry" frenchSubtitle="le plus economique et ecologique" />
             <div className={`column left`}>
                 <p>
-                    <Text english="" french="C'est " />
-                    <b><Text english="" french="souvent moins cher que l'avion" /></b>
-                    <Text english="" french=" et c'est également " />
-                    <b><Text english="" french="beaucoup plus lent." /> </b>
-                    <Text english="" french=" Cependant, le ferry présente l'avantage de pouvoir emmener sa voiture, facteur non négligeable pour certains, particulièrement les habitants du Sud de la France continentale et les frileux de la location de voiture. La plupart des traversées se font de nuit et durent de 8 à 11h, mais la connexion la plus rapide est Nice - Île rousse en 4h30. Il existe également des liaisons avec l’Italie, souvent plus courtes." />
+                    <Text english="It's " french="C'est " />
+                    <b><Text english="often cheaper than flying" french="souvent moins cher que l'avion" /></b>
+                    <Text english=" but it's also " french=" et c'est également " />
+                    <b><Text english="much slower." french="beaucoup plus lent." /> </b>
+                    <Text english="However, the ferry has the huge advantage of allowing you to take your car, which can be a big bonus if you don't want to go through the hassle of renting a car. Most of the ferries travel from continental France by night, the crossing lasts from 8 to 11 hours but the fastest connection is Nice - Ile Rousse (4h30 by day). You can also depart from Italy, there the crossing is a bit shorter." french=" Cependant, le ferry présente l'avantage de pouvoir emmener sa voiture, facteur non négligeable pour certains, particulièrement les habitants du Sud de la France continentale et les frileux de la location de voiture. La plupart des traversées se font de nuit et durent de 8 à 11h, mais la connexion la plus rapide est Nice - Île rousse en 4h30. Il existe également des liaisons avec l’Italie, souvent plus courtes." />
                     <br></br>
                     <br></br>
                     <div className={`departure-ports`}>
-                        <Text english="" french="D’où partir : "/>
+                        <Text english="From : " french="D’où partir : "/>
                         <img src="./icons/french-flag.png" />	 
-                        <Text english="" french="Marseille, Nice, Toulon"/>
+                        <Text english="Marseille, Nice, Toulon" french="Marseille, Nice, Toulon"/>
                         <img src="./icons/italian-flag.png" className={`italian-flag`}/>	
-                        <Text english="" french="Gènes, Livourne, Sardaigne" />
+                        <Text english="Genoa, Livorno, Sardinia" french="Gènes, Livourne, Sardaigne" />
                     </div>
                     <br></br>
-                    <Text english="" french="Où arriver : Bastia, Ajaccio, Île Rousse, Porto Vecchio, Bonifacio, Propriano" />
+                    <Text english="To : Bastia, Ajaccio, Île Rousse, Porto Vecchio, Bonifacio, Propriano" french="Où arriver : Bastia, Ajaccio, Île Rousse, Porto Vecchio, Bonifacio, Propriano" />
                     <br></br>
-                    <Text english="" french="Quelles compagnies : Corsica Linea, Corsica Ferries, Moby Lines, La Méridionale" />
+                    <Text english="Which company : Corsica Linea, Corsica Ferries, Moby Lines, La Méridionale" french="Quelles compagnies : Corsica Linea, Corsica Ferries, Moby Lines, La Méridionale" />
                     <br></br>
-                    <Text english="" french="Attention, toutes les compagnies ne desservent pas tous les ports et ne partent pas de partout et tout le temps. Par exemple, Corsica Linea part de Marseille tandis que Corsica Ferries propose des départs de Nice et Toulon. En été, il y a évidemment plus de choix. Pour plus de clarté, voici un petit module illustratif:" />
+                    <Text english="Warning, each company has different routes and don't connect all the ports. For example, Corsica Linea only departs from Marseille, while Corsica Ferries departs from Nice and Toulon. Outside the summer months (July and August), choices are more limited. For more clarity, please find below a module illustrating the possibles routes." french="Attention, toutes les compagnies ne desservent pas tous les ports et ne partent pas de partout et tout le temps. Par exemple, Corsica Linea part de Marseille tandis que Corsica Ferries propose des départs de Nice et Toulon. En été, il y a évidemment plus de choix. Pour plus de clarté, voici un petit module illustratif:" />
                     <br></br>
                     <br></br>
                     <div className={`choose-text`}>
-                        <Text english="" french="Je veux partir de" />
+                        <Text english="I want to depart from" french="Je veux partir de" />
                     </div>
                     <select name="departure" id="departure" className="departure" onChange={setDepartureValue}>
                         <option value={Departure.Marseille}>Marseille</option>
@@ -130,7 +130,7 @@ const Ferry : React.FC<IFerryProps> = props => {
                     </select>
                     <br></br>
                     <div className={`choose-text`}>
-                        <Text english="" french="Je veux arriver à " />
+                        <Text english="I want to arrive in" french="Je veux arriver à " />
                     </div>
                     <select name="arrival" id="arrival" className="arrival" onChange={setArrivalValue}>
                         <option value={Arrival.Ajaccio}>Ajaccio</option>
@@ -144,19 +144,19 @@ const Ferry : React.FC<IFerryProps> = props => {
                     {formatCompanies(updateCompanies())}
                     <br></br>
                     <br></br>
-                    <Text english="" french="Si vous avez une voiture, " />
-                    <b><Text english="" french="retenez bien son emplacement" /></b>
-                    <Text english="" french=" et le numéro du garage, ainsi que l’étage. Les garages sont inaccessibles durant la traversée et ne sont pas climatisés." />
+                    <Text english="If you have a car, " french="Si vous avez une voiture, " />
+                    <b><Text english="make sure to remember where you parked it" french="retenez bien son emplacement" /></b>
+                    <Text english=" (garage number, floor number...). You cannot access your car during the crossing and garages are not air-conditionned." french=" et le numéro du garage, ainsi que l’étage. Les garages sont inaccessibles durant la traversée et ne sont pas climatisés." />
                     <br></br>
-                    <Text english="" french="Les animaux de compagnie peuvent bien entendu venir en Corse mais selon les compagnies, ils seront soit placés dans des boxes individuelles, ou vous pourrez les garder avec vous. Corsica Ferries oblige notamment les passagers accompagnés d’un animal à réserver une cabine." />
+                    <Text english="Pets can of course come to Corsica, however, depending on the companies, they might be put in individual boxes or they might be able to stay with you during the crossing.  With Corsica Ferries for example, you need to book a cabin if you are with a pet." french="Les animaux de compagnie peuvent bien entendu venir en Corse mais selon les compagnies, ils seront soit placés dans des boxes individuelles, ou vous pourrez les garder avec vous. Corsica Ferries oblige notamment les passagers accompagnés d’un animal à réserver une cabine." />
                     <br></br>
-                    <Text english="" french="Si vous avez choisi " />
-                    <b><Text english="" french="une traversée de nuit sans cabine, il faudra dormir par terre." /></b>
-                    <Text english="" french=" La moquette est plutôt propre et confortable, cependant la plupart des passagers utilisent leur matériel de camping. Il est alors également possible de prendre une cabine une fois à bord pour une centaine d’euros (la moitié pour une traversée de jour) par cabine pouvant accueillir 4 personnes. " />
-                    <b><Text english="" french="Il fait extrêmement froid durant la nuit. " /></b>
+                    <Text english="If you chose " french="Si vous avez choisi " />
+                    <b><Text english="a night crossing without a cabin, you will have to sleep on the floor." french="une traversée de nuit sans cabine, il faudra dormir par terre." /></b>
+                    <Text english="Hopefully, the carpet is quite clean and comfy, however most passengers use their camping gear. You can pay for a cabin once on-board, it's about 100€ for a 4 people cabin (half for a day crossing). " french=" La moquette est plutôt propre et confortable, cependant la plupart des passagers utilisent leur matériel de camping. Il est alors également possible de prendre une cabine une fois à bord pour une centaine d’euros (la moitié pour une traversée de jour) par cabine pouvant accueillir 4 personnes. " />
+                    <b><Text english="It's very cold during the night." french="Il fait extrêmement froid durant la nuit." /></b>
                     <br></br>
-                    <Text english="" french="Il y a évidemment de la nourriture et des boissons en vente durant tout le trajet dans différents bars et restaurants. " />
-                    <b><Text english="" french="Le wifi est payant." /></b>
+                    <Text english="Food and drinks are available for sale in the many restaurants and bars onboard. They are open during the whole crossing, even at night. " french="Il y a évidemment de la nourriture et des boissons en vente durant tout le trajet dans différents bars et restaurants. " />
+                    <b><Text english="Wifi onboard is not free." french="Le wifi à bord est payant." /></b>
                 </p>
             </div>
             <div className={`column middle`}></div>
@@ -181,10 +181,10 @@ const Ferry : React.FC<IFerryProps> = props => {
                         <Text english="Bastia - Livourne 22€ / pax" french="Bastia - Livourne 22€ / personne" />
                     </div>
                     <br></br>
-                    <Text english="For two people and a car, it's about 150€ total each way in September." french="Pour 2 personnes avec une voiture, compter environ 150€ par traversée en septembre." />
+                    <Text english="For two people with a car, it's about 150€ total each way in September." french="Pour 2 personnes avec une voiture, compter environ 150€ par traversée en septembre." />
                     <br></br>
                     <br></br>
-                    <b><Text english="The ports we visited" french="Les ports que l'on a visités :" /></b>
+                    <b><Text english="The ports we visited :" french="Les ports que l'on a visités :" /></b>
                     <br></br>
                     <Port englishName="Toulon" frenchName="Toulon" details={
                         <p>
@@ -197,7 +197,7 @@ const Ferry : React.FC<IFerryProps> = props => {
                         <p>
                             <a href="https://goo.gl/maps/qyi6eStKBbt98SQYA" target="_blank"><Text english={"GPS coordinates : 41°55'17.2\"N 8°44'23.1\"E"} french ={"Coordonnées GPS : 41°55'17.2\"N 8°44'23.1\"E"} /></a>
                             <br></br>
-                            <Text english={"The terminal is located in the city center, in front of Palais Fesch"} french ={"Le terminal maritime et routier d’Ajaccio se situe dans le centre ville, en face du Palais Fesch."} />
+                            <Text english={"The terminal is located in the city center, in front of Palais Fesch."} french ={"Le terminal maritime et routier d’Ajaccio se situe dans le centre ville, en face du Palais Fesch."} />
                         </p>} 
                     />
                     <Port englishName="Bastia" frenchName="Bastia" details={
