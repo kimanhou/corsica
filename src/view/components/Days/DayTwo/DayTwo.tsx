@@ -2,6 +2,7 @@ import React from 'react';
 import Text from '../../LocalisationContext/Text';
 import Day from '../Day';
 import './DayTwo.scss';
+import Map from './Map';
 
 interface IDayTwoProps {
 }
@@ -100,6 +101,7 @@ const DayTwo : React.FC<IDayTwoProps> = props => {
             <Day dayNumber={2} 
                  introEnglishTitle="Sartene and Roccapina" introFrenchTitle="Sartene et Roccapina"
                  introText={introText}
+                 introMap={<Map/>}
                  isFullDay={false}
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"visit of Sartene old town"} programFrenchMorning={"visite du centre ville de Sartène"} 

@@ -3,12 +3,13 @@ import Text from '../../LocalisationContext/Text';
 import Day from '../Day';
 import IconAndText from '../IconAndText';
 import './DayThree.scss';
+import Map from './Map';
 
 interface IDayThreeProps {
 }
 
 const DayThree : React.FC<IDayThreeProps> = props => {
-    const introText = <p><Text english="" french="" /></p>;
+    const introText = <p><Text english="Bonifacio" french="Bonifacio" /></p>;
     const detailsMorning = <p>
         <Text english="" french="" />
         <b><Text english="" french="" /></b>
@@ -31,12 +32,13 @@ const DayThree : React.FC<IDayThreeProps> = props => {
     return(
         <div className={`day-three`}>
             <Day dayNumber={3} 
-                 introEnglishTitle="" introFrenchTitle=""
+                 introEnglishTitle="Bonifacio" introFrenchTitle="Bonifacio"
                  introText={introText}
+                 introMap={<Map/>}
                  isFullDay={false}
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
-                 programEnglishMorning={""} programFrenchMorning={""} 
-                 programEnglishAfternoon={""} programFrenchAfternoon={""}
+                 programEnglishMorning={"visit of Bonifacio"} programFrenchMorning={"visite de Bonifacio"} 
+                 programEnglishAfternoon={"Campu Rumanilu hike"} programFrenchAfternoon={"sentier du Campu Rumanilu"}
             />
         </div>
     );

@@ -2,8 +2,8 @@
     height: 100%;
     width: 100%;
     .animated {
-        animation: zoom-in 10s linear 0s infinite;
-        transform-origin: 28px 191px;
+        animation: zoom-in 5s linear 0s forwards;
+        transform-origin: 20px 191px;
     }
     .ajaccio-mark {
         opacity: 0;

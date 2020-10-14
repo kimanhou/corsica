@@ -1,0 +1,44 @@
+.map-day-six {
+    height: 100%;
+    width: 100%;
+    .zoom-in {
+        animation: zoom-in 2s linear 0s forwards;
+        transform-origin: 220px 220px;
+    }
+    .purcaraccia-mark, .purcaraccia-text {
+        opacity: 0;
+        animation: appear 1s linear 2s forwards;
+    }
+    .animated-path {
+        stroke-dasharray: 153;
+        stroke-dashoffset: -153;
+        animation: day-six-road-trip-path 4s linear 2s forwards;
+    }
+}
+
+@keyframes day-six-road-trip-path {
+    0% {
+        stroke-dashoffset: -153;
+    }
+    100% {
+        stroke-dashoffset: -306;
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

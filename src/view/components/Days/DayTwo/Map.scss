@@ -1,0 +1,48 @@
+.map-day-two {
+    height: 100%;
+    width: 100%;
+    .zoom-in {
+        animation: zoom-in 2s linear 0s forwards;
+        transform-origin: 71px 276px;
+    }
+    .sartene-mark, .sartene-text {
+        opacity: 0;
+        animation: appear 1s linear 4.2s forwards;
+    }
+    .roccapina-mark, .roccapina-text {
+        opacity: 0;
+        animation: appear 1s linear 4.8s forwards;
+    }
+    .animated-path {
+        stroke-dasharray: 140;
+        stroke-dashoffset: -140;
+        animation: day-two-road-trip-path 4s linear 2s forwards;
+    }
+}
+
+@keyframes day-two-road-trip-path {
+    0% {
+        stroke-dashoffset: -140;
+    }
+    100% {
+        stroke-dashoffset: -280;
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
