@@ -1,0 +1,47 @@
+.map-day-ten {
+    height: 100%;
+    width: 100%;
+    .zoom-in {
+        animation: zoom-in 2s linear 0s forwards;
+        transform-origin: 280px -10px;
+    }
+    .erbalunga-mark, .erbalunga-text {
+        opacity: 0;
+        animation: appear 1s linear 2.5s forwards;
+    }
+    .mattei-mark, .mattei-text {
+        opacity: 0;
+        animation: appear 1s linear 4s forwards;
+    }
+    .centuri-mark, .centuri-text {
+        opacity: 0;
+        animation: appear 1s linear 4.2s forwards;
+    }
+    .nonza-mark, .nonza-text {
+        opacity: 0;
+        animation: appear 1s linear 5s forwards;
+    }
+    .animated-path {
+        stroke-dasharray: 136;
+        stroke-dashoffset: -136;
+        animation: day-ten-road-trip-path 4s linear 2s forwards;
+    }
+}
+
+@keyframes day-ten-road-trip-path {
+    0% {
+        stroke-dashoffset: -136;
+    }
+    100% {
+        stroke-dashoffset: -272;
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+    }
+}

@@ -2,12 +2,17 @@
     height: 100%;
     width: 100%;
     .animated {
-        animation: zoom-in 5s linear 0s forwards;
+        animation: zoom-in 2s linear 0s forwards;
         transform-origin: 135px 275px;
     }
-    .porto-vecchio-mark {
+    .animated-path {
+        stroke-dasharray: 20;
+        stroke-dashoffset: -20;
+        animation: day-four-road-trip-path 2s linear 2s forwards;
+    }
+    .lavezzi-mark, .lavezzi-text {
         opacity: 0;
-        animation: flash 1s linear 0s infinite;
+        animation: appear 1s linear 4s forwards;
     }
 }
 
@@ -20,11 +25,11 @@
     }
 }
 
-@keyframes flash {
+@keyframes day-four-road-trip-path {
     0% {
-        opacity: 1;
+        stroke-dashoffset: -20;
     }
     100% {
-        opacity: 0;
+        stroke-dashoffset: -40;
     }
 }
