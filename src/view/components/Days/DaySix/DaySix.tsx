@@ -35,7 +35,7 @@ const DaySix : React.FC<IDaySixProps> = props => {
                  introEnglishTitle="" introFrenchTitle=""
                  introText={introText}
                  introMap={<Map/>}
-                 isFullDay={false}
+                 isFullDay={true}
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={""} programFrenchMorning={""} 
                  programEnglishAfternoon={""} programFrenchAfternoon={""}

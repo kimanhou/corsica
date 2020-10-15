@@ -3,6 +3,7 @@ import Text from '../../LocalisationContext/Text';
 import Day from '../Day';
 import IconAndText from '../IconAndText';
 import './DayFourteen.scss';
+import Map from './Map';
 
 interface IDayFourteenProps {
 }
@@ -33,6 +34,7 @@ const DayFourteen : React.FC<IDayFourteenProps> = props => {
             <Day dayNumber={14}
                  introEnglishTitle="" introFrenchTitle=""
                  introText={introText}
+                 introMap={<Map/>}
                  isFullDay={false}
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={""} programFrenchMorning={""} 
