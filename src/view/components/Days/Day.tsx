@@ -10,7 +10,7 @@ interface IDayProps {
     introEnglishTitle : string;
     introFrenchTitle : string;
     introText : React.ReactNode;
-    introMap ?: React.ReactNode;
+    introMap : React.ReactNode;
     isFullDay : boolean;
     programEnglishMorning : string;
     programFrenchMorning : string;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { IContentProps } from '../../../App';
 import './Day.scss';
 import DayEight from './DayEight/DayEight';
 import DayEleven from './DayEleven/DayEleven';
@@ -33,7 +34,7 @@ export enum DayNumber {
     fourteen = 14
 }
 
-interface IDayPageProps {
+interface IDayPageProps extends IContentProps {
 }
 
 const DayPage : React.FC<IDayPageProps> = props => {
@@ -89,7 +90,7 @@ const DayPage : React.FC<IDayPageProps> = props => {
 
     return(
         <div className={`day-page`}>
-            <DayHeader activeNumber={activeNumber} setActiveNumber={setActiveNumber}/>
+            <DayHeader activeNumber={activeNumber} setActiveNumber={setActiveNumber} setCurrentPage={props.setCurrentPage}/>
             <CurrentDay />
         </div>
     );

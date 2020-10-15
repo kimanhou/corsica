@@ -1,11 +1,15 @@
 .day-header {
     margin-left: 35px;
     margin-bottom: 30px;
-    cursor: pointer;
+    font-family: Kiona;
+    >.back-to-itinerary {
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
     >.day-header-number {
+        cursor: pointer;
         display: inline-block;
         vertical-align: top;
-        font-family: Kiona;
         font-size: 40px;
         width: calc((100vw - 70px - 4px) / 14);
         text-align: center;
