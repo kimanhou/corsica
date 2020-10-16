@@ -15,10 +15,14 @@ const Program : React.FC<IProgramProps> = props => {
         <div className={`program`}>
             {props.isFullDay && 
             <div className={`program-full-day`}>
-                <p><Text english={props.englishMorning} french={props.frenchMorning} /></p>
+                <p>
+                    <Text english="The program of the day is " french="Le programme de la journée est " />
+                    <Text english={props.englishMorning} french={props.frenchMorning} />
+                </p>
             </div>}
             {!props.isFullDay && 
             <div className={`program-half-days`}>
+                <p><Text english="The program of the day is :" french="Le programme de la journée est :" /></p>
                 <div className={`am`}>
                     <img src='./icons/am.png'/>
                     <p><Text english={props.englishMorning} french={props.frenchMorning} /></p>
