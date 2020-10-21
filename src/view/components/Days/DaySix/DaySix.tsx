@@ -11,22 +11,25 @@ interface IDaySixProps {
 const DaySix : React.FC<IDaySixProps> = props => {
     const introText = 
     <p>
-        <Text english="" french="Il est temps de quitter le Sud de la Corte pour s'enfoncer au cœur géographique et culturel de l'île : Corte. En chemin, nous vous proposons un arrêt alliant randonnée et baignade aux " />
-        <b><Text english="" french="cascades de Purcaraccia" /></b>
-        <Text english="" french=". Idéalement situé à mi-chemin entre Bonifacio et Corte, le lieu est très fréquenté, même en septembre." />
+        <Text english="It is time to leave the South of Corsica to delve into the geographical and cultural heart of the island: Corte. On the way, we suggest a stop combining hiking and swimming in the natural pools of " 
+              french="Il est temps de quitter le Sud de la Corse pour s'enfoncer au cœur géographique et culturel de l'île : Corte. En chemin, nous vous proposons un arrêt alliant randonnée et baignade aux " />
+        <b><Text english="Purcaraccia" french="cascades de Purcaraccia" /></b>
+        <Text english=". Ideally located halfway between Bonifacio and Corte, the place is very busy, even in September." french=". Idéalement situé à mi-chemin entre Bonifacio et Corte, le lieu est très fréquenté, même en septembre." />
     </p>;
     const detailsMorning = <p>
-        <Text english="" french="Après vous être garés au " />
-        <b><a href="https://goo.gl/maps/eyLupSGD5hCJFuUB9" target='_blank'><Text english="" french="parking du col de Bocca di Larone"/></a></b>
-        <Text english="" french=", descendez le long de la route jusqu'au " />
-        <b><a href="https://goo.gl/maps/h5Jqk3V2GZiWa6KG6" target='_blank'><Text english="" french="virage en épingle"/></a></b>
-        <Text english="" french=", point de départ de la randonnée doté d'une magnifique vue sur les aiguilles de Bavella. Le parking se remplit vite, il est recommandé d'arriver avant 10h, ensuite il faudra se garer le long de la route." />
+        <Text english="After parking at the " french="Après vous être garés au " />
+        <b><a href="https://goo.gl/maps/eyLupSGD5hCJFuUB9" target='_blank'><Text english="Bocca di Larone car park" french="parking du col de Bocca di Larone"/></a></b>
+        <Text english=", go down along the road until the " french=", descendez le long de la route jusqu'au " />
+        <b><a href="https://goo.gl/maps/h5Jqk3V2GZiWa6KG6" target='_blank'><Text english="first hairpin bend" french="premier virage en épingle"/></a></b>
+        <Text english=", starting point of the hike with a magnificent view of the " french=", point de départ de la randonnée doté d'une magnifique vue sur les aiguilles de Bavella. Le parking se remplit vite, il est recommandé d'arriver avant 10h, ensuite il faudra se garer le long de la route." />
+        <i><Text english="Aiguilles de Bavella" french="" /></i>
+        <Text english=". The parking lot fills up quickly, it is recommended to arrive before 10am, otherwise you will have to park along the road." french="" />
         <br></br>
-        <Text english="" french="Pour rejoindre les " />
-        <b><Text english="" french="piscines naturelles de Purcaraccia" /></b>
-        <Text english="" french=", il suffit de suivre le sentier (et la horde de gens) qui remonte le long d'une rivière et qui longe parfois quelques bassins. Après une heure d'ascension à un rythme soutenu, vous serez récompensé par ces magnifiques piscines naturelles, remplies d'eau tout de même très fraîche. Le retour se fait par le même chemin." />
+        <Text english="To get to the " french="Pour rejoindre les " />
+        <b><Text english="natural pools or Purcaraccia" french="piscines naturelles de Purcaraccia" /></b>
+        <Text english=", take the path that goes up the river. You will pass several pools along the way. After an hour of climbing (at a quick pace), you will be rewarded with these magnificent natural pools, filled with very fresh water. The return is made by the same path." french=", il suffit de suivre le sentier (et la horde de gens) qui remonte le long d'une rivière et qui longe parfois quelques bassins. Après une heure d'ascension à un rythme soutenu, vous serez récompensé par ces magnifiques piscines naturelles, remplies d'eau tout de même très fraîche. Le retour se fait par le même chemin." />
         <br></br>
-        <Text english="" french="Prévoir des chaussures fermées et un pique-nique. Il est également possible de faire d'y faire du canyoning." />
+        <Text english="Make sure to wear closed shoes and bring a picnic. It is also possible to go canyoning." french="Prévoir des chaussures fermées et un pique-nique. Il est également possible de faire d'y faire du canyoning." />
     </p>
 
     const detailsAfternoon = <div></div>
@@ -45,7 +48,7 @@ const DaySix : React.FC<IDaySixProps> = props => {
         <a href="https://goo.gl/maps/eyLupSGD5hCJFuUB9" target='_blank'><img src="./icons/parking.png"></img></a>
         <p>
             <a href="https://goo.gl/maps/eyLupSGD5hCJFuUB9" target='_blank'><b><Text english="Free parking" french="Parking gratuit" /></b></a>
-            <Text english=" " french=" Bocca di Larone" />
+            <Text english=" Bocca di Larone" french=" Bocca di Larone" />
         </p>
         <br></br>
         <br></br>
