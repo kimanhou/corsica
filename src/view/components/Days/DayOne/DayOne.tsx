@@ -67,6 +67,7 @@ const DayOne : React.FC<IDayOneProps> = props => {
         <a href="https://goo.gl/maps/883hx6pWFVmwTHEE6" target='_blank'><img src="./icons/map-marker-no-border.png"></img></a>
         <br></br>
         <br></br>
+        <img src="./icons/info.png"></img>
         <p>
             <a href="https://www.ajaccio-tourisme.com/" target='_blank'><b><Text english="Tourist office" french="L’office de tourisme" /></b>
             <Text english=" of Ajaccio and its region" french=" du pays d’Ajaccio" /></a>

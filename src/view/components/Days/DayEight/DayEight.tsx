@@ -47,16 +47,9 @@ const DayEight : React.FC<IDayEightProps> = props => {
         <IconAndText englishText="0€" frenchText="0€" iconSrc="./icons/parking.png"/>
         <IconAndText englishText="4h30 return trip to Rossolino Bridge (outbound 2h30, inbound 2h)" frenchText="4h30 A/R jusqu'à la passerelle de Rossolino (2h30 aller, 2h retour)" iconSrc="./icons/hike.png"/>
     </div>
-    const detailsAfternoon = <div>
-        <p>
-            <b><Text english="" french="" /></b>
-            <Text english="" french="" />
-            <b><Text english="" french="" /></b>
-            <Text english="" french="" />
-            <b><Text english="" french="" /></b>
-            <Text english="" french="" />
-        </p>
-    </div>
+
+    const detailsAfternoon = <div></div>
+    
     const detailsUseful = <div>
         <a href="https://goo.gl/maps/PSLiSMKi4wS6Aqbr5" target='_blank'><img src="./icons/parking.png"></img></a>
         <p>

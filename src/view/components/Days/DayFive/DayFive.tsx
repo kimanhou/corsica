@@ -69,6 +69,7 @@ const DayFive : React.FC<IDayFiveProps> = props => {
         <a href="https://goo.gl/maps/vJaZaN1gQFr4DnmW8" target='_blank'><img src="./icons/map-marker-no-border.png"></img></a>
         <br></br>
         <br></br>
+        <img src="./icons/info.png"></img>
         <p>
             <a href="http://www.ot-portovecchio.com/" target='_blank'><b><Text english="Tourist office" french="L’office de tourisme" /></b>
             <Text english="" 

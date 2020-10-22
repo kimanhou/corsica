@@ -15,6 +15,8 @@ const DaySix : React.FC<IDaySixProps> = props => {
               french="Il est temps de quitter le Sud de la Corse pour s'enfoncer au cœur géographique et culturel de l'île : Corte. En chemin, nous vous proposons un arrêt alliant randonnée et baignade aux " />
         <b><Text english="Purcaraccia" french="cascades de Purcaraccia" /></b>
         <Text english=". Ideally located halfway between Bonifacio and Corte, the place is very busy, even in September." french=". Idéalement situé à mi-chemin entre Bonifacio et Corte, le lieu est très fréquenté, même en septembre." />
+        <br></br>
+        <Text english="For info about Corte, see Day 9." french="Pour les informations sur Corte, voir Jour 9." />
     </p>;
     const detailsMorning = <p>
         <Text english="After parking at the " french="Après vous être garés au " />
@@ -49,6 +51,11 @@ const DaySix : React.FC<IDaySixProps> = props => {
         <p>
             <a href="https://goo.gl/maps/eyLupSGD5hCJFuUB9" target='_blank'><b><Text english="Free parking" french="Parking gratuit" /></b></a>
             <Text english=" Bocca di Larone" french=" Bocca di Larone" />
+        </p>
+        <br></br>
+        <p>
+            <a href="https://goo.gl/maps/urfjjgy5Hi89jvnK6" target='_blank'><b><Text english="Free parking" french="Parking gratuit" /></b></a>
+            <Text english=" at Corte University" french=" à l'université de Corte" />
         </p>
         <br></br>
         <br></br>

@@ -79,6 +79,7 @@ const DayTwo : React.FC<IDayTwoProps> = props => {
         <a href="https://goo.gl/maps/PgV3PLH9NfVf3h7Z6" target='_blank'><img src="./icons/map-marker-no-border.png"></img></a>
         <br></br>
         <br></br>
+        <img src="./icons/info.png"></img>
         <p>
             <a href="https://lacorsedesorigines.com/" target='_blank'><Text english="Tourist office" french="L’office de tourisme de Sartène" /></a>
         </p>

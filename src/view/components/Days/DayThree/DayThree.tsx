@@ -94,6 +94,7 @@ const DayThree : React.FC<IDayThreeProps> = props => {
         <a href="https://parking-bonifacio.fr/index.php" target='_blank'><Text english="Live status of all the parking lots here" french="Le status des parkings ici"/></a>
         <br></br>
         <br></br>
+        <img src="./icons/info.png"></img>
         <p>
             <a href="https://www.bonifacio.fr/" target='_blank'><b><Text english="Tourist office" french="L’office de tourisme" /></b>
             <Text english=" is located at the entrance of the upper town, right after the Genoa Gate. It also served as the ticket office for the Bastion of the Standard." french=" du Bastion de l'Étendard se trouve à l'entrée de la ville haute, à la porte de Gênes. Il fait également office de billeterie au Bastion de l'Étendard et on peut y acheter le pass monument." /></a>
