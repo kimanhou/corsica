@@ -24,8 +24,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.6547422"
-     inkscape:cx="295.90303"
-     inkscape:cy="601.68627"
+     inkscape:cx="686.96332"
+     inkscape:cy="93.91568"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -553,5 +553,22 @@
        style="fill:none;stroke:#000000;stroke-width:0.287774px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 72.892085,126.2483 -5.491924,3.33117 -1.440503,2.16075 1.26044,2.52089 -1.710599,3.1511 -2.971041,3.24113 -1.710599,2.79098 0.09003,3.33117 0.270096,0.99035 6.482269,2.881 2.34082,1.80064 4.411547,0.27009 1.26044,2.88101 5.491925,9.27325 -2.971042,3.4212 v 1.17041 l 3.061072,2.79097 1.33251,4.38241 -0.321,2.5426 -3.276413,6.55283 v 0"
        id="path1674" />
+    <circle
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-dashoffset:113.386"
+       id="path842-2-2-7-1-0-6-7-8-8"
+       cx="169.86308"
+       cy="9.2861681"
+       r="3" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="173.41795"
+       y="13.251866"
+       id="text878-3-2-8-2-5"><tspan
+         sodipodi:role="line"
+         id="tspan876-7-51-0-0-31"
+         x="173.41795"
+         y="13.251866"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Kiona;-inkscape-font-specification:Kiona;stroke-width:0.264583">Macinaggio</tspan></text>
   </g>
 </svg>

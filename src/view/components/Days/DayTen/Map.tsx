@@ -59,6 +59,24 @@ const Map : React.FC<IMapProps> = props => {
                     y="41.343899"
                     style={{fontStyle:"normal", fontWeight:"normal", fontVariant:"normal", fontStretch:"normal", fontFamily:"Kiona", strokeWidth:0.264583}}>Erbalunga</tspan></text>
 
+                {/* MACINAGGIO */}
+                <circle className={`macinaggio-mark`}
+                style={{fill:"#edc041", fillOpacity:1, stroke:"none", strokeWidth:"4", strokeLinecap:"round", strokeDashoffset:"113.386"}}
+                id="path842-2-2-7-1-0-6-7-8-8"
+                cx="169.86308"
+                cy="9.2861681"
+                r="3" />
+                <text className={`macinaggio-text`}
+                style={{fontStyle:"normal", fontWeight:"normal", fontSize:"10.5833px", lineHeight:1.25, fill:"#000000", fillOpacity:1, stroke:"none", strokeWidth:0.264583}}
+                x="173.41795"
+                y="13.251866"
+                id="text878-3-2-8-2-5"><tspan
+                    id="tspan876-7-51-0-0-31"
+                    x="173.41795"
+                    y="13.251866"
+                    style={{fontStyle:"normal", fontWeight:"normal", fontVariant:"normal", fontStretch:"normal", fontFamily:"Kiona", strokeWidth:0.264583}}>Macinaggio</tspan></text>
+  
+
                 {/* MATTEI */}
                 <circle className={`mattei-mark`}
                 style={{fill:"#edc041", fillOpacity:1, stroke:"none", strokeWidth:"4", strokeLinecap:"round", strokeDashoffset:"113.386"}}
