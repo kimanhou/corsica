@@ -9,12 +9,17 @@ interface IDayFourteenProps {
 }
 
 const DayFourteen : React.FC<IDayFourteenProps> = props => {
-    const introText = <p><Text english="" french="" /></p>;
+    const introText = 
+    <p>
+        <Text english="" french="" />
+    </p>;
+
     const detailsMorning = <p>
         <Text english="" french="" />
         <b><Text english="" french="" /></b>
         <Text english="" french="" />
     </p>
+    
     const detailsAfternoon = <div>
         <p>
             <b><Text english="" french="" /></b>
@@ -32,13 +37,13 @@ const DayFourteen : React.FC<IDayFourteenProps> = props => {
     return(
         <div className={`day-fourteen`}>
             <Day dayNumber={14}
-                 introEnglishTitle="" introFrenchTitle=""
+                 introEnglishTitle="" introFrenchTitle="Calanches de Piana et retour a Ajaccio"
                  introText={introText}
                  introMap={<Map/>}
                  isFullDay={false}
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
-                 programEnglishMorning={""} programFrenchMorning={""} 
-                 programEnglishAfternoon={""} programFrenchAfternoon={""}
+                 programEnglishMorning={""} programFrenchMorning={"randonnée dans les calanches de Piana"} 
+                 programEnglishAfternoon={""} programFrenchAfternoon={"route vers Ajaccio"}
             />
         </div>
     );

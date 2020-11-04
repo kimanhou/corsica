@@ -11,8 +11,14 @@ interface IDayElevenProps {
 const DayEleven : React.FC<IDayElevenProps> = props => {
     const introText = 
     <p>
-        <Text english="The day is devoted to the discovery of the northwest coast of Corsica. From Saint Florent to Île Rousse, via Agriates Desert, the day's program is packed!" 
-              french="La journée est consacrée à la découverte de la côte Nord-Ouest de la Corse. De Saint-Florent à l'Île Rousse, en passant par le Désert des Agriates, le programme de la journée est chargé !" />
+        <Text english="The day is devoted to the discovery of the northwest coast of Corsica. From " 
+              french="La journée est consacrée à la découverte de la côte Nord-Ouest de la Corse. De " />
+        <b><Text english="Saint Florent" french="Saint-Florent" /></b>
+        <Text english=" to " french=" à l'" />
+        <b><Text english="Ile Rousse" french="Île Rousse" /></b>
+        <Text english=", via " french=", en passant par le " />
+        <b><Text english="Agriates Desert" french="Désert des Agriates" /></b>
+        <Text english=", the day's program is packed!" french=", le programme de la journée est chargé !" />
     </p>;
     const detailsMorning = 
     <p>
@@ -22,10 +28,10 @@ const DayEleven : React.FC<IDayElevenProps> = props => {
               french="Le Désert des Agriates s'étend sur une superficie de 15 000 hectares entre mer et montagne. En fait, ce n'est pas vraiment un désert, mais plutôt une zone de terre sauvage où les crêtes rocheuses rencontrent des vallées couvertes de maquis méditerranéens denses." />
         <i><Text english="maquis." french="" /></i>
         <br></br>
-        <Text english="There are 2 main ways to visit Agriates Desert: take the boat to the beaches of" french="Il y a 2 moyen principaux de visiter le désert des Agriates : prendre le bateau jusqu'aux plages de " />
-        <a href="https://goo.gl/maps/Fi7PRRQJ4nBaDwGr9" target='_blank'><b><Text english="" french="Saleccia" /></b></a>
-        <Text english="" french=" et " />
-        <a href="https://goo.gl/maps/y1rCSN927y6ASbfY7" target='_blank'><b><Text english="" french="Lotu" /></b></a>
+        <Text english="There are 2 main ways to visit Agriates Desert: take the boat to the beaches of " french="Il y a 2 moyen principaux de visiter le désert des Agriates : prendre le bateau jusqu'aux plages de " />
+        <a href="https://goo.gl/maps/Fi7PRRQJ4nBaDwGr9" target='_blank'><b><Text english="Saleccia" french="Saleccia" /></b></a>
+        <Text english=" and " french=" et " />
+        <a href="https://goo.gl/maps/y1rCSN927y6ASbfY7" target='_blank'><b><Text english="Lotu" french="Lotu" /></b></a>
         <Text english=" or on foot via the " french=" ou à pied par le " />
         <b><Text english="" french="sentier du littoral" /></b>
         <b><i><Text english="sentier du littoral" french="" /></i></b>
@@ -184,7 +190,7 @@ const DayEleven : React.FC<IDayElevenProps> = props => {
                  isFullDay={false}
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"Agriates Desert, lunch in Saint Florent"} programFrenchMorning={"Désert des Agriates, déjeuner à Saint-Florent"} 
-                 programEnglishAfternoon={"visit of Ile Rousse"} programFrenchAfternoon={"visite de l'Île Rousse"}
+                 programEnglishAfternoon={"visit of Ile Rousse and Pietra Island"} programFrenchAfternoon={"visite de l'Île Rousse et l'île de la Pietra"}
             />
         </div>
     );

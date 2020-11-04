@@ -49,7 +49,7 @@ const DayOne : React.FC<IDayOneProps> = props => {
             <br></br>
             <Text english="Another option is to book a cruise to see the islands from the sea." french=" Il est également possible de voir les îles lors d’une croisière en bateau." />
         </p>
-        <IconAndText englishText="25 min drive from Ajaccio city center" frenchText="25 min depuis le centre d'Ajaccio" iconSrc="./icons/car.png"/>
+        <IconAndText englishText="25 min drive from the city center of Ajaccio" frenchText="25 min depuis le centre d'Ajaccio" iconSrc="./icons/car.png"/>
         <IconAndText englishText="4€ / 2h" frenchText="4€ / 2h" iconSrc="./icons/parking.png"/>
         <IconAndText englishText="1h30 for a combination of the 3 hikes" frenchText="1h30 pour une combinaison des 3 sentiers" iconSrc="./icons/hike.png"/>
     </div>
