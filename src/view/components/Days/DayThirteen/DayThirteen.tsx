@@ -25,17 +25,19 @@ const DayThirteen : React.FC<IDayThirteenProps> = props => {
         <b><Text english="very winding" french="très sineuse" /></b>
         <Text english="." french="." />
         <br></br>
-        <Text english="" french="Réservez votre excursion pour l'après-midi si ce n'est pas déjà fait et profitez des nombreux restaurants de Porto pour la pause déjeuner." />
+        <Text english="Book your excursion for the afternoon if you haven't already and enjoy the many restaurants in Porto for the lunch break." french="Réservez votre excursion pour l'après-midi si ce n'est pas déjà fait et profitez des nombreux restaurants de Porto pour la pause déjeuner." />
     </p>
     const detailsAfternoon = <div>
         <p>
-            <Text english="" french="De nombreuses compagnies se battent férocement pour l'attention des touristes dans le village de Porto. Elles proposent toutes des circuits et des prix similaires. Le prix varie selon la taille du bateau et la durée de la promenade. Pour un gros bateau classique (environ 80 personnes), la croisière coûte environ 38€ alors que pour un semi-rigide de 12 personnes, le prix oscille aux alentours de 65€. De plus, certaines compagnies proposent des arrêts baignade, ainsi que des pauses plus ou moins longues au village de Girolata." />
+            <Text english="Many companies fiercely fight for the attention of tourists in the village of Porto. They all offer similar tours and prices. The price varies according to the size of the boat and the duration of the trip. For a large classic boat (around 80 people), the cruise costs around 38€ per person while for a semi-rigid for 12 people, the price hovers around 65€. In addition, some companies offer swimming stops, as well as more or less long breaks in the village of Girolata." 
+                  french="De nombreuses compagnies se battent férocement pour l'attention des touristes dans le village de Porto. Elles proposent toutes des circuits et des prix similaires. Le prix varie selon la taille du bateau et la durée de la promenade. Pour un gros bateau classique (environ 80 personnes), la croisière coûte environ 38€ alors que pour un semi-rigide de 12 personnes, le prix oscille aux alentours de 65€. De plus, certaines compagnies proposent des arrêts baignade, ainsi que des pauses plus ou moins longues au village de Girolata." />
             <br></br>
             <Text english="" french="La " />
-            <b><Text english="" french="Réserve naturelle de Scandola" /></b>
-            <Text english="" french=" offre de splendides paysages façonnés par l'érosion. Le rouge intense des roches volcaniques constrate violemment avec le bleu de la mer. L'endroit est également connu comme étant un " />
-            <b><Text english="" french="haut lieu de la biodiversité" /></b>
-            <Text english="" french=", et c’est aussi une référence en termes de sauvegarde de l’environnement : 900 hectares terrestres et 1000 hectares marins sont protégés." />
+            <b><Text english="Scandola Nature Reserve" french="Réserve naturelle de Scandola" /></b>
+            <Text english=" offers splendid landscapes shaped by erosion. The intense red of the volcanic rocks contrasts violently with the blue of the sea. The place is also known for its " french=" offre de splendides paysages façonnés par l'érosion. Le rouge intense des roches volcaniques constrate violemment avec le bleu de la mer. L'endroit est également connu comme étant un " />
+            <b><Text english="biodiversity" french="haut lieu de la biodiversité" /></b>
+            <Text english=", and is a benchmark in terms of environmental protection : 900 land hectares and 1000 marine hectares are protected." 
+                  french=", et c’est aussi une référence en termes de sauvegarde de l’environnement : 900 hectares terrestres et 1000 hectares marins sont protégés." />
             <Text english="Along the way, the boat stops at the small fishing village of " french="En chemin, le bateau fait un arrêt au petit village de pêcheurs de " />
             <b><Text english="Girolata" french="Girolata" /></b>
             <Text english=", where there are a few bars and restaurants. On the beach, many cows roam freely. Going up the only street to the " french=", où se trouvent quelques bars et restaurants. Sur la plage, de nombreuses vaches vagabondent librement. En remontant l'unique rue vers la " />
@@ -43,8 +45,6 @@ const DayThirteen : React.FC<IDayThirteenProps> = props => {
             <Text english=", you can admire " french=", vous pouvez admirer " />
             <a href="https://goo.gl/maps/niRPmEqMCbEVFncP9" target='_blank'><Text english="the view" french="la vue" /></a>
             <Text english=" of the golfe." french=" sur le golf." />
-            <b><Text english="" french="" /></b>
-            <Text english="" french="" />
         </p>
     </div>
     const detailsUseful = <div>
@@ -64,7 +64,7 @@ const DayThirteen : React.FC<IDayThirteenProps> = props => {
         <br></br>
         <img src="./icons/boat-with-border.png"></img>
         <p>
-            <Text english="" french="Croisière de 3h (Scandola + 30 min à Girolata) sur un bateau hybride d'environ 60 places avec " />
+            <Text english="3-hour cruise (Scandola + 30 min in Girolata) on a hybrid boat of around 60 seats with " french="Croisière de 3h (Scandola + 30 min à Girolata) sur un bateau hybride d'environ 60 places avec " />
             <a href="https://www.viamare-promenades.com/" target='_blank'><Text english="Via Mare" french="Via Mare" /></a>
             <b><Text english="  38€ / pax" french=" 38€ / pax" /></b>
         </p>
