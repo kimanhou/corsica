@@ -67,7 +67,25 @@ const DayThirteen : React.FC<IDayThirteenProps> = props => {
             <Text english="3-hour cruise (Scandola + 30 min in Girolata) on a hybrid boat of around 60 seats with " french="Croisière de 3h (Scandola + 30 min à Girolata) sur un bateau hybride d'environ 60 places avec " />
             <a href="https://www.viamare-promenades.com/" target='_blank'><Text english="Via Mare" french="Via Mare" /></a>
             <b><Text english="  38€ / pax" french=" 38€ / pax" /></b>
+            <br></br>
+            <Text english="Some companies" french="Quelques compagnies"/>
+            <a href="https://www.naveva.com/" target='_blank'><Text english="Naveva, hybrid boat of about 80 seats" french="Naveva, bateau hybride d'environ 80 places"/></a>
+            <br></br>
+            <a href="https://lepasspartout.com/" target='_blank'><Text english="Le Pass' Partout, regular boat of about 40 seats" french="Le Pass' Partout, bateau classique d'environ 40 places"/></a>
+            <br></br>
+            <a href="https://www.scandola-girolata-piana.com/" target='_blank'><Text english="Alpana, 12-seat boats" french="Alpana, en petit comité de 12 places"/></a>
         </p>
+        <br></br>
+        <br></br>
+        <img src="./icons/info.png"></img>
+        <p>
+            <a href="http://www.ouestcorsica.com/" target='_blank'>
+                <b><Text english="Tourist office " french="L’office de tourisme " /></b>
+                <Text english="of Porto Ota" french=" de Porto Ota" />
+            </a>
+        </p>
+        <a href="https://g.page/OTIOC?share" target='_blank'><img src="./icons/map-marker-no-border.png"/></a>
+        <a href="http://www.ouestcorsica.com/" target='_blank'><img src="./icons/website.png"/></a>
     </div>
 
     return(

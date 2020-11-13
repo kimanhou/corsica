@@ -33,7 +33,7 @@ const ItineraryTable : React.FC<IItineraryTableProps> = props => {
                     <TwoHalfDays AMenglish="Agriates Desert" AMfrench="Désert des Agriates" AMimageSrc="./icons/hike-no-border.png" PMenglish="Saint Florent Ile Rousse" PMfrench="Saint Florent Île Rousse" PMimageSrc="./icons/village.png" />
                     <TwoHalfDays AMenglish="Revellata Peninsula" AMfrench="Pointe de la Revellata" AMimageSrc="./icons/hike-no-border.png" PMenglish="Calvi" PMfrench="Calvi" PMimageSrc="./icons/village.png" />
                     <TwoHalfDays AMenglish="Road to Porto" AMfrench="Route vers Porto" AMimageSrc="./icons/car-no-border.png" PMenglish="Natural reserve of Scandola and Girolata" PMfrench="Réserve naturelle de Scandola et Girolata" PMimageSrc="./icons/boat.png" />
-                    <TwoHalfDays AMenglish="Calanches de Piana" AMfrench="Calanches de Piana" AMimageSrc="./icons/hike-no-border.png" PMenglish="Road to Ajaccio" PMfrench="Route vers Ajaccio" PMimageSrc="./icons/car-no-border.png" />
+                    <TwoHalfDays AMenglish="Calanques de Piana" AMfrench="Calanques de Piana" AMimageSrc="./icons/hike-no-border.png" PMenglish="Road to Ajaccio" PMfrench="Route vers Ajaccio" PMimageSrc="./icons/car-no-border.png" />
                 </div>
             </div>
         </div>
