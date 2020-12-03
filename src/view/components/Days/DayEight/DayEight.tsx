@@ -13,7 +13,7 @@ const DayEight : React.FC<IDayEightProps> = props => {
     <p>
         <Text english="A hike that starts directly from the city center of Corte! More accessible and with less hills, this walk will take you to " french="Une randonnée qui part directement du centre ville de Corte ! Plus accessible et avec moins de dénivelé, cette balade vous permettra de vous conduira jusqu'à la " />
         <b><Text english="Rossolino Bridge" french="passerelle de Rossolino" /></b>
-        <Text english=", where you will be able to swim, in water certainly very cold. This trail is also (and weirdly) much less traveled than the one leading to Lake Melo in the Restonica Valley. It is also completely free!" french=", où vous pourrez vous baigner, dans une eau certes très froide. Ce sentier est également (et biazrrement) beaucoup moins fréquenté que celui menant au lac de Melo dans la vallée de la Restonica. Il est aussi totalement gratuit !" />
+        <Text english=", where you will be able to swim, in water certainly very cold. This trail is also (and weirdly) much less traveled than the one leading to Lake Melo in the Restonica Valley. It is also completely free!" french=", où vous pourrez vous baigner, dans une eau certes très froide. Ce sentier est également (et bizarrement) beaucoup moins fréquenté que celui menant au lac de Melo dans la vallée de la Restonica. Il est aussi totalement gratuit !" />
     </p>;
     const detailsMorning = 
     <div>
