@@ -32,7 +32,7 @@ const HomeInfo : React.FC<IHomeInfoProps> = props => {
             <SectionHeader englishTitle={`Practical info`} englishSubtitle={`good to know`} frenchTitle={`Infos pratiques`} frenchSubtitle={`bon a savoir`} setCurrentPage={props.setCurrentPage} page={Page.infos}/>
             <div className={`column left`}>
                 <div className={`column-content`}>
-                    <img src="./photos/home/info-01.png" />
+                    <img src="./photos/home/info-01.jpg" />
                     <h4 onClick={() => onClickInfoSection(InfoSection.transport)}><Text english="Transport" french="Se déplacer" /></h4>
                     <p><Text english="How to get there and out ? How to get from a city to another ? Public transport or car ? Where to park ? We tell you everything about transport." french="Arriver et partir de l'île, se déplacer entre chaque ville, en transports en commun ou en voiture, comment se garer..." /></p>
                     <div className={`subcolumns`}>
@@ -49,14 +49,14 @@ const HomeInfo : React.FC<IHomeInfoProps> = props => {
             </div>
             <div className={`column middle`}>
                 <div className={`column-content`}>
-                        <img src="./photos/home/info-02.png" />
+                        <img src="./photos/home/info-02.jpg" />
                         <h4 onClick={() => onClickInfoSection(InfoSection.accommodation)}><Text english="Accommodation" french="Se loger" /></h4>
                         <p><Text english="What kind of accommodation is there in Corsica ? For what budget ?" french="Quel type de logements est disponible ? Pour quel budget ?"/></p>
                     </div>
                 </div>
             <div className={`column right`}>
                 <div className={`column-content`}>
-                        <img src="./photos/home/info-03.png" />
+                        <img src="./photos/home/info-03.jpg" />
                         <h4 onClick={() => onClickInfoSection(InfoSection.food)}><Text english="Food" french="Se restaurer" /></h4>
                         <p><Text english="Supermarkets, bakeries, restaurants ... What is there to eat in Corsica ?" french="Supermarchés, boulangeries, restaurants... Qu'est ce qu'on mange en Corse ?" /></p>
                     </div>

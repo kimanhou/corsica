@@ -36,27 +36,27 @@ const HomePhotos : React.FC<IHomePhotosProps> = props => {
                     <div className={`middle-box`}>
                         <div className={`line one`}>
                             <div className={`first`}>
-                                <img src="./photos/home/photos-05.png" />
+                                <img src="./photos/home/photos-05.jpg" />
                                 <div className={`square-box-cover line-one`}></div>
                             </div>
                             <div className={`second`}>
-                                <img src="./photos/home/photos-02.png" />
+                                <img src="./photos/home/photos-02.jpg" />
                                 <div className={`horizontal-box-cover line-one`}></div>
                             </div>
                         </div>
                         <div className={`line two`}>
                             <div className={`first`}>
-                                <img src="./photos/home/photos-01.png" />
+                                <img src="./photos/home/photos-01.jpg" />
                                 <div className={`horizontal-box-cover line-two`}></div>
                             </div>
                             <div className={`second`}>
-                                <img src="./photos/home/photos-03.png" />
+                                <img src="./photos/home/photos-03.jpg" />
                                 <div className={`square-box-cover line-two`}></div>
                             </div>
                         </div>
                     </div>
                     <div className={`vertical-box`}>
-                        <img src="./photos/home/photos-06.png" />
+                        <img src="./photos/home/photos-06.jpg" />
                         <div className={`vertical-box-cover right`}></div>
                     </div>
                 </div>

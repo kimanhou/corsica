@@ -12,10 +12,10 @@ const Home : React.FunctionComponent<IHomeProps> = props => {
   return (
     <div className={`home`}>
       <div className={`home-image-container`}>
-        <img src="./photos/home/home.png" className={`home-image`}/>
+        <img src="./photos/home/home.jpg" className={`home-image`}/>
       </div>
       <HomeItinerary setCurrentPage={props.setCurrentPage}/>
-      <Transition classname="home-itinerary-info" imageSrc="./photos/home/transition.png" />
+      <Transition classname="home-itinerary-info" imageSrc="./photos/home/transition.jpg" />
       <HomeInfo setCurrentPage={props.setCurrentPage} setCurrentSection={props.setCurrentSection}/>
       <HomePhotos setCurrentPage={props.setCurrentPage} />
     </div>
