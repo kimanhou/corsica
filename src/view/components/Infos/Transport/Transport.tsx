@@ -25,11 +25,11 @@ const Transport : React.FC<ITransportProps> = props => {
                 <TransportMode english="The train" french="Le train" id="train" iconSrc="./icons/train.png" />
             </div>
             <Plane/>
-            <Transition imageSrc="./photos/infos/transport/transition-01.png" classname={''}/>
+            <Transition imageSrc="./photos/infos/transport/transition-01.jpg" classname={''}/>
             <Ferry />
-            <Transition imageSrc="./photos/infos/transport/transition-02.png" classname={''}/>
+            <Transition imageSrc="./photos/infos/transport/transition-02.jpg" classname={''}/>
             <Car />
-            <Transition imageSrc="./photos/infos/transport/transition-03.png" classname={''}/>
+            <Transition imageSrc="./photos/infos/transport/transition-03.jpg" classname={''}/>
             <Train />
         </div>
     );
