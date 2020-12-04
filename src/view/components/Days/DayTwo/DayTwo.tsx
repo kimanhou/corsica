@@ -3,6 +3,7 @@ import Text from '../../LocalisationContext/Text';
 import Day from '../Day';
 import './DayTwo.scss';
 import Map from './Map';
+import Photos from './Photos';
 
 interface IDayTwoProps {
 }
@@ -109,6 +110,7 @@ const DayTwo : React.FC<IDayTwoProps> = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"visit of Sartene old town"} programFrenchMorning={"visite du centre ville de Sartène"} 
                  programEnglishAfternoon={"beach time on Roccapina beach and optional hike "} programFrenchAfternoon={"plage de Roccapina et randonnée possible"}
+                 photos={<Photos/>}
             />
         </div>
     );

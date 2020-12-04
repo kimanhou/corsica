@@ -1,0 +1,49 @@
+.day-photos {
+    min-height: 100vh;
+    border-top: 1px solid transparent;
+    >.photos-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 450vh;
+        margin-top: 30px;
+        padding: 0 35px;
+        box-sizing: border-box;
+        .image {
+            margin: 5px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        >.row {
+            flex: 2;
+            display: flex;
+            flex-direction: row;
+            >.column {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .p111, .p112, .p121, .p131, .p132, .p211, .p212, .p221, .p222, .p231 {
+            flex: 1;
+        }
+        .p122 {
+            flex: 3;
+        }
+        .p231{
+            position: relative;
+            overflow: hidden;
+            >video {
+                position: absolute; 
+                left: 0;
+                top: 0;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .p3{
+            flex: 1;
+        }
+    }
+}

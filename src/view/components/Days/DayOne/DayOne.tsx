@@ -4,11 +4,9 @@ import Day from '../Day';
 import IconAndText from '../IconAndText';
 import './DayOne.scss';
 import Map from './Map';
+import Photos from './Photos';
 
-interface IDayOneProps {
-}
-
-const DayOne : React.FC<IDayOneProps> = props => {
+const DayOne : React.FC = props => {
     const introText = <p>
         <b><Text english="Ajaccio" french="Ajaccio" /></b>
         <Text english=", or " french=", ou " />
@@ -101,6 +99,7 @@ const DayOne : React.FC<IDayOneProps> = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"visit of Ajaccio old town"} programFrenchMorning={"visite du centre ville d'Ajaccio"} 
                  programEnglishAfternoon={"small hike on Parata Peninsula to admire the Blood Islands"} programFrenchAfternoon={"petite randonnée sur la presqu'île de la Parata pour admirer les Îles Sanguinaires"}
+                 photos={<Photos/>}
             />
         </div>
     );

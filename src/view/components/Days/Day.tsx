@@ -1,9 +1,8 @@
 import React from 'react';
 import './Day.scss';
 import DayDetails from './DayDetails';
-import DayHeader from './DayHeader';
 import DayIntro from './DayIntro';
-import DayPhotos from './DayPhotos';
+import DayPhotos from './Photos/DayPhotos';
 
 interface IDayProps {
     dayNumber : number;
@@ -19,6 +18,7 @@ interface IDayProps {
     detailsMorning : React.ReactNode;
     detailsAfternoon : React.ReactNode;
     detailsUseful : React.ReactNode;
+    photos ?: React.ReactNode;
 }
 
 const Day : React.FC<IDayProps> = props => {
@@ -32,7 +32,7 @@ const Day : React.FC<IDayProps> = props => {
                       programEnglishAfternoon={props.programEnglishAfternoon} programFrenchAfternoon={props.programFrenchAfternoon}
                       map={props.introMap} />
             <DayDetails isFullDay={props.isFullDay} morning={props.detailsMorning} afternoon={props.detailsAfternoon} useful={props.detailsUseful}/>
-            <DayPhotos />
+            <DayPhotos photos={props.photos}/>
         </div>
     );
 }
