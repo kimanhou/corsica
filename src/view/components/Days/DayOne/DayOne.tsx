@@ -1,10 +1,9 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
-import Day from '../Day';
+import Day, { IPhotoData } from '../Day';
 import IconAndText from '../IconAndText';
 import './DayOne.scss';
 import Map from './Map';
-import Photos from './Photos';
 
 const DayOne : React.FC = props => {
     const introText = <p>
@@ -89,6 +88,21 @@ const DayOne : React.FC = props => {
         <a href="https://www.grandsitesanguinaires-parata.com/" target='_blank'><img src="./icons/website.png"></img></a>
     </div>
 
+    const photos : IPhotoData[] = [
+        {photoName : '1.jpg', gridItemType : 'portrait'}, 
+        {photoName : '2.jpg', gridItemType : 'portrait'}, 
+        {photoName : '3.jpg', gridItemType : 'portrait'}, 
+        {photoName : '4.jpg', gridItemType : 'landscape'}, 
+        {photoName : '5.jpg', gridItemType : 'portrait'}, 
+        {photoName : '6.jpg', gridItemType : 'portrait'},
+        {photoName : '7.jpg', gridItemType : 'portrait'},
+        {photoName : '8.jpg', gridItemType : 'portrait'},
+        {photoName : '9.jpg', gridItemType : 'portrait'},
+        {photoName : '10.jpg', gridItemType : 'portrait'},
+        {photoName : '11.mp4', gridItemType : 'portrait', isVideo: true},
+        {photoName : '12.jpg', gridItemType : 'panorama'},
+    ]
+
     return(
         <div className={`day-one`}>
             <Day dayNumber={1} 
@@ -99,7 +113,7 @@ const DayOne : React.FC = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"visit of Ajaccio old town"} programFrenchMorning={"visite du centre ville d'Ajaccio"} 
                  programEnglishAfternoon={"small hike on Parata Peninsula to admire the Blood Islands"} programFrenchAfternoon={"petite randonnée sur la presqu'île de la Parata pour admirer les Îles Sanguinaires"}
-                 photos={<Photos/>}
+                 photos={photos}
             />
         </div>
     );

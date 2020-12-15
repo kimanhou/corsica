@@ -1,9 +1,8 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
-import Day from '../Day';
+import Day, { IPhotoData } from '../Day';
 import './DayTwo.scss';
 import Map from './Map';
-import Photos from './Photos';
 
 interface IDayTwoProps {
 }
@@ -100,6 +99,22 @@ const DayTwo : React.FC<IDayTwoProps> = props => {
         </p>
     </div>
 
+    const photos : IPhotoData[] = [
+        {photoName : '1.jpg', gridItemType : 'portrait'}, 
+        {photoName : '2.jpg', gridItemType : 'portrait'}, 
+        {photoName : '3.jpg', gridItemType : 'portrait'}, 
+        {photoName : '4.jpg', gridItemType : 'portrait'}, 
+        {photoName : '5.jpg', gridItemType : 'portrait'}, 
+        {photoName : '6.jpg', gridItemType : 'portrait'},
+        {photoName : '7.jpg', gridItemType : 'portrait'},
+        {photoName : '9.jpg', gridItemType : 'landscape'},
+        {photoName : '8.jpg', gridItemType : 'portrait'},
+        {photoName : '10.jpg', gridItemType : 'panorama'},
+        {photoName : '11.jpg', gridItemType : 'portrait'},
+        {photoName : '12.jpg', gridItemType : 'portrait'},
+        {photoName : '13.mp4', gridItemType : 'portrait', isVideo: true},
+    ]
+
     return(
         <div className={`day-two`}>
             <Day dayNumber={2} 
@@ -110,7 +125,7 @@ const DayTwo : React.FC<IDayTwoProps> = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"visit of Sartene old town"} programFrenchMorning={"visite du centre ville de Sartène"} 
                  programEnglishAfternoon={"beach time on Roccapina beach and optional hike "} programFrenchAfternoon={"plage de Roccapina et randonnée possible"}
-                 photos={<Photos/>}
+                 photos={photos}
             />
         </div>
     );

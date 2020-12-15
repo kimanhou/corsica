@@ -4,6 +4,12 @@ import DayDetails from './DayDetails';
 import DayIntro from './DayIntro';
 import DayPhotos from './Photos/DayPhotos';
 
+export interface IPhotoData{
+    photoName : string;
+    gridItemType : string;
+    isVideo ?: boolean;
+}
+
 interface IDayProps {
     dayNumber : number;
     introEnglishTitle : string;
@@ -18,7 +24,7 @@ interface IDayProps {
     detailsMorning : React.ReactNode;
     detailsAfternoon : React.ReactNode;
     detailsUseful : React.ReactNode;
-    photos ?: React.ReactNode;
+    photos ?: IPhotoData[];
 }
 
 const Day : React.FC<IDayProps> = props => {
@@ -32,7 +38,9 @@ const Day : React.FC<IDayProps> = props => {
                       programEnglishAfternoon={props.programEnglishAfternoon} programFrenchAfternoon={props.programFrenchAfternoon}
                       map={props.introMap} />
             <DayDetails isFullDay={props.isFullDay} morning={props.detailsMorning} afternoon={props.detailsAfternoon} useful={props.detailsUseful}/>
-            <DayPhotos photos={props.photos}/>
+            {props.photos != null && 
+                <DayPhotos photos={props.photos} dayNumber={props.dayNumber}/>
+            }
         </div>
     );
 }
