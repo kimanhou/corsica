@@ -1,6 +1,6 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
-import Day from '../Day';
+import Day, { IPhotoData } from '../Day';
 import IconAndText from '../IconAndText';
 import './DaySeven.scss';
 import Map from './Map';
@@ -118,6 +118,28 @@ const DaySeven : React.FC<IDaySevenProps> = props => {
         </p>
     </div>
 
+    const photos : IPhotoData[] = [
+        {photoName : '1.jpg', gridItemType : 'portrait'}, 
+        {photoName : '2.mp4', gridItemType : 'portrait', isVideo: true}, 
+        {photoName : '3.jpg', gridItemType : 'portrait'}, 
+        {photoName : '4.jpg', gridItemType : 'portrait'}, 
+        {photoName : '5.jpg', gridItemType : 'portrait'}, 
+        {photoName : '6.mp4', gridItemType : 'portrait', isVideo: true}, 
+        {photoName : '7.jpg', gridItemType : 'portrait'},
+        {photoName : '8.jpg', gridItemType : 'portrait'},
+        {photoName : '9.jpg', gridItemType : 'portrait'},
+        {photoName : '10.jpg', gridItemType : 'portrait'},
+        {photoName : '11.mp4', gridItemType : 'portrait', isVideo: true},
+        {photoName : '12.jpg', gridItemType : 'landscape'},
+        {photoName : '13.jpg', gridItemType : 'portrait'},
+        {photoName : '14.jpg', gridItemType : 'portrait'},
+        {photoName : '15.mp4', gridItemType : 'portrait', isVideo: true},
+        {photoName : '16.jpg', gridItemType : 'portrait'},
+        {photoName : '17.jpg', gridItemType : 'portrait'},
+        {photoName : '18.jpg', gridItemType : 'portrait'},
+        {photoName : '19.jpg', gridItemType : 'panorama'},
+    ]
+
     return(
         <div className={`day-seven`}>
             <Day dayNumber={7}
@@ -128,6 +150,7 @@ const DaySeven : React.FC<IDaySevenProps> = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"to hike up to Lake Melo, even Lake Capitello, in Restonica Gorges."} programFrenchMorning={"de monter jusqu'au lac Melo, voire le lac de Capitello, dans la vallée de la Restonica."} 
                  programEnglishAfternoon={""} programFrenchAfternoon={""}
+                 photos={photos}
             />
         </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
-import Day from '../Day';
+import Day, { IPhotoData } from '../Day';
 import IconAndText from '../IconAndText';
 import './DayFive.scss';
 import Map from './Map';
@@ -80,6 +80,20 @@ const DayFive : React.FC<IDayFiveProps> = props => {
         
     </div>
 
+    const photos : IPhotoData[] = [
+        {photoName : '1.jpg', gridItemType : 'portrait'}, 
+        {photoName : '2.jpg', gridItemType : 'portrait'}, 
+        {photoName : '3.jpg', gridItemType : 'portrait'}, 
+        {photoName : '4.jpg', gridItemType : 'half'}, 
+        {photoName : '5.jpg', gridItemType : 'half'}, 
+        {photoName : '6.jpg', gridItemType : 'half'},
+        {photoName : '7.jpg', gridItemType : 'half'},
+        {photoName : '8.mp4', gridItemType : 'portrait', isVideo: true},
+        {photoName : '9.jpg', gridItemType : 'landscape'},
+        {photoName : '10.jpg', gridItemType : 'half'},
+        {photoName : '11.jpg', gridItemType : 'half'},
+    ]
+
     return(
         <div className={`day-five`}>
             <Day dayNumber={5} 
@@ -90,6 +104,7 @@ const DayFive : React.FC<IDayFiveProps> = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"visit of the historical center of Porto-Vecchio"} programFrenchMorning={"visite du centre historique de Port-Vecchio"} 
                  programEnglishAfternoon={"beaches"} programFrenchAfternoon={"les plages"}
+                 photos={photos}
             />
         </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
-import Day from '../Day';
+import Day, { IPhotoData } from '../Day';
 import IconAndText from '../IconAndText';
 import './DayNine.scss';
 import Map from './Map';
@@ -164,6 +164,22 @@ const DayNine : React.FC<IDayNineProps> = props => {
         <a href="https://www.bastia-tourisme.com/" target='_blank'><img src="./icons/website.png"></img></a>
     </div>
 
+    const corte : IPhotoData[] = [
+        {photoName : '1.jpg', gridItemType : 'portrait'}, 
+        {photoName : '2.jpg', gridItemType : 'portrait'}, 
+        {photoName : '3.jpg', gridItemType : 'portrait'}, 
+        {photoName : '4.jpg', gridItemType : 'landscape'}, 
+        {photoName : '5.jpg', gridItemType : 'portrait'}, 
+        {photoName : '6.jpg', gridItemType : 'portrait'}, 
+        {photoName : '7.jpg', gridItemType : 'landscape'},
+    ]
+
+    const bastia : IPhotoData[] = [
+        {photoName : '1.jpg', gridItemType : 'portrait'},
+    ]
+
+    const photos : IPhotoData[] = corte.concat(bastia);
+
     return(
         <div className={`day-nine`}>
             <Day dayNumber={9}
@@ -174,6 +190,7 @@ const DayNine : React.FC<IDayNineProps> = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"visit of Corte's historical center"} programFrenchMorning={"visite du centre ville de Corte"} 
                  programEnglishAfternoon={"visit of Bastia's historical center, with an optional stop at Lucciana Cathedral"} programFrenchAfternoon={"visite du centre ville de Bastia, avec un arrêt optionnel à la cathédrale de Lucciana"}
+                 photos={photos}
             />
         </div>
     );

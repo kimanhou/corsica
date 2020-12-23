@@ -1,6 +1,6 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
-import Day from '../Day';
+import Day, { IPhotoData } from '../Day';
 import IconAndText from '../IconAndText';
 import './DayEight.scss';
 import Map from './Map';
@@ -84,6 +84,18 @@ const DayEight : React.FC<IDayEightProps> = props => {
         </p>
     </div>
 
+    const photos : IPhotoData[] = [
+        {photoName : '1.jpg', gridItemType : 'portrait'}, 
+        {photoName : '2.jpg', gridItemType : 'portrait'}, 
+        {photoName : '3.mp4', gridItemType : 'portrait', isVideo: true}, 
+        {photoName : '4.mp4', gridItemType : 'portrait', isVideo: true}, 
+        {photoName : '5.jpg', gridItemType : 'portrait'}, 
+        {photoName : '6.jpg', gridItemType : 'portrait'}, 
+        {photoName : '7.jpg', gridItemType : 'portrait'},
+        {photoName : '8.jpg', gridItemType : 'portrait'},
+        {photoName : '9.jpg', gridItemType : 'portrait'}
+    ]
+
     return(
         <div className={`day-eight`}>
             <Day dayNumber={8}
@@ -94,6 +106,7 @@ const DayEight : React.FC<IDayEightProps> = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"to discover the Tavignano gorges by getting to Rossolino Bridge."} programFrenchMorning={"de découvrir les gorges du Tavignano en allant jusqu'à la passerelle de Rossolino."} 
                  programEnglishAfternoon={""} programFrenchAfternoon={""}
+                 photos={photos}
             />
         </div>
     );

@@ -18,13 +18,16 @@
                     height: 133.33%;
                     object-fit: cover;
                 }
-                &.portrait{
+                &.portrait {
     
                 }
-                &.landscape{
+                &.half {
+                    width: calc(50% - 1%);
+                }
+                &.landscape {
                     width: calc(66.66% - 1%);
                 }
-                &.panorama{
+                &.panorama {
                     width: calc(100% - 1%);
                 }
             }

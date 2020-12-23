@@ -1,6 +1,6 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
-import Day from '../Day';
+import Day, { IPhotoData } from '../Day';
 import IconAndText from '../IconAndText';
 import './DaySix.scss';
 import Map from './Map';
@@ -66,6 +66,25 @@ const DaySix : React.FC<IDaySixProps> = props => {
         </p>
     </div>
 
+    const photos : IPhotoData[] = [
+        {photoName : '1.jpg', gridItemType : 'portrait'}, 
+        {photoName : '2.jpg', gridItemType : 'portrait'}, 
+        {photoName : '3.mp4', gridItemType : 'portrait', isVideo: true}, 
+        {photoName : '4.jpg', gridItemType : 'panorama'}, 
+        {photoName : '5.jpg', gridItemType : 'landscape'}, 
+        {photoName : '6.mp4', gridItemType : 'portrait', isVideo: true}, 
+        {photoName : '7.jpg', gridItemType : 'landscape'},
+        {photoName : '8.jpg', gridItemType : 'portrait'},
+        {photoName : '9.jpg', gridItemType : 'portrait'},
+        {photoName : '10.jpg', gridItemType : 'portrait'},
+        {photoName : '11.mp4', gridItemType : 'portrait', isVideo: true},
+        {photoName : '12.jpg', gridItemType : 'landscape'},
+        {photoName : '13.mp4', gridItemType : 'portrait', isVideo: true},
+        {photoName : '14.jpg', gridItemType : 'portrait'},
+        {photoName : '15.jpg', gridItemType : 'portrait'},
+        {photoName : '16.jpg', gridItemType : 'portrait'},
+    ]
+
     return(
         <div className={`day-six`}>
             <Day dayNumber={6}
@@ -76,6 +95,7 @@ const DaySix : React.FC<IDaySixProps> = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"to visit the cascades of Purcaraccia before going to Corte."} programFrenchMorning={"de visiter les cascades de Purcaraccia avant de se rendre à Corte."} 
                  programEnglishAfternoon={""} programFrenchAfternoon={""}
+                 photos={photos}
             />
         </div>
     );

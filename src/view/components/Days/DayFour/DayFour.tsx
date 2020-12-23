@@ -1,6 +1,6 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
-import Day from '../Day';
+import Day, { IPhotoData } from '../Day';
 import IconAndText from '../IconAndText';
 import './DayFour.scss';
 import Map from './Map';
@@ -107,6 +107,23 @@ const DayFour : React.FC<IDayFourProps> = props => {
         <a href="https://www.spmbonifacio.com/" target='_blank'><Text english="SPMB's website" french="Site de la SPMB"/></a>
     </div>
 
+    const photos : IPhotoData[] = [
+        {photoName : '1.jpg', gridItemType : 'portrait'}, 
+        {photoName : '2.jpg', gridItemType : 'portrait'}, 
+        {photoName : '3.jpg', gridItemType : 'portrait'}, 
+        {photoName : '4.jpg', gridItemType : 'portrait'}, 
+        {photoName : '5.jpg', gridItemType : 'portrait'}, 
+        {photoName : '6.jpg', gridItemType : 'portrait'},
+        {photoName : '7.jpg', gridItemType : 'landscape'},
+        {photoName : '8.mp4', gridItemType : 'portrait', isVideo: true},
+        {photoName : '9.jpg', gridItemType : 'portrait'},
+        {photoName : '10.jpg', gridItemType : 'landscape'},
+        {photoName : '11.jpg', gridItemType : 'half'},
+        {photoName : '12.jpg', gridItemType : 'half'},
+        {photoName : '13.jpg', gridItemType : 'half'},
+        {photoName : '14.jpg', gridItemType : 'half'},
+    ]
+
     return(
         <div className={`day-four`}>
             <Day dayNumber={4} 
@@ -117,6 +134,7 @@ const DayFour : React.FC<IDayFourProps> = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={<div></div>} detailsUseful={detailsUseful}
                  programEnglishMorning={"to find a secluded beach and to swim among the fish. Don't forget your snorkeling gear !"} programFrenchMorning={"de trouver un plage isolée pour nager au milieu des poissons. Ne pas oublier masques et tubas !"} 
                  programEnglishAfternoon={""} programFrenchAfternoon={""}
+                 photos={photos}
             />
         </div>
     );
