@@ -175,7 +175,18 @@ const DayNine : React.FC<IDayNineProps> = props => {
     ]
 
     const bastia : IPhotoData[] = [
-        {photoName : '1.jpg', gridItemType : 'portrait'},
+        {photoName : '8.jpg', gridItemType : 'half'},
+        {photoName : '9.jpg', gridItemType : 'half'},
+        {photoName : '10.jpg', gridItemType : 'panorama'},
+        {photoName : '11.mp4', gridItemType : 'portrait', isVideo: true},
+        {photoName : '12.jpg', gridItemType : 'portrait'},
+        {photoName : '13.jpg', gridItemType : 'portrait'},
+        {photoName : '14.jpg', gridItemType : 'portrait'},
+        {photoName : '15.jpg', gridItemType : 'portrait'},
+        {photoName : '16.jpg', gridItemType : 'portrait'},
+        {photoName : '17.jpg', gridItemType : 'portrait'},
+        {photoName : '18.jpg', gridItemType : 'portrait'},
+        {photoName : '19.jpg', gridItemType : 'portrait'},
     ]
 
     const photos : IPhotoData[] = corte.concat(bastia);
