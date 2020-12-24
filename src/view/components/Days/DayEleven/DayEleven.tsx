@@ -1,6 +1,6 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
-import Day from '../Day';
+import Day, { IPhotoData } from '../Day';
 import IconAndText from '../IconAndText';
 import './DayEleven.scss';
 import Map from './Map';
@@ -181,6 +181,21 @@ const DayEleven : React.FC<IDayElevenProps> = props => {
         </p>
     </div>
 
+    const photos : IPhotoData[] = [
+        {photoName : '1.jpg', gridItemType : 'half'}, 
+        {photoName : '2.jpg', gridItemType : 'half'}, 
+        {photoName : '3.jpg', gridItemType : 'portrait'}, 
+        {photoName : '4.jpg', gridItemType : 'landscape'}, 
+        {photoName : '5.jpg', gridItemType : 'portrait'}, 
+        {photoName : '6.jpg', gridItemType : 'landscape'}, 
+        {photoName : '7.jpg', gridItemType : 'landscape'},
+        {photoName : '8.jpg', gridItemType : 'portrait'}, 
+        {photoName : '9.jpg', gridItemType : 'half'}, 
+        {photoName : '10.jpg', gridItemType : 'half'},
+        {photoName : '11.jpg', gridItemType : 'landscape'},
+        {photoName : '12.mp4', gridItemType : 'portrait', isVideo: true}
+    ]
+
     return(
         <div className={`day-eleven`}>
             <Day dayNumber={11}
@@ -191,6 +206,7 @@ const DayEleven : React.FC<IDayElevenProps> = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"Agriates Desert, lunch in Saint Florent"} programFrenchMorning={"Désert des Agriates, déjeuner à Saint-Florent"} 
                  programEnglishAfternoon={"visit of Ile Rousse and Pietra Island"} programFrenchAfternoon={"visite de l'Île Rousse et l'île de la Pietra"}
+                 photos={photos}
             />
         </div>
     );
