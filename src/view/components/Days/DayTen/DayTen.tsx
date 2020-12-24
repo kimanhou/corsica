@@ -1,6 +1,6 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
-import Day from '../Day';
+import Day, { IPhotoData } from '../Day';
 import IconAndText from '../IconAndText';
 import './DayTen.scss';
 import Map from './Map';
@@ -165,6 +165,27 @@ const DayTen : React.FC<IDayTenProps> = props => {
         </p>
     </div>
 
+    const photos : IPhotoData[] = [
+        {photoName : '1.jpg', gridItemType : 'portrait'}, 
+        {photoName : '2.jpg', gridItemType : 'portrait'}, 
+        {photoName : '3.jpg', gridItemType : 'portrait'}, 
+        {photoName : '4.jpg', gridItemType : 'portrait'}, 
+        {photoName : '5.jpg', gridItemType : 'portrait'}, 
+        {photoName : '6.jpg', gridItemType : 'portrait'}, 
+        {photoName : '7.jpg', gridItemType : 'half'},
+        {photoName : '8.jpg', gridItemType : 'half'}, 
+        {photoName : '9.jpg', gridItemType : 'landscape'}, 
+        {photoName : '10.jpg', gridItemType : 'portrait'}, 
+        {photoName : '11.mp4', gridItemType : 'portrait', isVideo: true},
+        {photoName : '12.jpg', gridItemType : 'landscape'}, 
+        {photoName : '13.jpg', gridItemType : 'panorama'}, 
+        {photoName : '14.jpg', gridItemType : 'half'}, 
+        {photoName : '15.mp4', gridItemType : 'half', isVideo: true},
+        {photoName : '16.jpg', gridItemType : 'half'},
+        {photoName : '17.jpg', gridItemType : 'half'},
+        {photoName : '18.jpg', gridItemType : 'panorama'},
+    ]
+
     return(
         <div className={`day-ten`}>
             <Day dayNumber={10}
@@ -175,6 +196,7 @@ const DayTen : React.FC<IDayTenProps> = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"to go around Cap Corse. Lots of mountain road ahead!"} programFrenchMorning={"de faire le tour du Cap Corse. Beaucoup de routes de montagne en perspective !"} 
                  programEnglishAfternoon={""} programFrenchAfternoon={""}
+                 photos={photos}
             />
         </div>
     );
