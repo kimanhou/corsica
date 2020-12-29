@@ -1,6 +1,6 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
-import Day from '../Day';
+import Day, { IPhotoData } from '../Day';
 import IconAndText from '../IconAndText';
 import './DayTwelve.scss';
 import Map from './Map';
@@ -120,6 +120,19 @@ const DayTwelve : React.FC<IDayTwelveProps> = props => {
         <a href="https://balagne-corsica.com/" target='_blank'><img src="./icons/website.png"></img></a>
     </div>
 
+    const photos : IPhotoData[] = [
+        {photoName : '1.mp4', gridItemType : 'portrait', isVideo: true}, 
+        {photoName : '2.jpg', gridItemType : 'landscape'}, 
+        {photoName : '3.jpg', gridItemType : 'portrait'}, 
+        {photoName : '4.jpg', gridItemType : 'portrait'}, 
+        {photoName : '5.jpg', gridItemType : 'portrait'}, 
+        {photoName : '6.jpg', gridItemType : 'panorama'}, 
+        {photoName : '7.jpg', gridItemType : 'landscape'},
+        {photoName : '8.jpg', gridItemType : 'portrait'}, 
+        {photoName : '9.jpg', gridItemType : 'half'}, 
+        {photoName : '10.jpg', gridItemType : 'half'}
+    ]
+
     return(
         <div className={`day-twelve`}>
             <Day dayNumber={12}
@@ -130,6 +143,7 @@ const DayTwelve : React.FC<IDayTwelveProps> = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"Hike on Revellata Peninsula"} programFrenchMorning={"Randonnée sur la Pointe de la Revellata"} 
                  programEnglishAfternoon={"city center of Calvi and beach time"} programFrenchAfternoon={"visite du centre ville de Calvi et plage"}
+                 photos={photos}
             />
         </div>
     );
