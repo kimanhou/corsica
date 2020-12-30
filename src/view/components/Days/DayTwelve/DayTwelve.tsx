@@ -120,7 +120,7 @@ const DayTwelve : React.FC<IDayTwelveProps> = props => {
         <a href="https://balagne-corsica.com/" target='_blank'><img src="./icons/website.png"></img></a>
     </div>
 
-    const photos : IPhotoData[] = [
+    const revellata : IPhotoData[] = [
         {photoName : '1.mp4', gridItemType : 'portrait', isVideo: true}, 
         {photoName : '2.jpg', gridItemType : 'landscape'}, 
         {photoName : '3.jpg', gridItemType : 'portrait'}, 
@@ -130,8 +130,22 @@ const DayTwelve : React.FC<IDayTwelveProps> = props => {
         {photoName : '7.jpg', gridItemType : 'landscape'},
         {photoName : '8.jpg', gridItemType : 'portrait'}, 
         {photoName : '9.jpg', gridItemType : 'half'}, 
-        {photoName : '10.jpg', gridItemType : 'half'}
+        {photoName : '10.jpg', gridItemType : 'half'},
     ]
+
+    const calvi : IPhotoData[] = [
+        {photoName : '11.jpg', gridItemType : 'portrait'},
+        {photoName : '12.mp4', gridItemType : 'portrait', isVideo: true},
+        {photoName : '13.jpg', gridItemType : 'portrait'},
+        {photoName : '14.jpg', gridItemType : 'panorama'},
+        {photoName : '15.jpg', gridItemType : 'half'},
+        {photoName : '16.jpg', gridItemType : 'half'},
+        {photoName : '17.jpg', gridItemType : 'portrait'},
+        {photoName : '18.jpg', gridItemType : 'portrait'},
+        {photoName : '19.mp4', gridItemType : 'portrait', isVideo: true}
+    ]
+
+    const photos : IPhotoData[] = revellata.concat(calvi);
 
     return(
         <div className={`day-twelve`}>
