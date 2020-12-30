@@ -1,6 +1,6 @@
 import React from 'react';
 import Text from '../../LocalisationContext/Text';
-import Day from '../Day';
+import Day, { IPhotoData } from '../Day';
 import IconAndText from '../IconAndText';
 import './DayThirteen.scss';
 import Map from './Map';
@@ -88,6 +88,31 @@ const DayThirteen : React.FC<IDayThirteenProps> = props => {
         <a href="http://www.ouestcorsica.com/" target='_blank'><img src="./icons/website.png"/></a>
     </div>
 
+    const porto : IPhotoData[] = [
+        {photoName : '1.mp4', gridItemType : 'portrait', isVideo: true}, 
+        {photoName : '2.jpg', gridItemType : 'landscape'}, 
+        {photoName : '3.jpg', gridItemType : 'half'}, 
+    ]
+
+    const cruise : IPhotoData[] = [
+        {photoName : '4.jpg', gridItemType : 'half'}, 
+        {photoName : '5.jpg', gridItemType : 'portrait'}, 
+        {photoName : '6.mp4', gridItemType : 'portrait', isVideo: true}, 
+        {photoName : '7.jpg', gridItemType : 'portrait'},
+        {photoName : '8.jpg', gridItemType : 'portrait'}, 
+        {photoName : '9.jpg', gridItemType : 'portrait'}, 
+        {photoName : '10.jpg', gridItemType : 'portrait'},
+        {photoName : '11.jpg', gridItemType : 'panorama'},
+        {photoName : '12.jpg', gridItemType : 'landscape'},
+        {photoName : '13.jpg', gridItemType : 'portrait'},
+        {photoName : '14.jpg', gridItemType : 'portrait'},
+        {photoName : '15.jpg', gridItemType : 'landscape'},
+        {photoName : '16.jpg', gridItemType : 'landscape'},
+        {photoName : '17.jpg', gridItemType : 'portrait'}
+    ]
+
+    const photos : IPhotoData[] = porto.concat(cruise);
+
     return(
         <div className={`day-thirteen`}>
             <Day dayNumber={13}
@@ -98,6 +123,7 @@ const DayThirteen : React.FC<IDayThirteenProps> = props => {
                  detailsMorning={detailsMorning} detailsAfternoon={detailsAfternoon} detailsUseful={detailsUseful}
                  programEnglishMorning={"road to Porto"} programFrenchMorning={"route jusqu'à Porto"} 
                  programEnglishAfternoon={"cruise in the Natural Reserve of Scandola and Girolata"} programFrenchAfternoon={"promenade en mer dans la réserve naturelle de Scandola et Girolata"}
+                 photos={photos}
             />
         </div>
     );
