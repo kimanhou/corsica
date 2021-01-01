@@ -130,7 +130,7 @@ const DaySeven : React.FC<IDaySevenProps> = props => {
         {photoName : '9.jpg', gridItemType : 'portrait'},
         {photoName : '10.jpg', gridItemType : 'portrait'},
         {photoName : '11.mp4', gridItemType : 'portrait', isVideo: true},
-        {photoName : '12.jpg', gridItemType : 'landscape'},
+        {photoName : '12.jpg', gridItemType : 'portrait'},
         {photoName : '13.jpg', gridItemType : 'portrait'},
         {photoName : '14.jpg', gridItemType : 'portrait'},
         {photoName : '15.mp4', gridItemType : 'portrait', isVideo: true},

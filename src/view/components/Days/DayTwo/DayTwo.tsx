@@ -100,13 +100,13 @@ const DayTwo : React.FC<IDayTwoProps> = props => {
     </div>
 
     const photos : IPhotoData[] = [
-        {photoName : '1.jpg', gridItemType : 'portrait'}, 
+        {photoName : '1.jpg', gridItemType : 'landscape'}, 
         {photoName : '2.jpg', gridItemType : 'portrait'}, 
         {photoName : '3.jpg', gridItemType : 'portrait'}, 
         {photoName : '4.jpg', gridItemType : 'portrait'}, 
         {photoName : '5.jpg', gridItemType : 'portrait'}, 
         {photoName : '6.jpg', gridItemType : 'portrait'},
-        {photoName : '7.jpg', gridItemType : 'portrait'},
+        {photoName : '7.jpg', gridItemType : 'landscape'},
         {photoName : '9.jpg', gridItemType : 'landscape'},
         {photoName : '8.jpg', gridItemType : 'portrait'},
         {photoName : '10.jpg', gridItemType : 'panorama'},

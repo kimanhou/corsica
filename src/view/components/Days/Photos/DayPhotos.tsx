@@ -1,5 +1,4 @@
 import React from 'react';
-import Masonry, { MasonryOptions } from 'react-masonry-component';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 import { IPhotoData } from '../Day';
 import './DayPhotos.scss';
@@ -26,18 +25,13 @@ const DayPhotos : React.FC<IDayPhotosProps> = props => {
         )
     }
 
-    const masonryOptions : MasonryOptions = {
-        transitionDuration: 0,
-        percentPosition: true,
-    };
-    
     return(
         <div className={`day-photos`}>
             <SectionHeader englishTitle="Photos and videos" englishSubtitle="" frenchTitle="Photos et vidéos" frenchSubtitle=""/>
             <div className={`photos-container`}>
-                <Masonry className={'masonry'} options={masonryOptions} >
+                <div className={'masonry'}>
                     {props.photos.map(t => renderGridItem(t.photoName, t.gridItemType, t.isVideo))}
-                </Masonry>
+                </div>
             </div>
         </div>
     );
