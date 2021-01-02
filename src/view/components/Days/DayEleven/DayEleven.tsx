@@ -46,6 +46,8 @@ const DayEleven : React.FC<IDayElevenProps> = props => {
         <Text english="Between Lotu beach and Saleccia beach, there is 1h walk inland and 1h30 along the coast. It is possible to go by boat to one, hike to the other and catch the boat from the other beach." french="Entre la plage de Lotu et la plage de Saleccia, il y a 1h de marche par l'intérieur des terres et 1h30 en longeant la côte. Il est possible d'aller en bateau à l'une, faire la randonnée jusqu'à l'autre et reprendre le bateau de l'autre plage." />
         <br></br>
         <br></br>
+        <span className={`on-foot`}>
+        <img src='./photos/days/11/map-agriates-zoom.png' style={{shapeOutside : `url('./photos/days/11/map-agriates-zoom.png')`}} className={'map-agriates-zoom'}/>
         <h3><Text english="By foot" french="À pied" /></h3>
         <Text english="The " french="Le " />
         <a href="https://goo.gl/maps/BRioZyLqGZ3jKVwU9" target='_blank'><b><Text english="starting point" french="point de départ" /></b></a>
@@ -59,6 +61,9 @@ const DayEleven : React.FC<IDayElevenProps> = props => {
         <Text english=" which you reach after 2 hours of walking." french=" qu'on atteint au bout de 2 heures de marche." />
         <br></br>
         <Text english="To get to Lotu beach on foot, it takes about 4 hours from Saint Florent, obviously a little less from the starting point given above." french="Pour aller à la plage de Lotu à pied, il faut environ 4 heures depuis Saint-Florent, évidemment un peu moins depuis le point de départ donné ci-dessus." />
+        <br></br>
+        </span>
+        <img src='./photos/days/11/map-agriates.png' className={'map-agriates'}/>
         <br></br>
         <br></br>
         <br></br>
