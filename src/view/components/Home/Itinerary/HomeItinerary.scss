@@ -1,15 +1,15 @@
 .home-itinerary {
     background-color: var(--color-light-yellow);
-    height: 100vh;
+    min-height: 100vh;
     border: 1px solid transparent;
     >.left, >.right {
         display: inline-block;
         vertical-align: top;
         width: calc(50vw - 36px);
-        height: calc(100vh - 180px);
     }
     >.left {
         text-align: center;
+        height: calc(100vh - 180px);
     }
     >.right {
         >h3 {
@@ -29,7 +29,6 @@
         >.left, >.right {
             display: block;
             width: calc(100vw - ( 2 * var(--size-margin-35)));
-            height: calc(100vh - 180px);
             margin-left: var(--size-margin-35);
         }
         >.left {
