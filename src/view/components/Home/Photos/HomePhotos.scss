@@ -28,9 +28,9 @@
             flex-direction: row;
             padding: 0 25px;
             box-sizing: border-box;
-            margin: 50px 0;
+            margin: var(--size-big-margin) 0;
             >*{
-                margin: 10px;
+                margin: var(--size-very-small-margin);
             }
             >.vertical-box{
                 flex: 1;
@@ -59,15 +59,15 @@
                     flex-direction: row;
                     flex: 1;
                     >.first{
-                        margin-right: 10px;
+                        margin-right: var(--size-very-small-margin);
                         position: relative;
                     }
                     >.second{
-                        margin-left: 10px;
+                        margin-left: var(--size-very-small-margin);
                         position: relative;
                     }
                     &.one{
-                        margin-bottom: 10px;
+                        margin-bottom: var(--size-very-small-margin);
                         >.first{
                             flex: 1;
                         }
@@ -76,7 +76,7 @@
                         }
                     }
                     &.two{
-                        margin-top: 10px;
+                        margin-top: var(--size-very-small-margin);
                         >.first{
                             flex: 2;
                         }
@@ -131,6 +131,14 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home-photos {
+        >p {
+            margin: 0 var(--size-margin-35);
         }
     }
 }

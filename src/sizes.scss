@@ -1,7 +1,9 @@
 :root{
     --size-margin: 30px;
     --size-margin-35: 35px;
+    --size-big-margin: 50px;
     --size-small-margin: 20px;
+    --size-very-small-margin: 10px;
     --size-tiny-margin: 5px;
 
     --size-font-size-header: 60px;
@@ -12,7 +14,9 @@
 
 @media screen and (max-width: 600px) {
     :root{
+        --size-big-margin: 20px;
         --size-small-margin: 14px;
+        --size-very-small-margin: 5px;
 
         --size-font-size-header: 40px;
         --size-font-size-header-signature: 50px;
