@@ -8,7 +8,7 @@
         margin-bottom: 30px;
         &.left {
             width: 770px;
-            margin-left: 35px;
+            margin-left: var(--size-margin-35);
             >p {
                 >.departure-ports {
                     display: inline-block;

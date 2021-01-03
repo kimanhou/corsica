@@ -9,7 +9,7 @@
         margin-bottom: 30px;
         &.left {
             width: 400px;
-            margin-left: 35px;
+            margin-left: var(--size-margin-35);
             text-align: center;
             >p {
                 margin: 0;

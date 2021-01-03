@@ -3,7 +3,7 @@
     >.columns {
         overflow: hidden;
         width: calc(100vw - 70px);
-        margin-left: 35px;
+        margin-left: var(--size-margin-35);
         &.active {
             >.column {
                 >.image-container {

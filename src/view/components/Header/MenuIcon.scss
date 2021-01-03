@@ -3,7 +3,7 @@
     width: 63px;
     position: absolute;
     top: 50px;
-    right: 35px;
+    right: var(--size-margin-35);
     .bar1, .bar2, .bar3 {
         transform: translateX(0); 
         transition: transform 0.4s;   
@@ -16,5 +16,12 @@
         .bar2 {
             transform: translateX(-20px);
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-icon {
+        height: 20px;
+        width: 35px;
     }
 }

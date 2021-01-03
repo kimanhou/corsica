@@ -1,4 +1,16 @@
 :root{
     --size-margin: 30px;
+    --size-margin-35: 35px;
     --size-small-margin: 5px;
+    --size-font-size-header: 60px;
+    --size-font-size-header-signature: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    :root{
+        --size-margin: 30px;
+        --size-small-margin: 5px;
+        --size-font-size-header: 40px;
+        --size-font-size-header-signature: 50px;
+    }
 }

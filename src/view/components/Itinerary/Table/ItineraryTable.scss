@@ -1,7 +1,7 @@
 .table {
     width: calc(100vw - 70px);
     height: calc(100vh - 200px);
-    margin-left: 35px;
+    margin-left: var(--size-margin-35);
     border: 2px solid var(--color-off-black);
     border-radius: 30px;
     text-align: center;

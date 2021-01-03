@@ -4,7 +4,7 @@
         width: calc(100vw - 70px);
         height: calc(100vh - 180px);
         margin-bottom: 50px;
-        margin-left: 35px;
+        margin-left: var(--size-margin-35);
         overflow: hidden;
         >.home-image {
             object-fit: cover;

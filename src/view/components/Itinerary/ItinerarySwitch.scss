@@ -1,6 +1,6 @@
 .switch {
     float: right;
-    margin-right: 35px;
+    margin-right: var(--size-margin-35);
     margin-top: -45px;
     >p, >.bar-circle, .bar, .circle {
         display: inline-block;

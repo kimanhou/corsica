@@ -5,17 +5,17 @@
         margin-bottom: 50px;
     }
     >.day-intro-map {
-        width: calc(40vw - 35px);
+        width: calc(40vw - var(--size-margin-35));
         height: calc(100vh - 180px);
-        margin-left: 35px;
+        margin-left: var(--size-margin-35);
         text-align: center;
     }
     >.day-intro-text {
-        width: calc(60vw - 35px);
-        margin-right: 35px;
+        width: calc(60vw - var(--size-margin-35));
+        margin-right: var(--size-margin-35);
         >h2 {
             font-family: Signature;
-            font-size: 100px; 
+            font-size: var(--size-font-size-signature); 
             font-weight: 100;
         }
     }

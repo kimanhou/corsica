@@ -3,7 +3,7 @@
     width: 63px;
     position: absolute;
     top: 50px;
-    right: 35px;
+    right: var(--size-margin-35);
     cursor: pointer;
     .bar1, .bar2 {
         transform: rotate(0deg); 
