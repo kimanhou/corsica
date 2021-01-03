@@ -1,7 +1,7 @@
 .home {
     >.home-image-container {
         position: relative;
-        width: calc(100vw - 70px);
+        width: calc(100vw - ( 2 * var(--size-margin-35)));
         height: calc(100vh - 180px);
         margin-bottom: 50px;
         margin-left: var(--size-margin-35);
@@ -22,5 +22,18 @@
     }
     100% {
         transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        >.home-image-container {
+            >.home-image {
+                object-fit: cover;
+                height:100%;
+                max-width:100%;
+                object-position: left;
+            }
+        }
     }
 }
