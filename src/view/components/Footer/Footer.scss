@@ -32,7 +32,7 @@
                 vertical-align: top;
                 cursor: pointer;
                 &.divider {
-                    margin: 0 10px;
+                    margin: 0 var(--size-very-small-margin);
                     cursor: initial;
                 }
             }
@@ -43,5 +43,41 @@
         font-weight: 100;
         font-size: 1.25em;
         margin: 0.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        >.grey {
+            margin-left: var(--size-margin-35);
+            margin-right: var(--size-margin-35);
+            >.left, >.right {
+                display: block;
+            }
+            >.left {
+                >h1 {
+                    font-size: var(--size-font-size-secondary-title);
+                }
+            }
+            >.right {
+                position: relative;
+                top: unset;
+                transform: unset;
+                right: unset;
+                >h2 {
+                    text-align: left;
+                    font-size: var(--size-font-size-default);
+                    display: block;
+                    &.divider {
+                        display: none;
+                    }
+                }
+            }
+        }
+        >h3 {
+            font-size: var(--size-font-size-default);
+            width: calc(100vw - ( 2 * var(--size-margin-35)));
+            margin-left: var(--size-margin-35);
+        }
     }
 }
