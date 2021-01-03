@@ -21,16 +21,16 @@
   }
   p {
     font-weight: 100;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: var(--size-font-size-default);
+    line-height: calc(2 * var(--size-font-size-default));
     font-family: Timeless;
   }
   a {
     text-decoration: none;
     color: var(--color-off-black);
     font-weight: 100;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: var(--size-font-size-default);
+    line-height: calc(2 * var(--size-font-size-default));
     font-family: Timeless;
   }
 }

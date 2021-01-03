@@ -14,11 +14,36 @@
     >.right {
         >h3 {
             font-weight: 100;
-            font-size: 30px;
-            line-height: 50px;
+            font-size: var(--size-font-size-secondary-title);
+            line-height: calc(var(--size-font-size-secondary-title) * 5 / 3);
         }
         >.space {
             height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home-itinerary {
+        height: unset;
+        >.left, >.right {
+            display: block;
+            width: calc(100vw - ( 2 * var(--size-margin-35)));
+            height: calc(100vh - 180px);
+            margin-left: var(--size-margin-35);
+        }
+        >.left {
+            text-align: center;
+        }
+        >.right {
+            margin-top: var(--size-margin);
+            height: unset;
+            >h3 {
+                text-align: center;
+            }
+            >.space {
+                height: 10px;
+            }
         }
     }
 }
