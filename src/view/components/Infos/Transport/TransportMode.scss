@@ -2,6 +2,8 @@
     display: inline-block;
     vertical-align: top;
     cursor: pointer;
+    border: solid 2px transparent;
+    transition: border-color 0.4s;
     >.icon, >.text {
         display: inline-block;
         vertical-align: top;
@@ -24,5 +26,11 @@
             margin-left: 50px;
             text-align: left;
         }
+    }
+    &:hover {
+        border-color: var(--color-off-black);
+    }
+    &.margin-right {
+        margin-right: var(--size-margin);
     }
 }

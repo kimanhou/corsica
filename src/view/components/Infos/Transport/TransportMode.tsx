@@ -8,15 +8,18 @@ interface ITransportModeProps {
     french : string;
     iconSrc : string;
     id : string;
+    hasMarginRight ?: boolean;
 }
 
 const TransportMode : React.FC<ITransportModeProps> = props => {
+    const hasMarginRightClassname = props.hasMarginRight ? 'margin-right' : '';
+
     const onClick = () => {
         myScrollTo(props.id);
     }
     
     return(
-        <div className={`transport-mode`} onClick={onClick}>
+        <div className={`transport-mode ${hasMarginRightClassname}`} onClick={onClick}>
             <div className={`icon`}>
                 <img src={props.iconSrc}/>
             </div>

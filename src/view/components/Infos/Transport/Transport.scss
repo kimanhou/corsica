@@ -13,5 +13,8 @@
         margin-top: 50px;
         margin-bottom: 50px;
         text-align: center;
+        >.transport-modes-middle {
+            height: var(--size-margin);
+        }
     }
 }
