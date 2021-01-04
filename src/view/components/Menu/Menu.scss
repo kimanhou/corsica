@@ -38,25 +38,25 @@
     >.left {
         >h1 {
             font-weight: normal;
-            font-size: 60px;
-            margin-top: 30px;
-            margin-left: 20px;
+            font-size: var(--size-font-size-header);
+            margin-top: var(--size-margin);
+            margin-left: var(--size-small-margin);
             opacity: 0;
             transition: opacity 0.8s 0.8s;
         }
         >h2 {
             font-family: Signature;
             font-weight: normal;
-            font-size: 100px;
+            font-size: var(--size-font-size-header-signature);
             margin-left: calc(20px + 95px);
             margin-top: -35px;
             opacity: 0;
             transition: opacity 0.8s 0.8s;
         }
         >.menu-links {
-            margin-top: 50px;
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-top: var(--size-big-margin);
+            margin-left: var(--size-small-margin);
+            margin-right: var(--size-small-margin);
             transition: opacity 0.8s 0.8s;
             >*{
                 opacity: 0;
@@ -104,6 +104,30 @@
             height: 100vh;
             transition: opacity 0.8s 1.5s;
             opacity: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        &.visible {
+            left: 0;
+        }
+        >.left, >.right {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+        }
+        >.left {
+            >h2 {
+                margin-left: 70px;
+                margin-top: -15px;
+            }
+        }
+        >.right {
+            >img {
+                height: 100vh;
+            }
         }
     }
 }

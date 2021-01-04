@@ -19,3 +19,11 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .cross-icon {
+        height: 19px;
+        width: 31px;
+        top: calc(15px - 100vh);
+    }
+}

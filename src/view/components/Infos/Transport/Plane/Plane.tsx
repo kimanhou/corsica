@@ -27,7 +27,7 @@ const Plane : React.FC<IPlaneProps> = props => {
                 <p>
                     <Text english="Flying to Corsica is " french="Se rendre en avion en Corse est le moyen " />
                     <b><Text english="the fastest and most comfortable way, but it's also the most expensive" french="le plus rapide et confortable, mais c’est également souvent le plus coûteux" /></b>
-                    <Text english=". A few airlines like Corsica Airlines, Air France and Easyjet connect the four airports of the island with the continent (mainly France and Italy). Those airports are : Ajaccio et Bastia, Calvi and Figari (near Bonifacio)." french=". Quelques compagnies dont Corsica Airlines, Air France et EasyJet desservent les 4 aéroports de l’île : Ajaccio et Bastia, Calvi et Figari (près de Bonifacio)." />
+                    <Text english=". A few airlines like Corsica Airlines, Air France and Easyjet connect the four airports of the island with the continent (mainly France and Italy). Those airports are : Ajaccio, Bastia, Calvi and Figari (near Bonifacio)." french=". Quelques compagnies dont Corsica Airlines, Air France et EasyJet desservent les 4 aéroports de l’île : Ajaccio, Bastia, Calvi et Figari (près de Bonifacio)." />
                     <br></br>
                     <br></br>
                     <b><Text english="Ajaccio airport : " french="L’aéroport d’Ajaccio : " /></b>
