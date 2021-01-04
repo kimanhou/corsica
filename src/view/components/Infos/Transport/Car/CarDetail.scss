@@ -24,12 +24,31 @@
             >.normal {
                 display: inline-block;
                 vertical-align: middle;
-                font-size: 20px;
+                font-size: var(--size-font-size-default);
             }
             >.space {
                 display: inline-block;
                 vertical-align: middle;
                 width: 4px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .car-detail {
+        >.image-container {
+            width: 40px;
+            >img {
+                width: 40px;
+            }
+        }
+        >.text-container {
+            width: calc(100vw - (var(--size-margin) * 2) - 40px - 10px);
+            >p {
+                >.small {
+                    font-size: 10px;
+                }
             }
         }
     }

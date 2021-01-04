@@ -10,7 +10,7 @@
             transition: width 0.8s;
             width: 0%;
             height: 2px;
-            margin-top: 10px;
+            margin-top: var(--size-very-small-margin);
         }
         &.active {
             color: var(--color-dark-yellow);
@@ -32,5 +32,16 @@
     }
     >.info-content {
       flex: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .infos {
+        >.section-title {
+            display: block;
+            width: calc(100vw);
+            font-size: 25px;
+            margin-left: var(--size-margin-35);
+        }
     }
 }

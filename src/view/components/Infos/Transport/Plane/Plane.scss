@@ -34,3 +34,30 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .plane {
+        >.column {
+            display: block;
+            margin-bottom: 0;
+            padding-bottom: var(--size-big-margin);
+            &.left {
+                width: calc(100vw - (var(--size-margin) * 2));
+                margin-left: var(--size-margin);
+                >a {
+                    >img {
+                        width: calc(100vw - (var(--size-margin) * 2));
+                        margin-left: 0;
+                    }
+                }
+            }
+            &.middle {
+                display: none;
+            }
+            &.right {
+                width: calc(100vw - (var(--size-margin) * 2));
+                margin-left: var(--size-margin);
+            }
+        }
+    }
+}

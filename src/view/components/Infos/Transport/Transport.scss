@@ -2,7 +2,7 @@
     >h2 {
         font-family: Signature;
         font-weight: normal;
-        font-size: 100px;
+        font-size: var(--size-font-size-header-signature);
         text-align: center;
     }
     >p {
@@ -10,11 +10,24 @@
         margin: 0 150px;
     }
     >.transport-modes {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: var(--size-big-margin);
+        margin-bottom: var(--size-big-margin);
         text-align: center;
         >.transport-modes-middle {
             height: var(--size-margin);
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .transport {
+        >p {
+            text-align: left;
+            margin: 0 var(--size-margin-35);
+        }
+        >.transport-modes {
+            >.transport-modes-middle {
+                height: 0;
+            }
         }
     }
 }

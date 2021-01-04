@@ -67,3 +67,20 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .ferry {
+        >.column {
+            display: block;
+            margin-bottom: 0;
+            padding-bottom: var(--size-big-margin);
+            &.left, &.right {
+                width: calc(100vw - (var(--size-margin) * 2));
+                margin-left: var(--size-margin);
+            }
+            &.middle {
+                display: none;
+            }
+        }
+    }
+}

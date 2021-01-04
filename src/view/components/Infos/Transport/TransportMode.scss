@@ -9,8 +9,8 @@
         vertical-align: top;
     }
     >.icon {
-        width: 100px;
-        height: 100px;
+        width: var(--size-font-size-header-signature);
+        height: var(--size-font-size-header-signature);
         border: 1px solid transparent;
         >img {
             object-fit: cover;
@@ -22,8 +22,8 @@
         width: 300px;
         height: 100px;
         >p {
-            font-size: 30px;
-            margin-left: 50px;
+            font-size: var(--size-font-size-secondary-title);
+            margin-left: var(--size-big-margin);
             text-align: left;
         }
     }
@@ -32,5 +32,18 @@
     }
     &.margin-right {
         margin-right: var(--size-margin);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .transport-mode {
+        display: block;
+        >.text {
+            width: 50vw;
+            height: 50px;
+        }
+        &.margin-right {
+            margin-right: 0;
+        }
     }
 }

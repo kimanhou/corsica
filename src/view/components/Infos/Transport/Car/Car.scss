@@ -30,3 +30,31 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .car {
+        >.column {
+            display: block;
+            margin-bottom: 0;
+            padding-bottom: var(--size-big-margin);
+            &.left, &.right {
+                width: calc(100vw - (var(--size-margin) * 2));
+                margin-left: var(--size-margin);
+            }
+            &.middle {
+                display: none;
+            }
+            &.left {
+                >img {
+                    width: calc(100vw - (var(--size-margin) * 2));
+                }
+            }
+            &.right {
+                >img {
+                    height: unset;
+                    width: calc(100vw - (var(--size-margin) * 2));
+                }
+            }
+        }
+    }
+}
