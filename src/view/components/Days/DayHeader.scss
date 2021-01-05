@@ -6,17 +6,31 @@
         cursor: pointer;
         margin-bottom: 20px;
     }
-    >.day-header-number {
-        cursor: pointer;
-        display: inline-block;
-        vertical-align: top;
-        font-size: 40px;
-        width: calc((100vw - 70px - 4px) / 14);
-        text-align: center;
-        color: var(--color-dark-grey);
-        &.active {
-            color: var(--color-off-black);
-            border: 2px solid var(--color-off-black);
+    >.day-header-days {
+        >.day-header-number {
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 40px;
+            width: calc((100vw - (2 * var(--size-margin-35)) - 4px) / 14);
+            text-align: center;
+            color: var(--color-dark-grey);
+            &.active {
+                color: var(--color-off-black);
+                border: 2px solid var(--color-off-black);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .day-header {
+        >.day-header-days {
+            width: calc(100vw - (2 * var(--size-margin-35)));
+            >.day-header-number {
+                width: calc((100vw - (2 * var(--size-margin-35)) - 4px) / 7);
+                font-size: 25px;
+            }
         }
     }
 }

@@ -15,8 +15,18 @@
         margin-right: var(--size-margin-35);
         >h2 {
             font-family: Signature;
-            font-size: var(--size-font-size-signature); 
+            font-size: var(--size-font-size-header-signature); 
             font-weight: 100;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .day-intro {
+        >.day-intro-text, >.day-intro-map {
+            display: block;
+            width: calc(100vw - (2 * var(--size-margin-35)));
+            margin-left: var(--size-margin-35);
         }
     }
 }

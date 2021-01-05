@@ -7,4 +7,24 @@
         width: 80px;
         margin-left: 40px;
     }
+    >.program-half-days {
+        >.am, >.pm {
+            display: flex;
+            flex-direction: row;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .program {
+        img {
+            width: 40px;
+            margin-left: 20px;
+            align-self: center;
+        }
+        p {
+            margin-left: 20px;
+        }
+    }
 }

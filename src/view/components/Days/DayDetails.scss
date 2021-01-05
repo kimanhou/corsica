@@ -37,12 +37,39 @@
         }
         h2 {
             font-family: Signature;
-            font-size: 100px; 
+            font-size: var(--size-font-size-header-signature); 
             font-weight: 100;
         }
         ul {
             list-style-type : none;
             margin-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .day-details {
+        >.column {
+            display: block;
+            margin-bottom: 0;
+            padding-bottom: var(--size-big-margin);
+            &.left, &.right {
+                width: calc(100vw - (var(--size-margin) * 2));
+                margin-left: var(--size-margin);
+            }
+            &.middle {
+                display: none;
+            }
+            &.left {
+                >img {
+                    width: calc(100vw - (var(--size-margin) * 2));
+                }
+            }
+            &.right {
+                img {
+                    height: 40px;
+                }
+            }
         }
     }
 }

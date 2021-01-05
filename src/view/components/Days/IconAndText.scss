@@ -22,3 +22,17 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .icon-and-text {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        >.image-container {
+            width: 40px;
+            >img {
+                width: 40px;
+            }
+        }
+    }
+}

@@ -40,7 +40,9 @@ const DayHeader : React.FC<IDayHeaderProps> = props => {
             <div className={`back-to-itinerary`} onClick={backToItinerary}>
                 <Text english="< Back to overview" french="< Retour vers l'aperçu"/>
             </div>
-            {renderDayNumbers()}
+            <div className={`day-header-days`}>
+                {renderDayNumbers()}
+            </div>
         </div>
     );
 }

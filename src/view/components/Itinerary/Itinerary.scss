@@ -2,7 +2,7 @@
     text-align: center;
     >.columns {
         overflow: hidden;
-        width: calc(100vw - 70px);
+        width: calc(100vw - (var(--size-margin-35) * 2));
         margin-left: var(--size-margin-35);
         &.active {
             >.column {
@@ -18,17 +18,17 @@
             vertical-align: top;
             width: calc(33.33vw - 23.33px);
             height: calc(100vh - 180px);
-            margin-bottom: 30px;
+            padding-bottom: 30px;
             >h1 {
                 font-family: Kiona;
                 font-weight: normal;
-                font-size: 60px;
+                font-size: var(--size-font-size-header);
                 margin-top: 50px;
             }
             >h2 {
                 font-family: Signature;
                 font-weight: normal;
-                font-size: 100px;
+                font-size: var(--size-font-size-header-signature);
             }
             >.image-container {
                 width: 9vw;
@@ -53,6 +53,24 @@
                 &.three {
                     margin-top: 40px;
                     transform: translateY(200px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .itinerary {
+        >.columns {
+            >.column {
+                width: calc(100vw - (var(--size-margin-35) * 2));
+                height: calc(100vh);
+                &.middle {
+                    display: block;
+                }
+                >.image-container {
+                    width: 13vw;
+                    height: 30vh;
                 }
             }
         }
