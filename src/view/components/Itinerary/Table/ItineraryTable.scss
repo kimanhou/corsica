@@ -1,5 +1,5 @@
 .table {
-    width: calc(100vw - 70px);
+    width: calc(100vw - (var(--size-margin-35) * 2));
     height: calc(100vh - 200px);
     margin-left: var(--size-margin-35);
     border: 2px solid var(--color-off-black);
@@ -38,5 +38,18 @@
         width: 100%;
         height: 2px;
         background-color: var(--color-off-black);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .table {
+        margin-top: 40px;
+        >.table-line {
+            >.days {
+                >.two-half-days, >.full-day {
+                    width: calc(100vw - (var(--size-margin-35) * 2));
+                }
+            }
+        }
     }
 }

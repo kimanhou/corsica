@@ -63,14 +63,13 @@
     .itinerary {
         >.columns {
             >.column {
-                width: calc(100vw - (var(--size-margin-35) * 2));
-                height: calc(100vh);
                 &.middle {
                     display: block;
+                    width: calc(100vw - (var(--size-margin-35) * 2));
+                    height: unset;
                 }
-                >.image-container {
-                    width: 13vw;
-                    height: 30vh;
+                &.left, &.right {
+                    display: none;
                 }
             }
         }
