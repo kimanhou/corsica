@@ -37,7 +37,7 @@ const onClickMenu = (page : Page) => {
                 <h2 onClick={() => onClickMenu(Page.photos)}><Text english={`Photos & Videos`} french={`Photos & Vidéos`}/></h2>
             </div>
         </div>
-      <h3><Text english={`©2020 Website made by Kim Anh Nguyen and Mark Poussard`} french={`©2020 Site web réalisé par Kim Anh Nguyen et Mark Poussard`}/></h3>
+      <h3><Text english={`©2021 Website made by Kim Anh Nguyen and Mark Poussard`} french={`©2020 Site web réalisé par Kim Anh Nguyen et Mark Poussard`}/></h3>
     </div>
   )
 }
