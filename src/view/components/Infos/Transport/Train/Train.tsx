@@ -19,7 +19,7 @@ const Train : React.FC<ITrainProps> = props => {
                 </p>
                 <p><Text english="Opposite is the map of the two main lines with prices and durations from Ajaccio (not all station is mentionned here). For a two-way ticket, you need to double the price, there is no discount. There are about 5 trains between Ajaccio and Bastia in each direction." french="Ci-contre le plan des deux grandes lignes avec les prix et temps de trajet depuis Ajaccio (toutes les stations n'y figurent pas). Pour un aller-retour, il faut multiplier le prix par 2, il n'y a pas de réduction. Il y a environ 5 trains par jour sur l'axe Ajaccio - Bastia dans chaque sens." /></p>
                 <br></br>
-                <p style={{ marginBottom: "0"}}><b><Text english="" french="Liens utiles" /></b></p>
+                <p style={{ marginBottom: "0"}}><b><Text english="Useful links" french="Liens utiles" /></b></p>
                 <Link textEnglish="CFC website" textFrench="Site CFC" link="https://cf-corse.corsica/" />
                 <Link textEnglish="Prices (see “Barème par gare“ p.9)" textFrench="Grille tarifaire (voir “Barème par gare“ p.9)" link="https://cf-corse.corsica/wp-content/uploads/2019/03/Grille-tarifaire.pdf" />
                 <Link textEnglish="Timetables of the main lines" textFrench="Horaires grandes lignes" link="https://cf-corse.corsica/wp-content/uploads/2020/08/Affiches-CFC-automne-hiver-2020-2021-1.pdf" />

@@ -29,14 +29,14 @@
                 >select {
                     cursor: pointer;
                     font-weight: 100;
-                    font-size: 20px;
-                    line-height: 40px;
+                    font-size: var(--size-font-size-default);
+                    line-height: calc(2 * var(--size-font-size-default));
                     font-family: Timeless;
                     color: var(--color-off-black);
                     background-color: transparent;
                     outline: 0px;
                     padding: 5px;
-                    margin-left: 10px;
+                    margin-left: var(--size-very-small-margin);
                 }
             }
         }

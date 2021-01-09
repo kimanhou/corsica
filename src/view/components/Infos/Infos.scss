@@ -39,9 +39,19 @@
     .infos {
         >.section-title {
             display: block;
-            width: calc(100vw);
+            width: calc(100vw - (var(--size-margin-35) * 2));
             font-size: 25px;
             margin-left: var(--size-margin-35);
+            &.active {
+                >.underline {
+                    width: 100%;
+                }
+            }
+            &:hover {
+                >.underline {
+                    width: 100%;
+                }
+            }
         }
     }
 }

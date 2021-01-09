@@ -11,3 +11,13 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .port {
+        >.details {
+            &.visible {
+                height: 200px;
+            }
+        }
+    }
+}
