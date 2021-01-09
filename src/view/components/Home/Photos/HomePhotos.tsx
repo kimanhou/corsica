@@ -4,6 +4,7 @@ import './HomePhotos.scss';
 import Text from '../../LocalisationContext/Text';
 import ScreenDetector from '../../ScreenDetector/screenDetector';
 import { IContentProps, Page } from '../../../../App';
+import { isMobile } from '../../../hooks/UseMediaQuery';
 
 interface IHomePhotosProps {
     setCurrentPage : (currentPage : Page) => void;
@@ -19,6 +20,8 @@ const HomePhotos : React.FC<IHomePhotosProps> = props => {
         setOnActiveClassname("");
     }
 
+    const shouldNotAutoPlay = isMobile();
+
     return(
         <div className={`home-photos`}>
             <SectionHeader englishTitle={`A sneak peak`} englishSubtitle={`photos and videos`} frenchTitle={`Un avant goût`} frenchSubtitle={`en photos et videos`} setCurrentPage={props.setCurrentPage} page={Page.photos}/>
@@ -27,7 +30,7 @@ const HomePhotos : React.FC<IHomePhotosProps> = props => {
                 <ScreenDetector onActive={onActive} onUnactive={onUnactive} className={`screen-detector`}/>
                 <div className={`photos-container ${onActiveClassname}`}>
                     <div className={`vertical-box`}>
-                        <video autoPlay loop muted>
+                        <video autoPlay={!shouldNotAutoPlay} loop muted>
                             <source src="./videos/01.mp4" type="video/mp4"/>
                             Your browser does not support the video tag.
                         </video>

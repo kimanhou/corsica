@@ -1,4 +1,5 @@
 import React from 'react';
+import { isMobile } from '../../../hooks/UseMediaQuery';
 import SectionHeader from '../../SectionHeader/SectionHeader';
 import { IPhotoData } from '../Day';
 import './DayPhotos.scss';
@@ -13,11 +14,13 @@ const DayPhotos : React.FC<IDayPhotosProps> = props => {
     const getUrl = (mediaName : string) => {
         return path + mediaName ;
     }
+    
+    const shouldNotAutoPlay = isMobile();
 
     const renderGridItem = (photoName : string, gridItemType : string, isVideo ?: boolean) => {
         return (
             <div className={`grid-item ${gridItemType}`}>
-                {isVideo && <video width="100%" autoPlay loop muted>
+                {isVideo && <video width="100%" autoPlay={!shouldNotAutoPlay} loop muted>
                         <source src={getUrl(photoName)} type="video/mp4" />
                     </video>}
                 {!isVideo && <img src={getUrl(photoName)} />}
