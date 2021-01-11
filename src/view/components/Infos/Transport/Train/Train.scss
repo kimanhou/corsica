@@ -7,14 +7,14 @@
         min-height: calc(100vh - 180px);
         margin-bottom: 30px;
         &.left {
-            width: 770px;
+            width: 53.5%;
             margin-left: var(--size-margin-35);
         }
         &.middle {
-            width: 200px;
+            width: 13.9%;
         }
         &.right {
-            width: 600px;
+            width: 27.8%;
             >img {
                 max-height: 100%;
                 max-width: 100%;

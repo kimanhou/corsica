@@ -8,7 +8,7 @@
         min-height: calc(100vh - 180px);
         margin-bottom: 30px;
         &.left {
-            width: 400px;
+            width: 27.8%;
             margin-left: var(--size-margin-35);
             text-align: center;
             >p {
@@ -23,10 +23,10 @@
             }
         }
         &.middle {
-            width: 200px;
+            width: 13.9%;
         }
         &.right {
-            width: 770px;
+            width: 53.5%;
             ul {
                 list-style-type : none;
                 margin-top: 0;

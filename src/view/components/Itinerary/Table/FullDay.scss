@@ -38,10 +38,20 @@
         }
         >.back {
             transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             >img {
+                width: 100%;
                 max-height: 80%;
                 object-fit: cover;
             }
         }
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 601px) {
+    .full-day {
+        height: calc(30vw - var(--size-itinerary-table-number-height));
     }
 }

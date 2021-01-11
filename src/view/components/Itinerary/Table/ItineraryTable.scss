@@ -80,13 +80,12 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) and (min-width: 601px) {
     .table {
-        margin-top: 40px;
-        >.table-line {
-            >.days {
-                >.two-half-days, >.full-day {
-                    width: calc(100vw - (var(--size-margin-35) * 2));
+        >.table-desktop {
+            >.table-line {
+                p {
+                    font-size: 15px;
                 }
             }
         }

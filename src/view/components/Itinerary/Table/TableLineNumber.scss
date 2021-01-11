@@ -1,7 +1,7 @@
 .table-line-number {
     font-family: Kiona;
-    font-size: 40px;
-    height: 50px;
+    font-size: calc(2 * var(--size-font-size-default));
+    height: var(--size-itinerary-table-number-height);
     border-bottom: 1px solid var(--color-off-black);
     >.table-number {
         display: inline-block;

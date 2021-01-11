@@ -19,12 +19,14 @@
                 margin-top: 0.2em;
             }
         }
-        >.right{
+        >.right {
             display: inline-block;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
             right: 0.5em;
+            max-width: calc(100vw - 500px);
+            text-align: right;
             >h2 {
                 text-align: right;
                 font-weight: normal;
@@ -64,6 +66,7 @@
                 top: unset;
                 transform: unset;
                 right: unset;
+                max-width: calc(100vw - (var(--size-margin-35) * 2) - 2em);
                 >h2 {
                     text-align: left;
                     font-size: var(--size-font-size-default);
