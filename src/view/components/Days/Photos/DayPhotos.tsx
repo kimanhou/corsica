@@ -7,6 +7,7 @@ import './DayPhotos.scss';
 interface IDayPhotosProps {
     photos : IPhotoData[];
     dayNumber : number;
+    noSectionHeader ?: boolean;
 }
 
 const DayPhotos : React.FC<IDayPhotosProps> = props => {
@@ -30,7 +31,8 @@ const DayPhotos : React.FC<IDayPhotosProps> = props => {
 
     return(
         <div className={`day-photos`}>
-            <SectionHeader englishTitle="Photos and videos" englishSubtitle="" frenchTitle="Photos et vidéos" frenchSubtitle=""/>
+            {!props.noSectionHeader && 
+                <SectionHeader englishTitle="Photos and videos" englishSubtitle="" frenchTitle="Photos et vidéos" frenchSubtitle=""/>}
             <div className={`photos-container`}>
                 <div className={'masonry'}>
                     {props.photos.map(t => renderGridItem(t.photoName, t.gridItemType, t.isVideo))}
