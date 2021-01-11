@@ -5,6 +5,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    &.is-mobile {
+        min-height: calc(40vh);
+        padding-bottom: var(--size-tiny-margin);
+        &.line-1 {
+            width: calc((100vw - (var(--size-margin-35) * 2)) / 2);
+        }
+        &.line-2 {
+            width: calc((100vw - (var(--size-margin-35) * 2)) / 3);
+        }
+    }
     >.day-divider {
         width: 50%;
         height: 1px;

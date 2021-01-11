@@ -1,10 +1,19 @@
 .full-day {
     display: inline-block;
-    width: calc((100vw - 70px) / 7);
+    width: calc((100vw - (var(--size-margin-35) * 2)) / 7);
     height: calc((100vh - 200px) / 2 - 52px);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    &.is-mobile {
+        min-height: calc(40vh);
+        &.line-1 {
+            width: calc((100vw - (var(--size-margin-35) * 2)) / 2);
+        }
+        &.line-2 {
+            width: calc((100vw - (var(--size-margin-35) * 2)) / 3);
+        }
+    }
     &:hover {
         >.flippable {
             transform: rotateY(180deg);

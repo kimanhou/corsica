@@ -5,6 +5,18 @@
     border-bottom: 1px solid var(--color-off-black);
     >.table-number {
         display: inline-block;
-        width: calc((100vw - 70px) / 7);
+        width: calc((100vw - (var(--size-margin-35) * 2)) / 7);
+    }
+    &.is-mobile {
+        &.line-1 {
+            >.table-number {
+                width: calc((100vw - (var(--size-margin-35) * 2)) / 3);
+            }
+        }
+        &.line-2 {
+            >.table-number {
+                width: calc((100vw - (var(--size-margin-35) * 2)) / 4);
+            }
+        }
     }
 }

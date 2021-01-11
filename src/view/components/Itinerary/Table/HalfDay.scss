@@ -3,6 +3,14 @@
     width: calc((100vw - 70px) / 7);
     flex: 1;
     position: relative;
+    &.is-mobile {
+        &.line-1 {
+            width: calc((100vw - (var(--size-margin-35) * 2)) / 2);
+        }
+        &.line-2 {
+            width: calc((100vw - (var(--size-margin-35) * 2)) / 3);
+        }
+    }
     &:hover {
         >.flippable {
             transform: rotateY(180deg);
