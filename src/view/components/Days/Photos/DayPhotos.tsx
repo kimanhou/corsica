@@ -21,7 +21,8 @@ const DayPhotos : React.FC<IDayPhotosProps> = props => {
     const renderGridItem = (photoName : string, gridItemType : string, isVideo ?: boolean) => {
         return (
             <div className={`grid-item ${gridItemType}`}>
-                {isVideo && <video width="100%" autoPlay={!shouldNotAutoPlay} loop muted>
+                {/* {isVideo && <video width="100%" autoPlay={!shouldNotAutoPlay} loop muted> */}
+                {isVideo && <video width="100%" autoPlay playsInline loop muted>
                         <source src={getUrl(photoName)} type="video/mp4" />
                     </video>}
                 {!isVideo && <img src={getUrl(photoName)} />}
