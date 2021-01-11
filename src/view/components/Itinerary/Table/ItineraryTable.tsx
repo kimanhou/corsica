@@ -53,6 +53,7 @@ const ItineraryTable : React.FC<IItineraryTableProps> = props => {
                         <TwoHalfDays AMenglish="Sartene" AMfrench="Sartène" AMimageSrc="./icons/village.png" PMenglish="Roccapina" PMfrench="Roccapina" PMimageSrc="./icons/beach.png" isMobile lineNumber={1} />
                     </div>
                 </div>
+                <div className={`table-line-divider`}></div>
                 <div className={`table-line`}>
                     <TableLineNumber numbers={["3", "4"]} isMobile lineNumber={1} />
                     <div className={`days ${props.positionClassname}`}>   
@@ -60,6 +61,7 @@ const ItineraryTable : React.FC<IItineraryTableProps> = props => {
                         <FullDay english="Lavezzi Islands" french="Îles Lavezzi" imageSrc="./icons/beach.png" isMobile lineNumber={1} />
                     </div>
                 </div>
+                <div className={`table-line-divider`}></div>
                 <div className={`table-line`}>
                     <TableLineNumber numbers={["5", "6", "7"]} isMobile lineNumber={2} />
                     <div className={`days ${props.positionClassname}`}>
@@ -76,6 +78,7 @@ const ItineraryTable : React.FC<IItineraryTableProps> = props => {
                         <TwoHalfDays AMenglish="Corte" AMfrench="Corte" AMimageSrc="./icons/village.png" PMenglish="Bastia" PMfrench="Bastia" PMimageSrc="./icons/village.png" isMobile lineNumber={1} />
                     </div>
                 </div>
+                <div className={`table-line-divider`}></div>
                 <div className={`table-line`}>
                     <TableLineNumber numbers={["10", "11"]} isMobile lineNumber={1} />
                     <div className={`days ${props.positionClassname}`}>
@@ -83,6 +86,7 @@ const ItineraryTable : React.FC<IItineraryTableProps> = props => {
                         <TwoHalfDays AMenglish="Agriates Desert" AMfrench="Désert des Agriates" AMimageSrc="./icons/hike-no-border.png" PMenglish="Saint Florent Ile Rousse" PMfrench="Saint Florent Île Rousse" PMimageSrc="./icons/village.png" isMobile lineNumber={2} />
                     </div>
                 </div>
+                <div className={`table-line-divider`}></div>
                 <div className={`table-line`}>
                     <TableLineNumber numbers={["12", "13", "14"]} isMobile lineNumber={2} />
                     <div className={`days ${props.positionClassname}`}>
