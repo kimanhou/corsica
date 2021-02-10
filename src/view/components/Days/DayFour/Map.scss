@@ -7,7 +7,7 @@
     }
     .animated-path {
         stroke-dasharray: 20;
-        stroke-dashoffset: -20;
+        stroke-dashoffset: 20;
         animation: day-four-road-trip-path 2s linear 2s forwards;
     }
     .lavezzi-mark, .lavezzi-text {
@@ -27,9 +27,9 @@
 
 @keyframes day-four-road-trip-path {
     0% {
-        stroke-dashoffset: -20;
+        stroke-dashoffset: 20;
     }
     100% {
-        stroke-dashoffset: -40;
+        stroke-dashoffset: 0;
     }
 }

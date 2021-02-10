@@ -7,7 +7,7 @@
     }
     .animated-path {
         stroke-dasharray: 153;
-        stroke-dashoffset: -153;
+        stroke-dashoffset: 153;
         animation: day-seven-road-trip-path 4s linear 2s forwards;
     }
     .restonica-mark, .restonica-text {
@@ -18,10 +18,10 @@
 
 @keyframes day-seven-road-trip-path {
     0% {
-        stroke-dashoffset: -153;
+        stroke-dashoffset: 153;
     }
     100% {
-        stroke-dashoffset: -306;
+        stroke-dashoffset: 0;
     }
 }
 

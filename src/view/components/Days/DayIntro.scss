@@ -1,7 +1,7 @@
 .day-intro {
+    display: flex;
+    flex-direction: row;
     >.day-intro-text, >.day-intro-map {
-        display: inline-block;
-        vertical-align: top;
         margin-bottom: 50px;
     }
     >.day-intro-map {

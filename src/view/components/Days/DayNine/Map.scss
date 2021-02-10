@@ -11,17 +11,17 @@
     }
     .animated-path {
         stroke-dasharray: 90;
-        stroke-dashoffset: -90;
+        stroke-dashoffset: 90;
         animation: day-nine-road-trip-path 2s linear 2s forwards;
     }
 }
 
 @keyframes day-nine-road-trip-path {
     0% {
-        stroke-dashoffset: -90;
+        stroke-dashoffset: 90;
     }
     100% {
-        stroke-dashoffset: -180;
+        stroke-dashoffset: 0;
     }
 }
 

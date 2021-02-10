@@ -6,8 +6,8 @@
         transform-origin: 131px 121px;
     }
     .animated-path {
-        stroke-dasharray: 10;
-        stroke-dashoffset: -10;
+        stroke-dasharray: 11;
+        stroke-dashoffset: 11;
         animation: day-eight-road-trip-path 1s linear 2s forwards;
     }
     .tavignano-mark, .tavignano-text {
@@ -18,10 +18,10 @@
 
 @keyframes day-eight-road-trip-path {
     0% {
-        stroke-dashoffset: -10;
+        stroke-dashoffset: 11;
     }
     100% {
-        stroke-dashoffset: -20;
+        stroke-dashoffset: 0;
     }
 }
 

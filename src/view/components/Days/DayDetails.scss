@@ -2,15 +2,26 @@
     min-height: 100vh;
     background-color: var(--color-light-yellow);
     border-top: 1px solid transparent;
-    >.column {
-        display: inline-block;
-        vertical-align: top;
-        min-height: calc(100vh - 180px);
-        margin-bottom: 30px;
-        margin-top: 65px;
-        &.left {
+    >.day-details-content {
+        display: flex;
+        flex-direction: row;
+        padding: 0 var(--size-margin-35);
+        >.day-details-content-left, >.day-details-content-right {
+            margin-bottom: 30px;
+            margin-top: 65px;
+            h2 {
+                font-family: Signature;
+                font-size: var(--size-font-size-header-signature); 
+                font-weight: 100;
+            }
+            ul {
+                list-style-type : none;
+                margin-top: 0;
+            }
+        }
+        >.day-details-content-left {
+            margin-right: 100px;
             width: 770px;
-            margin-left: var(--size-margin-35);
             >.day-details-half-days {
                 >.am {
                     margin-bottom: 50px;
@@ -20,10 +31,7 @@
                 text-decoration: underline;
             }
         }
-        &.middle {
-            width: 200px;
-        }
-        &.right {
+        >.day-details-content-right {
             width: 400px;
             p {
                 display: inline;
@@ -35,37 +43,22 @@
                 vertical-align: middle;
             }
         }
-        h2 {
-            font-family: Signature;
-            font-size: var(--size-font-size-header-signature); 
-            font-weight: 100;
-        }
-        ul {
-            list-style-type : none;
-            margin-top: 0;
-        }
     }
 }
 
 @media screen and (max-width: 600px) {
     .day-details {
-        >.column {
-            display: block;
-            margin-bottom: 0;
-            padding-bottom: var(--size-big-margin);
-            &.left, &.right {
-                width: calc(100vw - (var(--size-margin) * 2));
-                margin-left: var(--size-margin);
+        >.day-details-content {
+            flex-direction: column;
+            >.day-details-content-left, >.day-details-content-right {
+                width: 100%;
             }
-            &.middle {
-                display: none;
-            }
-            &.left {
+            >.day-details-content-left {
                 >img {
                     width: calc(100vw - (var(--size-margin) * 2));
                 }
             }
-            &.right {
+            >.day-details-content-right {
                 img {
                     height: 40px;
                 }
